@@ -1,0 +1,914 @@
+{
+  "courseSlug": "multithreading-and-parallel-computing-in-java",
+  "courseId": 1035518,
+  "totalLectures": 121,
+  "totalWithTranscripts": 89,
+  "outputDir": "/Users/ashwin-14876/My Files/udemy-to-notes/output/multithreading-course",
+  "sections": [
+    {
+      "index": 1,
+      "title": "Introduction",
+      "lectureCount": 1,
+      "dir": "section-01"
+    },
+    {
+      "index": 2,
+      "title": "Environment",
+      "lectureCount": 2,
+      "dir": "section-02"
+    },
+    {
+      "index": 3,
+      "title": "### MULTITHREADING ###",
+      "lectureCount": 0,
+      "dir": "section-03"
+    },
+    {
+      "index": 4,
+      "title": "Multithreading Theory",
+      "lectureCount": 5,
+      "dir": "section-04"
+    },
+    {
+      "index": 5,
+      "title": "Threads Manipulation",
+      "lectureCount": 8,
+      "dir": "section-05"
+    },
+    {
+      "index": 6,
+      "title": "Inter-Thread Communication",
+      "lectureCount": 12,
+      "dir": "section-06"
+    },
+    {
+      "index": 7,
+      "title": "Multithreading Concepts",
+      "lectureCount": 9,
+      "dir": "section-07"
+    },
+    {
+      "index": 8,
+      "title": "Creating Threads with Executors",
+      "lectureCount": 7,
+      "dir": "section-08"
+    },
+    {
+      "index": 9,
+      "title": "Concurrent Collections",
+      "lectureCount": 12,
+      "dir": "section-09"
+    },
+    {
+      "index": 10,
+      "title": "Multithreading Exercise I - Dining Philosophers Problem",
+      "lectureCount": 6,
+      "dir": "section-10"
+    },
+    {
+      "index": 11,
+      "title": "Multithreading Exercise II -Students Library Problem",
+      "lectureCount": 6,
+      "dir": "section-11"
+    },
+    {
+      "index": 12,
+      "title": "### PARALLEL ALGORITHMS ###",
+      "lectureCount": 1,
+      "dir": "section-12"
+    },
+    {
+      "index": 13,
+      "title": "Parallelization",
+      "lectureCount": 10,
+      "dir": "section-13"
+    },
+    {
+      "index": 14,
+      "title": "Fork-Join Framework",
+      "lectureCount": 8,
+      "dir": "section-14"
+    },
+    {
+      "index": 15,
+      "title": "Using Java's Stream API",
+      "lectureCount": 19,
+      "dir": "section-15"
+    },
+    {
+      "index": 16,
+      "title": "Virtual Threads",
+      "lectureCount": 15,
+      "dir": "section-16"
+    },
+    {
+      "index": 17,
+      "title": "Course Materials (DOWNLOADS)",
+      "lectureCount": 0,
+      "dir": "section-17"
+    }
+  ],
+  "lectures": [
+    {
+      "noteNumber": "001",
+      "lectureId": 6166566,
+      "title": "Introduction",
+      "section": "Introduction",
+      "sectionIndex": 1,
+      "transcriptFile": "section-01/01-introduction.txt",
+      "noteFile": "001-introduction.md"
+    },
+    {
+      "noteNumber": "002",
+      "lectureId": 51651263,
+      "title": "Installing Java JDK 23",
+      "section": "Environment",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/02-installing-java-jdk-23.txt",
+      "noteFile": "002-installing-java-jdk-23.md"
+    },
+    {
+      "noteNumber": "003",
+      "lectureId": 51651267,
+      "title": "(OPTIONAL!!!!) Installing IntelliJ",
+      "section": "Environment",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/03-optional-installing-intellij.txt",
+      "noteFile": "003-optional-installing-intellij.md"
+    },
+    {
+      "noteNumber": "004",
+      "lectureId": 6166580,
+      "title": "Processes and threads introduction",
+      "section": "Multithreading Theory",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/05-processes-and-threads-introduction.txt",
+      "noteFile": "004-processes-and-threads-introduction.md"
+    },
+    {
+      "noteNumber": "005",
+      "lectureId": 14232158,
+      "title": "What is time-slicing algorithm?",
+      "section": "Multithreading Theory",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/06-what-is-time-slicing-algorithm.txt",
+      "noteFile": "005-what-is-time-slicing-algorithm.md"
+    },
+    {
+      "noteNumber": "006",
+      "lectureId": 40873549,
+      "title": "Benefits of multithreading",
+      "section": "Multithreading Theory",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/07-benefits-of-multithreading.txt",
+      "noteFile": "006-benefits-of-multithreading.md"
+    },
+    {
+      "noteNumber": "007",
+      "lectureId": 6166690,
+      "title": "Thread lifecycles",
+      "section": "Multithreading Theory",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/09-thread-lifecycles.txt",
+      "noteFile": "007-thread-lifecycles.md"
+    },
+    {
+      "noteNumber": "008",
+      "lectureId": 6176028,
+      "title": "Sequential processing",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/10-sequential-processing.txt",
+      "noteFile": "008-sequential-processing.md"
+    },
+    {
+      "noteNumber": "009",
+      "lectureId": 14002654,
+      "title": "Starting threads - Runnable",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/11-starting-threads---runnable.txt",
+      "noteFile": "009-starting-threads---runnable.md"
+    },
+    {
+      "noteNumber": "010",
+      "lectureId": 6175924,
+      "title": "Wait for threads to finish - join",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/14-wait-for-threads-to-finish---join.txt",
+      "noteFile": "010-wait-for-threads-to-finish---join.md"
+    },
+    {
+      "noteNumber": "011",
+      "lectureId": 51667439,
+      "title": "Showing all threads in the JVM",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/15-showing-all-threads-in-the-jvm.txt",
+      "noteFile": "011-showing-all-threads-in-the-jvm.md"
+    },
+    {
+      "noteNumber": "012",
+      "lectureId": 51674297,
+      "title": "Is multithreading faster than sequential execution?",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/16-is-multithreading-faster-than-sequential-execution.txt",
+      "noteFile": "012-is-multithreading-faster-than-sequential-execution.md"
+    },
+    {
+      "noteNumber": "013",
+      "lectureId": 22428922,
+      "title": "Daemon threads and user threads",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/17-daemon-threads-and-user-threads.txt",
+      "noteFile": "013-daemon-threads-and-user-threads.md"
+    },
+    {
+      "noteNumber": "014",
+      "lectureId": 34283862,
+      "title": "Thread priority and Java Thread Scheduler",
+      "section": "Threads Manipulation",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/18-thread-priority-and-java-thread-scheduler.txt",
+      "noteFile": "014-thread-priority-and-java-thread-scheduler.md"
+    },
+    {
+      "noteNumber": "015",
+      "lectureId": 6175930,
+      "title": "Synchronization",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/20-synchronization.txt",
+      "noteFile": "015-synchronization.md"
+    },
+    {
+      "noteNumber": "016",
+      "lectureId": 22470968,
+      "title": "Synchronized blocks and custom objects",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/22-synchronized-blocks-and-custom-objects.txt",
+      "noteFile": "016-synchronized-blocks-and-custom-objects.md"
+    },
+    {
+      "noteNumber": "017",
+      "lectureId": 6175934,
+      "title": "Wait and notify",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/25-wait-and-notify.txt",
+      "noteFile": "017-wait-and-notify.md"
+    },
+    {
+      "noteNumber": "018",
+      "lectureId": 6175938,
+      "title": "Producer and consumer",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/27-producer-and-consumer.txt",
+      "noteFile": "018-producer-and-consumer.md"
+    },
+    {
+      "noteNumber": "019",
+      "lectureId": 51812267,
+      "title": "Why should we use a while loop with wait()?",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/28-why-should-we-use-a-while-loop-with-wait.txt",
+      "noteFile": "019-why-should-we-use-a-while-loop-with-wait.md"
+    },
+    {
+      "noteNumber": "020",
+      "lectureId": 6175942,
+      "title": "Locks example",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/30-locks-example.txt",
+      "noteFile": "020-locks-example.md"
+    },
+    {
+      "noteNumber": "021",
+      "lectureId": 6175944,
+      "title": "Producer consumer with locks",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/31-producer-consumer-with-locks.txt",
+      "noteFile": "021-producer-consumer-with-locks.md"
+    },
+    {
+      "noteNumber": "022",
+      "lectureId": 6205428,
+      "title": "Locks and synchronization",
+      "section": "Inter-Thread Communication",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/32-locks-and-synchronization.txt",
+      "noteFile": "022-locks-and-synchronization.md"
+    },
+    {
+      "noteNumber": "023",
+      "lectureId": 22476174,
+      "title": "Deadlock example",
+      "section": "Multithreading Concepts",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/34-deadlock-example.txt",
+      "noteFile": "023-deadlock-example.md"
+    },
+    {
+      "noteNumber": "024",
+      "lectureId": 6175926,
+      "title": "Volatile",
+      "section": "Multithreading Concepts",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/36-volatile.txt",
+      "noteFile": "024-volatile.md"
+    },
+    {
+      "noteNumber": "025",
+      "lectureId": 22455224,
+      "title": "Stopping a thread",
+      "section": "Multithreading Concepts",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/37-stopping-a-thread.txt",
+      "noteFile": "025-stopping-a-thread.md"
+    },
+    {
+      "noteNumber": "026",
+      "lectureId": 22489598,
+      "title": "Atomic variables",
+      "section": "Multithreading Concepts",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/38-atomic-variables.txt",
+      "noteFile": "026-atomic-variables.md"
+    },
+    {
+      "noteNumber": "027",
+      "lectureId": 6175946,
+      "title": "What are semaphores?",
+      "section": "Multithreading Concepts",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/39-what-are-semaphores.txt",
+      "noteFile": "027-what-are-semaphores.md"
+    },
+    {
+      "noteNumber": "028",
+      "lectureId": 6175954,
+      "title": "Semaphores example",
+      "section": "Multithreading Concepts",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/41-semaphores-example.txt",
+      "noteFile": "028-semaphores-example.md"
+    },
+    {
+      "noteNumber": "029",
+      "lectureId": 22509138,
+      "title": "Why to use thread pools?",
+      "section": "Creating Threads with Executors",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/43-why-to-use-thread-pools.txt",
+      "noteFile": "029-why-to-use-thread-pools.md"
+    },
+    {
+      "noteNumber": "030",
+      "lectureId": 22512596,
+      "title": "Executors example - FixedThreadPools",
+      "section": "Creating Threads with Executors",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/45-executors-example---fixedthreadpools.txt",
+      "noteFile": "030-executors-example---fixedthreadpools.md"
+    },
+    {
+      "noteNumber": "031",
+      "lectureId": 22500192,
+      "title": "Stopping executors",
+      "section": "Creating Threads with Executors",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/47-stopping-executors.txt",
+      "noteFile": "031-stopping-executors.md"
+    },
+    {
+      "noteNumber": "032",
+      "lectureId": 22509748,
+      "title": "What are the Callable interface and Future object?",
+      "section": "Creating Threads with Executors",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/48-what-are-the-callable-interface-and-future-object.txt",
+      "noteFile": "032-what-are-the-callable-interface-and-future-object.md"
+    },
+    {
+      "noteNumber": "033",
+      "lectureId": 6175952,
+      "title": "Callable and future example",
+      "section": "Creating Threads with Executors",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/49-callable-and-future-example.txt",
+      "noteFile": "033-callable-and-future-example.md"
+    },
+    {
+      "noteNumber": "034",
+      "lectureId": 26052754,
+      "title": "Collections synchronization",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/51-collections-synchronization.txt",
+      "noteFile": "034-collections-synchronization.md"
+    },
+    {
+      "noteNumber": "035",
+      "lectureId": 6175958,
+      "title": "Latch",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/52-latch.txt",
+      "noteFile": "035-latch.md"
+    },
+    {
+      "noteNumber": "036",
+      "lectureId": 6175960,
+      "title": "Cyclic barrier",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/53-cyclic-barrier.txt",
+      "noteFile": "036-cyclic-barrier.md"
+    },
+    {
+      "noteNumber": "037",
+      "lectureId": 6175962,
+      "title": "Blocking queue - ArrayBlockingQueue",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/54-blocking-queue---arrayblockingqueue.txt",
+      "noteFile": "037-blocking-queue---arrayblockingqueue.md"
+    },
+    {
+      "noteNumber": "038",
+      "lectureId": 51922891,
+      "title": "Blocking queue - LinkedBlockingQueue",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/55-blocking-queue---linkedblockingqueue.txt",
+      "noteFile": "038-blocking-queue---linkedblockingqueue.md"
+    },
+    {
+      "noteNumber": "039",
+      "lectureId": 6175966,
+      "title": "BlockingPriorityQueue",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/57-blockingpriorityqueue.txt",
+      "noteFile": "039-blockingpriorityqueue.md"
+    },
+    {
+      "noteNumber": "040",
+      "lectureId": 6175968,
+      "title": "Concurrent maps",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/58-concurrent-maps.txt",
+      "noteFile": "040-concurrent-maps.md"
+    },
+    {
+      "noteNumber": "041",
+      "lectureId": 51952867,
+      "title": "Concurrent maps - slipping conditions",
+      "section": "Concurrent Collections",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/59-concurrent-maps---slipping-conditions.txt",
+      "noteFile": "041-concurrent-maps---slipping-conditions.md"
+    },
+    {
+      "noteNumber": "042",
+      "lectureId": 6175974,
+      "title": "Dining philosophers problem I - the problem",
+      "section": "Multithreading Exercise I - Dining Philosophers Problem",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/62-dining-philosophers-problem-i---the-problem.txt",
+      "noteFile": "042-dining-philosophers-problem-i---the-problem.md"
+    },
+    {
+      "noteNumber": "043",
+      "lectureId": 6175976,
+      "title": "Dining philosophers problems II - constants",
+      "section": "Multithreading Exercise I - Dining Philosophers Problem",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/63-dining-philosophers-problems-ii---constants.txt",
+      "noteFile": "043-dining-philosophers-problems-ii---constants.md"
+    },
+    {
+      "noteNumber": "044",
+      "lectureId": 6175978,
+      "title": "Dining philosophers problems III - chopstick",
+      "section": "Multithreading Exercise I - Dining Philosophers Problem",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/64-dining-philosophers-problems-iii---chopstick.txt",
+      "noteFile": "044-dining-philosophers-problems-iii---chopstick.md"
+    },
+    {
+      "noteNumber": "045",
+      "lectureId": 6252320,
+      "title": "Dining philosophers problems IV - philosopher",
+      "section": "Multithreading Exercise I - Dining Philosophers Problem",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/65-dining-philosophers-problems-iv---philosopher.txt",
+      "noteFile": "045-dining-philosophers-problems-iv---philosopher.md"
+    },
+    {
+      "noteNumber": "046",
+      "lectureId": 6252322,
+      "title": "Dining philosophers problems V - starting the threads",
+      "section": "Multithreading Exercise I - Dining Philosophers Problem",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/66-dining-philosophers-problems-v---starting-the-threads.txt",
+      "noteFile": "046-dining-philosophers-problems-v---starting-the-threads.md"
+    },
+    {
+      "noteNumber": "047",
+      "lectureId": 6258606,
+      "title": "Student library simulation I - the problem",
+      "section": "Multithreading Exercise II -Students Library Problem",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/68-student-library-simulation-i---the-problem.txt",
+      "noteFile": "047-student-library-simulation-i---the-problem.md"
+    },
+    {
+      "noteNumber": "048",
+      "lectureId": 6258612,
+      "title": "Student library simulation III - book",
+      "section": "Multithreading Exercise II -Students Library Problem",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/70-student-library-simulation-iii---book.txt",
+      "noteFile": "048-student-library-simulation-iii---book.md"
+    },
+    {
+      "noteNumber": "049",
+      "lectureId": 6258614,
+      "title": "Student library simulation IV - student",
+      "section": "Multithreading Exercise II -Students Library Problem",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/71-student-library-simulation-iv---student.txt",
+      "noteFile": "049-student-library-simulation-iv---student.md"
+    },
+    {
+      "noteNumber": "050",
+      "lectureId": 6258618,
+      "title": "Student library simulation VI - running the simulation",
+      "section": "Multithreading Exercise II -Students Library Problem",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/73-student-library-simulation-vi---running-the-simulation.txt",
+      "noteFile": "050-student-library-simulation-vi---running-the-simulation.md"
+    },
+    {
+      "noteNumber": "051",
+      "lectureId": 7050180,
+      "title": "Sequential merge sort introduction",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/75-sequential-merge-sort-introduction.txt",
+      "noteFile": "051-sequential-merge-sort-introduction.md"
+    },
+    {
+      "noteNumber": "052",
+      "lectureId": 29749126,
+      "title": "Merge sort and stack memory visualization",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/77-merge-sort-and-stack-memory-visualization.txt",
+      "noteFile": "052-merge-sort-and-stack-memory-visualization.md"
+    },
+    {
+      "noteNumber": "053",
+      "lectureId": 6176016,
+      "title": "Parallel merge sort implementation",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/78-parallel-merge-sort-implementation.txt",
+      "noteFile": "053-parallel-merge-sort-implementation.md"
+    },
+    {
+      "noteNumber": "054",
+      "lectureId": 6176018,
+      "title": "Running time comparison of merge sort implementations",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/79-running-time-comparison-of-merge-sort-implementations.txt",
+      "noteFile": "054-running-time-comparison-of-merge-sort-implementations.md"
+    },
+    {
+      "noteNumber": "055",
+      "lectureId": 6262946,
+      "title": "Sum problem introduction",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/80-sum-problem-introduction.txt",
+      "noteFile": "055-sum-problem-introduction.md"
+    },
+    {
+      "noteNumber": "056",
+      "lectureId": 6262948,
+      "title": "Sum problem - sequential approach",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/81-sum-problem---sequential-approach.txt",
+      "noteFile": "056-sum-problem---sequential-approach.md"
+    },
+    {
+      "noteNumber": "057",
+      "lectureId": 6262952,
+      "title": "Running time comparison of sum operations",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/83-running-time-comparison-of-sum-operations.txt",
+      "noteFile": "057-running-time-comparison-of-sum-operations.md"
+    },
+    {
+      "noteNumber": "058",
+      "lectureId": 29730826,
+      "title": "Amdahl's law",
+      "section": "Parallelization",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/84-amdahls-law.txt",
+      "noteFile": "058-amdahls-law.md"
+    },
+    {
+      "noteNumber": "059",
+      "lectureId": 6270786,
+      "title": "What is the Fork-join framework?",
+      "section": "Fork-Join Framework",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/85-what-is-the-fork-join-framework.txt",
+      "noteFile": "059-what-is-the-fork-join-framework.md"
+    },
+    {
+      "noteNumber": "060",
+      "lectureId": 6273632,
+      "title": "Fork-join framework simple example - RecursiveAction",
+      "section": "Fork-Join Framework",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/86-fork-join-framework-simple-example---recursiveaction.txt",
+      "noteFile": "060-fork-join-framework-simple-example---recursiveaction.md"
+    },
+    {
+      "noteNumber": "061",
+      "lectureId": 34270420,
+      "title": "Thread optimization",
+      "section": "Fork-Join Framework",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/92-thread-optimization.txt",
+      "noteFile": "061-thread-optimization.md"
+    },
+    {
+      "noteNumber": "062",
+      "lectureId": 6270788,
+      "title": "Maximum finding - the algorithm",
+      "section": "Fork-Join Framework",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/93-maximum-finding---the-algorithm.txt",
+      "noteFile": "062-maximum-finding---the-algorithm.md"
+    },
+    {
+      "noteNumber": "063",
+      "lectureId": 6270790,
+      "title": "Maximum finding - running the application",
+      "section": "Fork-Join Framework",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/94-maximum-finding---running-the-application.txt",
+      "noteFile": "063-maximum-finding---running-the-application.md"
+    },
+    {
+      "noteNumber": "064",
+      "lectureId": 6270794,
+      "title": "Merge sort revisited II",
+      "section": "Fork-Join Framework",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/96-merge-sort-revisited-ii.txt",
+      "noteFile": "064-merge-sort-revisited-ii.md"
+    },
+    {
+      "noteNumber": "065",
+      "lectureId": 9663786,
+      "title": "What is the Stream API?",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/97-what-is-the-stream-api.txt",
+      "noteFile": "065-what-is-the-stream-api.md"
+    },
+    {
+      "noteNumber": "066",
+      "lectureId": 9663792,
+      "title": "Streams with numbers",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/98-streams-with-numbers.txt",
+      "noteFile": "066-streams-with-numbers.md"
+    },
+    {
+      "noteNumber": "067",
+      "lectureId": 9663798,
+      "title": "Streams with strings",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/99-streams-with-strings.txt",
+      "noteFile": "067-streams-with-strings.md"
+    },
+    {
+      "noteNumber": "068",
+      "lectureId": 11654548,
+      "title": "Streams with custom objects - part 1",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/101-streams-with-custom-objects---part-1.txt",
+      "noteFile": "068-streams-with-custom-objects---part-1.md"
+    },
+    {
+      "noteNumber": "069",
+      "lectureId": 34324040,
+      "title": "Streams with custom objects - part 2",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/102-streams-with-custom-objects---part-2.txt",
+      "noteFile": "069-streams-with-custom-objects---part-2.md"
+    },
+    {
+      "noteNumber": "070",
+      "lectureId": 34323780,
+      "title": "External and internal iteration",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/105-external-and-internal-iteration.txt",
+      "noteFile": "070-external-and-internal-iteration.md"
+    },
+    {
+      "noteNumber": "071",
+      "lectureId": 9663794,
+      "title": "Processing files with streams",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/106-processing-files-with-streams.txt",
+      "noteFile": "071-processing-files-with-streams.md"
+    },
+    {
+      "noteNumber": "072",
+      "lectureId": 34336570,
+      "title": "map() and flatMap()",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/108-map-and-flatmap.txt",
+      "noteFile": "072-map-and-flatmap.md"
+    },
+    {
+      "noteNumber": "073",
+      "lectureId": 52215523,
+      "title": "groupingBy()",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/111-groupingby.txt",
+      "noteFile": "073-groupingby.md"
+    },
+    {
+      "noteNumber": "074",
+      "lectureId": 52215525,
+      "title": "groupingBy() with flatMap()",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/112-groupingby-with-flatmap.txt",
+      "noteFile": "074-groupingby-with-flatmap.md"
+    },
+    {
+      "noteNumber": "075",
+      "lectureId": 34324436,
+      "title": "Optionals and other important concepts",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/114-optionals-and-other-important-concepts.txt",
+      "noteFile": "075-optionals-and-other-important-concepts.md"
+    },
+    {
+      "noteNumber": "076",
+      "lectureId": 34351514,
+      "title": "OptionalInt, OptionalFloat and OptionalDouble",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/115-optionalint-optionalfloat-and-optionaldouble.txt",
+      "noteFile": "076-optionalint-optionalfloat-and-optionaldouble.md"
+    },
+    {
+      "noteNumber": "077",
+      "lectureId": 34295554,
+      "title": "allMatch(), noneMatch(), findFirst() and findAny()",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/116-allmatch-nonematch-findfirst-and-findany.txt",
+      "noteFile": "077-allmatch-nonematch-findfirst-and-findany.md"
+    },
+    {
+      "noteNumber": "078",
+      "lectureId": 34339972,
+      "title": "Parallelization - example #1",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/117-parallelization---example-1.txt",
+      "noteFile": "078-parallelization---example-1.md"
+    },
+    {
+      "noteNumber": "079",
+      "lectureId": 34351634,
+      "title": "Parallelization - example #3",
+      "section": "Using Java's Stream API",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/119-parallelization---example-3.txt",
+      "noteFile": "079-parallelization---example-3.md"
+    },
+    {
+      "noteNumber": "080",
+      "lectureId": 42652148,
+      "title": "What are virtual threads?",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/120-what-are-virtual-threads.txt",
+      "noteFile": "080-what-are-virtual-threads.md"
+    },
+    {
+      "noteNumber": "081",
+      "lectureId": 42667104,
+      "title": "Understanding virtual threads and OS threads",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/121-understanding-virtual-threads-and-os-threads.txt",
+      "noteFile": "081-understanding-virtual-threads-and-os-threads.md"
+    },
+    {
+      "noteNumber": "082",
+      "lectureId": 42684410,
+      "title": "Creating virtual threads",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/122-creating-virtual-threads.txt",
+      "noteFile": "082-creating-virtual-threads.md"
+    },
+    {
+      "noteNumber": "083",
+      "lectureId": 42689820,
+      "title": "Using ExecutorService to create virtual threads",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/124-using-executorservice-to-create-virtual-threads.txt",
+      "noteFile": "083-using-executorservice-to-create-virtual-threads.md"
+    },
+    {
+      "noteNumber": "084",
+      "lectureId": 42718652,
+      "title": "Understanding CompletableFutures II",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/128-understanding-completablefutures-ii.txt",
+      "noteFile": "084-understanding-completablefutures-ii.md"
+    },
+    {
+      "noteNumber": "085",
+      "lectureId": 42652156,
+      "title": "StructuredTaskScope and Subtask",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/130-structuredtaskscope-and-subtask.txt",
+      "noteFile": "085-structuredtaskscope-and-subtask.md"
+    },
+    {
+      "noteNumber": "086",
+      "lectureId": 42713350,
+      "title": "ShutdownOnFailure",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/131-shutdownonfailure.txt",
+      "noteFile": "086-shutdownonfailure.md"
+    },
+    {
+      "noteNumber": "087",
+      "lectureId": 42713352,
+      "title": "ShutdownOnSuccess",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/132-shutdownonsuccess.txt",
+      "noteFile": "087-shutdownonsuccess.md"
+    },
+    {
+      "noteNumber": "088",
+      "lectureId": 41069258,
+      "title": "Continuations and coroutines",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/133-continuations-and-coroutines.txt",
+      "noteFile": "088-continuations-and-coroutines.md"
+    },
+    {
+      "noteNumber": "089",
+      "lectureId": 42701638,
+      "title": "Scaling with virtual threads",
+      "section": "Virtual Threads",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/134-scaling-with-virtual-threads.txt",
+      "noteFile": "089-scaling-with-virtual-threads.md"
+    }
+  ]
+}

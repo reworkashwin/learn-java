@@ -66,7 +66,16 @@ async function login(page) {
   }
 
   console.log('  ⏳ Login required — browser window is open');
-  await page.goto('https://www.udemy.com/join/login-popup/');
+  try {
+    await page.goto('https://www.udemy.com/join/login-popup/', { timeout: 15000 });
+  } catch {
+    // Fallback: try alternative login URLs
+    try {
+      await page.goto('https://www.udemy.com/join/login-popup/', { waitUntil: 'domcontentloaded', timeout: 15000 });
+    } catch {
+      await page.goto('https://www.udemy.com/', { timeout: 15000 });
+    }
+  }
   await sleep(2000);
 
   console.log('');
