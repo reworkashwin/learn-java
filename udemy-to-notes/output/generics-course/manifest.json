@@ -1,0 +1,797 @@
+{
+  "courseSlug": "introduction-to-generics-in-java",
+  "courseId": 552508,
+  "totalLectures": 101,
+  "totalWithTranscripts": 74,
+  "outputDir": "/Users/ashwin-14876/My Files/udemy-to-notes/output/generics-course",
+  "sections": [
+    {
+      "index": 1,
+      "title": "Introduction",
+      "lectureCount": 1,
+      "dir": "section-01"
+    },
+    {
+      "index": 2,
+      "title": "### GENERICS AND GENERIC PROGRAMMING ###",
+      "lectureCount": 1,
+      "dir": "section-02"
+    },
+    {
+      "index": 3,
+      "title": "Basic Generics",
+      "lectureCount": 5,
+      "dir": "section-03"
+    },
+    {
+      "index": 4,
+      "title": "Bounded Type Parameters",
+      "lectureCount": 3,
+      "dir": "section-04"
+    },
+    {
+      "index": 5,
+      "title": "Type Inference",
+      "lectureCount": 4,
+      "dir": "section-05"
+    },
+    {
+      "index": 6,
+      "title": "Wildcards",
+      "lectureCount": 8,
+      "dir": "section-06"
+    },
+    {
+      "index": 7,
+      "title": "Type Erasure",
+      "lectureCount": 5,
+      "dir": "section-07"
+    },
+    {
+      "index": 8,
+      "title": "Homework Exercise I - Generics",
+      "lectureCount": 1,
+      "dir": "section-08"
+    },
+    {
+      "index": 9,
+      "title": "### COLLECTIONS FRAMEWORK ###",
+      "lectureCount": 3,
+      "dir": "section-09"
+    },
+    {
+      "index": 10,
+      "title": "Lists",
+      "lectureCount": 9,
+      "dir": "section-10"
+    },
+    {
+      "index": 11,
+      "title": "Stacks",
+      "lectureCount": 2,
+      "dir": "section-11"
+    },
+    {
+      "index": 12,
+      "title": "Queues",
+      "lectureCount": 4,
+      "dir": "section-12"
+    },
+    {
+      "index": 13,
+      "title": "Maps",
+      "lectureCount": 11,
+      "dir": "section-13"
+    },
+    {
+      "index": 14,
+      "title": "Sets",
+      "lectureCount": 5,
+      "dir": "section-14"
+    },
+    {
+      "index": 15,
+      "title": "Sorting Collections",
+      "lectureCount": 5,
+      "dir": "section-15"
+    },
+    {
+      "index": 16,
+      "title": "Collections Class",
+      "lectureCount": 5,
+      "dir": "section-16"
+    },
+    {
+      "index": 17,
+      "title": "Homework Exercise II - Collections",
+      "lectureCount": 1,
+      "dir": "section-17"
+    },
+    {
+      "index": 18,
+      "title": "### Stream API ###",
+      "lectureCount": 19,
+      "dir": "section-18"
+    },
+    {
+      "index": 19,
+      "title": "### REFLECTION ###",
+      "lectureCount": 9,
+      "dir": "section-19"
+    },
+    {
+      "index": 20,
+      "title": "Course Materials (DOWNLOADS)",
+      "lectureCount": 0,
+      "dir": "section-20"
+    }
+  ],
+  "lectures": [
+    {
+      "noteNumber": "001",
+      "lectureId": 3249338,
+      "title": "Introduction",
+      "section": "Introduction",
+      "sectionIndex": 1,
+      "transcriptFile": "section-01/01-introduction.txt",
+      "noteFile": "001-introduction.md"
+    },
+    {
+      "noteNumber": "002",
+      "lectureId": 3249352,
+      "title": "Why to use generics and generic programming?",
+      "section": "### GENERICS AND GENERIC PROGRAMMING ###",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/02-why-to-use-generics-and-generic-programming.txt",
+      "noteFile": "002-why-to-use-generics-and-generic-programming.md"
+    },
+    {
+      "noteNumber": "003",
+      "lectureId": 32993286,
+      "title": "Problem illustration",
+      "section": "Basic Generics",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/03-problem-illustration.txt",
+      "noteFile": "003-problem-illustration.md"
+    },
+    {
+      "noteNumber": "004",
+      "lectureId": 3249354,
+      "title": "Generic types",
+      "section": "Basic Generics",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/04-generic-types.txt",
+      "noteFile": "004-generic-types.md"
+    },
+    {
+      "noteNumber": "005",
+      "lectureId": 3249356,
+      "title": "Generic methods",
+      "section": "Basic Generics",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/06-generic-methods.txt",
+      "noteFile": "005-generic-methods.md"
+    },
+    {
+      "noteNumber": "006",
+      "lectureId": 6053800,
+      "title": "Generic methods and generic arrays",
+      "section": "Basic Generics",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/07-generic-methods-and-generic-arrays.txt",
+      "noteFile": "006-generic-methods-and-generic-arrays.md"
+    },
+    {
+      "noteNumber": "007",
+      "lectureId": 3249358,
+      "title": "Bounded type parameters introduction",
+      "section": "Bounded Type Parameters",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/09-bounded-type-parameters-introduction.txt",
+      "noteFile": "007-bounded-type-parameters-introduction.md"
+    },
+    {
+      "noteNumber": "008",
+      "lectureId": 52327293,
+      "title": "Bounded type parameters example",
+      "section": "Bounded Type Parameters",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/10-bounded-type-parameters-example.txt",
+      "noteFile": "008-bounded-type-parameters-example.md"
+    },
+    {
+      "noteNumber": "009",
+      "lectureId": 3249360,
+      "title": "What is type inference?",
+      "section": "Type Inference",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/13-what-is-type-inference.txt",
+      "noteFile": "009-what-is-type-inference.md"
+    },
+    {
+      "noteNumber": "010",
+      "lectureId": 52329989,
+      "title": "Type inference example I",
+      "section": "Type Inference",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/14-type-inference-example-i.txt",
+      "noteFile": "010-type-inference-example-i.md"
+    },
+    {
+      "noteNumber": "011",
+      "lectureId": 25886686,
+      "title": "Type inference example II",
+      "section": "Type Inference",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/15-type-inference-example-ii.txt",
+      "noteFile": "011-type-inference-example-ii.md"
+    },
+    {
+      "noteNumber": "012",
+      "lectureId": 52331305,
+      "title": "Type witness",
+      "section": "Type Inference",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/16-type-witness.txt",
+      "noteFile": "012-type-witness.md"
+    },
+    {
+      "noteNumber": "013",
+      "lectureId": 3249362,
+      "title": "Unbounded wildcards example",
+      "section": "Wildcards",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/18-unbounded-wildcards-example.txt",
+      "noteFile": "013-unbounded-wildcards-example.md"
+    },
+    {
+      "noteNumber": "014",
+      "lectureId": 6095186,
+      "title": "Upper bounded wildcards example",
+      "section": "Wildcards",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/20-upper-bounded-wildcards-example.txt",
+      "noteFile": "014-upper-bounded-wildcards-example.md"
+    },
+    {
+      "noteNumber": "015",
+      "lectureId": 3261694,
+      "title": "Lower bounded wildcards introduction",
+      "section": "Wildcards",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/21-lower-bounded-wildcards-introduction.txt",
+      "noteFile": "015-lower-bounded-wildcards-introduction.md"
+    },
+    {
+      "noteNumber": "016",
+      "lectureId": 25894904,
+      "title": "Wildcards solution",
+      "section": "Wildcards",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/23-wildcards-solution.txt",
+      "noteFile": "016-wildcards-solution.md"
+    },
+    {
+      "noteNumber": "017",
+      "lectureId": 6095190,
+      "title": "Wildcards and bounded type parameters",
+      "section": "Wildcards",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/24-wildcards-and-bounded-type-parameters.txt",
+      "noteFile": "017-wildcards-and-bounded-type-parameters.md"
+    },
+    {
+      "noteNumber": "018",
+      "lectureId": 3263162,
+      "title": "What is type erasure?",
+      "section": "Type Erasure",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/26-what-is-type-erasure.txt",
+      "noteFile": "018-what-is-type-erasure.md"
+    },
+    {
+      "noteNumber": "019",
+      "lectureId": 6095192,
+      "title": "Type erasure and bridge methods",
+      "section": "Type Erasure",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/28-type-erasure-and-bridge-methods.txt",
+      "noteFile": "019-type-erasure-and-bridge-methods.md"
+    },
+    {
+      "noteNumber": "020",
+      "lectureId": 52344101,
+      "title": "Why are generic arrays problematic?",
+      "section": "Type Erasure",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/29-why-are-generic-arrays-problematic.txt",
+      "noteFile": "020-why-are-generic-arrays-problematic.md"
+    },
+    {
+      "noteNumber": "021",
+      "lectureId": 22543562,
+      "title": "Generics homework solution",
+      "section": "Homework Exercise I - Generics",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/31-generics-homework-solution.txt",
+      "noteFile": "021-generics-homework-solution.md"
+    },
+    {
+      "noteNumber": "022",
+      "lectureId": 14004610,
+      "title": "Collections overview",
+      "section": "### COLLECTIONS FRAMEWORK ###",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/32-collections-overview.txt",
+      "noteFile": "022-collections-overview.md"
+    },
+    {
+      "noteNumber": "023",
+      "lectureId": 25939034,
+      "title": "How to measure the running time of algorithms?",
+      "section": "### COLLECTIONS FRAMEWORK ###",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/33-how-to-measure-the-running-time-of-algorithms.txt",
+      "noteFile": "023-how-to-measure-the-running-time-of-algorithms.md"
+    },
+    {
+      "noteNumber": "024",
+      "lectureId": 25956188,
+      "title": "The List interface",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/35-the-list-interface.txt",
+      "noteFile": "024-the-list-interface.md"
+    },
+    {
+      "noteNumber": "025",
+      "lectureId": 25956622,
+      "title": "What are arrays?",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/36-what-are-arrays.txt",
+      "noteFile": "025-what-are-arrays.md"
+    },
+    {
+      "noteNumber": "026",
+      "lectureId": 25956900,
+      "title": "Array operations visualization",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/37-array-operations-visualization.txt",
+      "noteFile": "026-array-operations-visualization.md"
+    },
+    {
+      "noteNumber": "027",
+      "lectureId": 25956626,
+      "title": "What are linked lists?",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/41-what-are-linked-lists.txt",
+      "noteFile": "027-what-are-linked-lists.md"
+    },
+    {
+      "noteNumber": "028",
+      "lectureId": 25957070,
+      "title": "Linked list operations visualization",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/42-linked-list-operations-visualization.txt",
+      "noteFile": "028-linked-list-operations-visualization.md"
+    },
+    {
+      "noteNumber": "029",
+      "lectureId": 3544424,
+      "title": "LinkedList example",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/43-linkedlist-example.txt",
+      "noteFile": "029-linkedlist-example.md"
+    },
+    {
+      "noteNumber": "030",
+      "lectureId": 25956630,
+      "title": "ArrayList and LinkedList performance comparison",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/44-arraylist-and-linkedlist-performance-comparison.txt",
+      "noteFile": "030-arraylist-and-linkedlist-performance-comparison.md"
+    },
+    {
+      "noteNumber": "031",
+      "lectureId": 6102366,
+      "title": "Vector",
+      "section": "Lists",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/46-vector.txt",
+      "noteFile": "031-vector.md"
+    },
+    {
+      "noteNumber": "032",
+      "lectureId": 25956954,
+      "title": "What are stacks?",
+      "section": "Stacks",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/47-what-are-stacks.txt",
+      "noteFile": "032-what-are-stacks.md"
+    },
+    {
+      "noteNumber": "033",
+      "lectureId": 25966328,
+      "title": "What are queues?",
+      "section": "Queues",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/51-what-are-queues.txt",
+      "noteFile": "033-what-are-queues.md"
+    },
+    {
+      "noteNumber": "034",
+      "lectureId": 3544434,
+      "title": "PriorityQueue example",
+      "section": "Queues",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/53-priorityqueue-example.txt",
+      "noteFile": "034-priorityqueue-example.md"
+    },
+    {
+      "noteNumber": "035",
+      "lectureId": 6105822,
+      "title": "ArrayDeque example",
+      "section": "Queues",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/55-arraydeque-example.txt",
+      "noteFile": "035-arraydeque-example.md"
+    },
+    {
+      "noteNumber": "036",
+      "lectureId": 25982798,
+      "title": "What are associative arrays?",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/58-what-are-associative-arrays.txt",
+      "noteFile": "036-what-are-associative-arrays.md"
+    },
+    {
+      "noteNumber": "037",
+      "lectureId": 25982808,
+      "title": "Hashtables introduction - collisions",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/60-hashtables-introduction---collisions.txt",
+      "noteFile": "037-hashtables-introduction---collisions.md"
+    },
+    {
+      "noteNumber": "038",
+      "lectureId": 25982818,
+      "title": "Hashtables introduction - load factor & dynamic resizing",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/61-hashtables-introduction---load-factor-dynamic-resizing.txt",
+      "noteFile": "038-hashtables-introduction---load-factor-dynamic-resizing.md"
+    },
+    {
+      "noteNumber": "039",
+      "lectureId": 25983912,
+      "title": "HashMap example - hashCode() and equals()",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/63-hashmap-example---hashcode-and-equals.txt",
+      "noteFile": "039-hashmap-example---hashcode-and-equals.md"
+    },
+    {
+      "noteNumber": "040",
+      "lectureId": 6105818,
+      "title": "LinkedHashMap example",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/64-linkedhashmap-example.txt",
+      "noteFile": "040-linkedhashmap-example.md"
+    },
+    {
+      "noteNumber": "041",
+      "lectureId": 3544468,
+      "title": "TreeMap example",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/66-treemap-example.txt",
+      "noteFile": "041-treemap-example.md"
+    },
+    {
+      "noteNumber": "042",
+      "lectureId": 25984452,
+      "title": "TreeMap and HashMap performance comparison",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/67-treemap-and-hashmap-performance-comparison.txt",
+      "noteFile": "042-treemap-and-hashmap-performance-comparison.md"
+    },
+    {
+      "noteNumber": "043",
+      "lectureId": 25997832,
+      "title": "Comparison of maps",
+      "section": "Maps",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/68-comparison-of-maps.txt",
+      "noteFile": "043-comparison-of-maps.md"
+    },
+    {
+      "noteNumber": "044",
+      "lectureId": 26002186,
+      "title": "What are sets?",
+      "section": "Sets",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/70-what-are-sets.txt",
+      "noteFile": "044-what-are-sets.md"
+    },
+    {
+      "noteNumber": "045",
+      "lectureId": 6105826,
+      "title": "LinkedHashSet example",
+      "section": "Sets",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/72-linkedhashset-example.txt",
+      "noteFile": "045-linkedhashset-example.md"
+    },
+    {
+      "noteNumber": "046",
+      "lectureId": 25870156,
+      "title": "Comparison of sets",
+      "section": "Sets",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/74-comparison-of-sets.txt",
+      "noteFile": "046-comparison-of-sets.md"
+    },
+    {
+      "noteNumber": "047",
+      "lectureId": 3544428,
+      "title": "Sorting arrays",
+      "section": "Sorting Collections",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/75-sorting-arrays.txt",
+      "noteFile": "047-sorting-arrays.md"
+    },
+    {
+      "noteNumber": "048",
+      "lectureId": 6115498,
+      "title": "Comparable interface",
+      "section": "Sorting Collections",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/77-comparable-interface.txt",
+      "noteFile": "048-comparable-interface.md"
+    },
+    {
+      "noteNumber": "049",
+      "lectureId": 6102368,
+      "title": "Comparator interface",
+      "section": "Sorting Collections",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/78-comparator-interface.txt",
+      "noteFile": "049-comparator-interface.md"
+    },
+    {
+      "noteNumber": "050",
+      "lectureId": 26016656,
+      "title": "Methods of the Collections class",
+      "section": "Collections Class",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/80-methods-of-the-collections-class.txt",
+      "noteFile": "050-methods-of-the-collections-class.md"
+    },
+    {
+      "noteNumber": "051",
+      "lectureId": 26016660,
+      "title": "Copy and bounded type wildcards",
+      "section": "Collections Class",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/82-copy-and-bounded-type-wildcards.txt",
+      "noteFile": "051-copy-and-bounded-type-wildcards.md"
+    },
+    {
+      "noteNumber": "052",
+      "lectureId": 26016652,
+      "title": "Unmodifiable collections",
+      "section": "Collections Class",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/83-unmodifiable-collections.txt",
+      "noteFile": "052-unmodifiable-collections.md"
+    },
+    {
+      "noteNumber": "053",
+      "lectureId": 26001660,
+      "title": "Synchronized collections",
+      "section": "Collections Class",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/84-synchronized-collections.txt",
+      "noteFile": "053-synchronized-collections.md"
+    },
+    {
+      "noteNumber": "054",
+      "lectureId": 22543408,
+      "title": "Collections homework solution",
+      "section": "Homework Exercise II - Collections",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/85-collections-homework-solution.txt",
+      "noteFile": "054-collections-homework-solution.md"
+    },
+    {
+      "noteNumber": "055",
+      "lectureId": 34388660,
+      "title": "What is the Stream API?",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/86-what-is-the-stream-api.txt",
+      "noteFile": "055-what-is-the-stream-api.md"
+    },
+    {
+      "noteNumber": "056",
+      "lectureId": 34388670,
+      "title": "Streams with strings",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/88-streams-with-strings.txt",
+      "noteFile": "056-streams-with-strings.md"
+    },
+    {
+      "noteNumber": "057",
+      "lectureId": 34388674,
+      "title": "Collections and streams",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/89-collections-and-streams.txt",
+      "noteFile": "057-collections-and-streams.md"
+    },
+    {
+      "noteNumber": "058",
+      "lectureId": 34388676,
+      "title": "Streams with custom objects - part 1",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/90-streams-with-custom-objects---part-1.txt",
+      "noteFile": "058-streams-with-custom-objects---part-1.md"
+    },
+    {
+      "noteNumber": "059",
+      "lectureId": 34388680,
+      "title": "Streams with custom objects - part 2",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/91-streams-with-custom-objects---part-2.txt",
+      "noteFile": "059-streams-with-custom-objects---part-2.md"
+    },
+    {
+      "noteNumber": "060",
+      "lectureId": 34388696,
+      "title": "Processing files with streams",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/94-processing-files-with-streams.txt",
+      "noteFile": "060-processing-files-with-streams.md"
+    },
+    {
+      "noteNumber": "061",
+      "lectureId": 34388700,
+      "title": "Short-circuiting and loop fusion",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/95-short-circuiting-and-loop-fusion.txt",
+      "noteFile": "061-short-circuiting-and-loop-fusion.md"
+    },
+    {
+      "noteNumber": "062",
+      "lectureId": 34388704,
+      "title": "map() and flatMap()",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/96-map-and-flatmap.txt",
+      "noteFile": "062-map-and-flatmap.md"
+    },
+    {
+      "noteNumber": "063",
+      "lectureId": 52122785,
+      "title": "groupingBy()",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/98-groupingby.txt",
+      "noteFile": "063-groupingby.md"
+    },
+    {
+      "noteNumber": "064",
+      "lectureId": 34388722,
+      "title": "Optionals and other important concepts",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/101-optionals-and-other-important-concepts.txt",
+      "noteFile": "064-optionals-and-other-important-concepts.md"
+    },
+    {
+      "noteNumber": "065",
+      "lectureId": 34388728,
+      "title": "OptionalInt, OptionalFloat and OptionalDouble",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/102-optionalint-optionalfloat-and-optionaldouble.txt",
+      "noteFile": "065-optionalint-optionalfloat-and-optionaldouble.md"
+    },
+    {
+      "noteNumber": "066",
+      "lectureId": 34388732,
+      "title": "allMatch(), noneMatch(), findFirst() and findAny()",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/103-allmatch-nonematch-findfirst-and-findany.txt",
+      "noteFile": "066-allmatch-nonematch-findfirst-and-findany.md"
+    },
+    {
+      "noteNumber": "067",
+      "lectureId": 34388748,
+      "title": "Parallelization - example #3",
+      "section": "### Stream API ###",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/106-parallelization---example-3.txt",
+      "noteFile": "067-parallelization---example-3.md"
+    },
+    {
+      "noteNumber": "068",
+      "lectureId": 3321048,
+      "title": "What is reflection?",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/107-what-is-reflection.txt",
+      "noteFile": "068-what-is-reflection.md"
+    },
+    {
+      "noteNumber": "069",
+      "lectureId": 3325408,
+      "title": "Get class",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/108-get-class.txt",
+      "noteFile": "069-get-class.md"
+    },
+    {
+      "noteNumber": "070",
+      "lectureId": 6106178,
+      "title": "Methods",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/110-methods.txt",
+      "noteFile": "070-methods.md"
+    },
+    {
+      "noteNumber": "071",
+      "lectureId": 6121570,
+      "title": "Getting private fields and methods",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/111-getting-private-fields-and-methods.txt",
+      "noteFile": "071-getting-private-fields-and-methods.md"
+    },
+    {
+      "noteNumber": "072",
+      "lectureId": 26035732,
+      "title": "Private constructors and the singleton pattern",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/112-private-constructors-and-the-singleton-pattern.txt",
+      "noteFile": "072-private-constructors-and-the-singleton-pattern.md"
+    },
+    {
+      "noteNumber": "073",
+      "lectureId": 6113858,
+      "title": "Annotations",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/114-annotations.txt",
+      "noteFile": "073-annotations.md"
+    },
+    {
+      "noteNumber": "074",
+      "lectureId": 25939078,
+      "title": "Spring framework and reflection",
+      "section": "### REFLECTION ###",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/115-spring-framework-and-reflection.txt",
+      "noteFile": "074-spring-framework-and-reflection.md"
+    }
+  ]
+}

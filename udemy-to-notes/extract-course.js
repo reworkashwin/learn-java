@@ -79,7 +79,10 @@ async function login(page) {
 
   await page.waitForURL(url => {
     const href = url.toString();
-    return href.includes('/learn/') || href.includes('/home/') || href.includes('/my-courses/');
+    return !href.includes('/join/') && !href.includes('/login') &&
+      (href.includes('/learn/') || href.includes('/home/') || href.includes('/my-courses/') ||
+       href.includes('/course/') || href === 'https://www.udemy.com/' ||
+       href.includes('/dashboard') || href.includes('/occupation/'));
   }, { timeout: 300000 });
 
   await sleep(2000);
