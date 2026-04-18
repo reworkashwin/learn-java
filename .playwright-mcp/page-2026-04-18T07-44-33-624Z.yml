@@ -1,0 +1,948 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - banner [ref=e8]:
+        - link "Udemy" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Udemy" [ref=e10]
+        - heading "[NEW] Master Spring 7, Spring Boot 4, REST, JPA, Security" [level=1] [ref=e13]:
+          - generic [ref=e14]: "[NEW] Master Spring 7, Spring Boot 4, REST, JPA, Security"
+        - button "Your progress" [ref=e17] [cursor=pointer]:
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - img
+            - img
+          - generic [ref=e20]: Your progress
+          - img [ref=e21]
+        - button "Save" [expanded] [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Save
+          - img [ref=e26]
+        - generic [ref=e28]:
+          - button "Share this course" [ref=e29] [cursor=pointer]:
+            - generic [ref=e30]: Share
+            - img [ref=e31]
+          - button "Actions" [ref=e34] [cursor=pointer]:
+            - img "Actions" [ref=e35]
+      - main [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e48]:
+            - 'region "Section 1: Spring Core & Maven — The Fast-Track Foundation, Lecture 1: Course Introduction" [ref=e49]':
+              - generic [ref=e52]:
+                - button "Play video" [ref=e54] [cursor=pointer]:
+                  - img "Play video" [ref=e55]
+                - generic [ref=e61]:
+                  - generic [ref=e62] [cursor=pointer]:
+                    - slider "Progress bar" [ref=e63]:
+                      - generic [ref=e64]:
+                        - generic [ref=e66]: "Loaded: 3%"
+                        - generic [ref=e69]: "Progress bar: NaN%"
+                    - generic:
+                      - img "Lecture thumbnail"
+                  - generic [ref=e70]:
+                    - button "Play" [ref=e72] [cursor=pointer]:
+                      - img "Play" [ref=e73]
+                    - button "Rewind 5 seconds" [ref=e76] [cursor=pointer]:
+                      - img "Rewind 5 seconds" [ref=e77]
+                    - button "Playback rate" [ref=e81] [cursor=pointer]:
+                      - generic [ref=e82]: 1x
+                    - button "Forward 5 seconds" [ref=e84] [cursor=pointer]:
+                      - img "Forward 5 seconds" [ref=e85]
+                    - generic [ref=e88]: 0:00 / 0:00
+                    - button "Add note" [ref=e90] [cursor=pointer]:
+                      - img "Add note" [ref=e91]
+                    - generic [ref=e93]:
+                      - slider "Volume" [ref=e94]
+                      - button "Mute" [ref=e97] [cursor=pointer]:
+                        - img "Mute" [ref=e98]
+                    - generic [ref=e100]:
+                      - button "Transcript in sidebar region" [expanded] [active] [ref=e101] [cursor=pointer]:
+                        - img "Transcript in sidebar region" [ref=e102]
+                      - generic [ref=e1331]: Transcript
+                    - button "Subtitles" [ref=e106] [cursor=pointer]:
+                      - img "Subtitles" [ref=e107]
+                    - button "Settings" [ref=e111] [cursor=pointer]:
+                      - img "Settings" [ref=e112]
+                    - button "Fullscreen" [ref=e115] [cursor=pointer]:
+                      - img "Fullscreen" [ref=e116]
+                    - button "Expanded view" [ref=e119] [cursor=pointer]:
+                      - img [ref=e120]
+            - link "Go to Next lecture" [ref=e124] [cursor=pointer]:
+              - img "Go to Next lecture" [ref=e125]
+          - dialog "Sidebar" [ref=e1332]:
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - tablist [ref=e131]:
+                  - region "Tab Navigation" [ref=e132]:
+                    - generic [ref=e134]:
+                      - tab "Transcript" [selected] [ref=e1333]:
+                        - generic [ref=e138]: Transcript
+                      - tab "AI Assistant" [ref=e141] [cursor=pointer]:
+                        - img [ref=e142]
+                        - generic [ref=e144]: AI Assistant
+                - tabpanel "Transcript" [ref=e1334]:
+                  - generic [ref=e1335]:
+                    - button "Hey there, welcome to the course." [ref=e1337]
+                    - button "If you are watching this video, you are probably asking yourself one simple question," [ref=e1339]
+                    - button "Is this the right spring and spring boot course for me ?" [ref=e1341]
+                    - button "That's a very valid question." [ref=e1343]
+                    - button "I'm going to answer the same inside this video." [ref=e1345]
+                    - button "I'm Madan Reddy and I have spent years teaching Java developers on how to build real world" [ref=e1347]
+                    - button "backend applications." [ref=e1349]
+                    - button "And here is what I have learned." [ref=e1351]
+                    - button "Knowing core Java is like having a hammer in your hand." [ref=e1353]
+                    - button "It's great, but you can't build a house with just a hammer, right ?" [ref=e1355]
+                    - button "If you take the same analogy to the software development, if you want to build modern web" [ref=e1357]
+                    - button "applications like APIs or microservices that companies actually use in production, core java" [ref=e1359]
+                    - button "alone won't cut it." [ref=e1361]
+                    - button "Many developers, they learn core Java, write a few programs and then hit a wall." [ref=e1363]
+                    - button "They'll ask themselves questions like how do I build a real backend application ?" [ref=e1365]
+                    - button "How do I handle security, databases interaction, transactions, caching, logging, deployment?" [ref=e1367]
+                    - button "To answer all these questions, this course has been created to bridge that exact gap" [ref=e1369]
+                    - button "that every Java professional is going to have." [ref=e1371]
+                    - button "Before I try to explain to you about how this course is structured, let me answer one of" [ref=e1373]
+                    - button "the burning questions that you may have, which is on why should I learn backend development" [ref=e1375]
+                    - button "by using Spring Boot and Spring Framework?" [ref=e1377]
+                    - button "In any typical enterprise application, backend developers, they're going to act as a brains" [ref=e1379]
+                    - button "for the application." [ref=e1381]
+                    - button "As a backend developer, you're going to design the APIs, handle the data that is coming from" [ref=e1383]
+                    - button "the client applications." [ref=e1385]
+                    - button "You're going to secure the system and make sure everything actually works when users" [ref=e1387]
+                    - button "start clicking buttons like crazy on the website or inside a mobile application." [ref=e1389]
+                    - button "Inside the Java ecosystem, to build a real enterprise backend applications inside" [ref=e1391]
+                    - button "the industry, almost all the Java developers, they are relying on the Spring Boot and Spring Frameworks. why ?" [ref=e1393]
+                    - button "Because Spring Boot is like a Swiss army knife." [ref=e1395]
+                    - button "It has projects and libraries that are going to help the developers to build the REST APIs," [ref=e1397]
+                    - button "to interact with the databases, implement security, caching, transaction management," [ref=e1399]
+                    - button "all in one powerful stack." [ref=e1401]
+                    - button "That's why any backend developer who has a very good understanding around the Spring" [ref=e1403]
+                    - button "and Spring Boot ecosystem, the demand for them will be high and they're going to get" [ref=e1405]
+                    - button "strong salaries and never ending real world problems to solve by using the backend development." [ref=e1407]
+                    - button "Inside software industry, almost all the enterprise backend applications, they are built by using" [ref=e1409]
+                    - button "the Java, Spring and Spring Boot, whether you're building a banking system, e-commerce" [ref=e1411]
+                    - button "Platform, job portals are the next startup idea" [ref=e1413]
+                    - button "solid backend skills with Spring Boot are where the real magic happens." [ref=e1415]
+                    - button "I hope you're convinced to learn Spring Boot for the Java backend development." [ref=e1417]
+                    - button "Now let's try to understand how this entire course is structured." [ref=e1419]
+                    - button "We're going to start from the absolute foundations and then steadily move towards the advanced" [ref=e1421]
+                    - button "and production ready concepts." [ref=e1423]
+                    - button "Throughout this course, you're going to see a clear learning path." [ref=e1425]
+                    - button "We begin with the Spring Core Fundamentals, Maven, and Project Setup," [ref=e1427]
+                    - button "core concepts including Inversion of Control, Dependency Injection, Beans, Application Context," [ref=e1429]
+                    - button "Aspect Oriented Programming." [ref=e1431]
+                    - button "All these core concepts, they're going to be explained slowly, clearly, and visually." [ref=e1433]
+                    - button "So you understand why things work, not just how." [ref=e1435]
+                    - button "Then we move into Spring Boot Essentials, REST APIs Development from Scratch, Request" [ref=e1437]
+                    - button "and Response Anatomy, API Design, Best Practices, Versioning Strategies." [ref=e1439]
+                    - button "We will build APIs the same way backend teams they build in real enterprise applications." [ref=e1441]
+                    - button "Next we go deep into database related concepts like H2Database, MySQL Database, Spring" [ref=e1443]
+                    - button "Data JPA, Entity Mappings, JPA Relationships, Pagination, Sorting, Advanced Queries, Transaction" [ref=e1445]
+                    - button "Management, and Performance Optimizations." [ref=e1447]
+                    - button "You will clearly understand what ORM Frameworks like Hibernate does behind the scenes and" [ref=e1449]
+                    - button "how to avoid the common pitfalls as well." [ref=e1451]
+                    - button "Security is going to be a big focus of this course." [ref=e1453]
+                    - button "Security is not going to be treated as an add-on here." [ref=e1455]
+                    - button "You will learn Spring Security from the ground up." [ref=e1457]
+                    - button "Security concepts like Authentication, Authorization, Password Encoding, Hashing, JWT based Authentication," [ref=e1459]
+                    - button "CSRF Protection, Course Configuration, all the security concepts are going to be explained" [ref=e1461]
+                    - button "with step-by-step demos and internal flow diagrams." [ref=e1463]
+                    - button "We then move into advanced real-world topics." [ref=e1465]
+                    - button "We are going to explore Logging Strategies, Global Exception Handling, Backend Validations," [ref=e1467]
+                    - button "Caching, Profiles and Configuration Management, Actuator, Observability using OpenTelemetry." [ref=e1469]
+                    - button "These are the skills that separate tutorial level apps from production grade systems." [ref=e1471]
+                    - button "Finally, we will learn on how to prepare Spring Boot application for production deployment." [ref=e1473]
+                    - button "We are going to work with Docker and MySQL." [ref=e1475]
+                    - button "We will also deploy our application into AWS cloud environment." [ref=e1477]
+                    - button "You will see the full journey from code to cloud." [ref=e1479]
+                    - button "I can confidently say that this is not one of those courses where you are going to build" [ref=e1481]
+                    - button "toy projects that look nothing like real applications." [ref=e1483]
+                    - button "Throughout this course, we are going to build a complete backend logic for a job portal application." [ref=e1485]
+                    - button "Let me show you a glimpse of job portal application for which we are going to build the backend logic." [ref=e1487]
+                    - button "This is a UI application that I'm going to provide to test the REST APIs end-to-end," [ref=e1489]
+                    - button "so that as a backend developer, you're going to get a good end-to-end picture." [ref=e1491]
+                    - button "In case if you're not comfortable testing the REST APIs by using these React UI application," [ref=e1493]
+                    - button "I'm also going to explain on how to test our backend REST APIs by using the tools like Postman." [ref=e1495]
+                    - button "As soon as we're done developing a REST API, we're going to test the REST API by using" [ref=e1497]
+                    - button "both the Postman and the React UI application." [ref=e1499]
+                    - button "Inside the UI application homepage, we're going to display all the jobs that are posted" [ref=e1501]
+                    - button "by the companies." [ref=e1503]
+                    - button "For example, this is a job which is posted by Apple company." [ref=e1505]
+                    - button "Apart from job details, we're also going to display company's details as well." [ref=e1507]
+                    - button "So if you open any of the company like GitHub, inside this company details page, we're going" [ref=e1509]
+                    - button "to show what are the list of jobs that are posted by this company." [ref=e1511]
+                    - button "All the data about the jobs and companies we're going to fetch from our backend REST APIs." [ref=e1513]
+                    - button "We're also going to implement security." [ref=e1515]
+                    - button "That's why you can see there is signup page and login page." [ref=e1517]
+                    - button "Apart from implementing simple security, we're also going to implement authorization, where" [ref=e1519]
+                    - button "we are going to enforce the access based upon the roles of the user." [ref=e1521]
+                    - button "Inside the job portal application, in total, we are going to have three different types" [ref=e1523]
+                    - button "of roles. Employer, an employer can post new jobs" [ref=e1525]
+                    - button "next we have job seeker who is going to use this application to apply for the jobs." [ref=e1527]
+                    - button "And there'll be an admin user as well to take care of all the admin activities of the application." [ref=e1529]
+                    - button "For example, if I try to log in with the job seeker, this is how the page is going to look like." [ref=e1531]
+                    - button "There'll be a profile page where the job seeker can upload the photo and the resume." [ref=e1533]
+                    - button "Apart from profile, we're also going to display what are the list of applied jobs that are" [ref=e1535]
+                    - button "applied by the job seeker." [ref=e1537]
+                    - button "What is the status of each of the application ?" [ref=e1539]
+                    - button "Next we're also going to have saved jobs page, where we're going to show all the list of" [ref=e1541]
+                    - button "jobs that are saved by the user." [ref=e1543]
+                    - button "So everything that you're seeing on this UI application is going to be supported by" [ref=e1545]
+                    - button "the backend APIS that we are going to build by using Spring and Spring Boot Frameworks." [ref=e1547]
+                    - button "Since this is a backend focused course, I'm not going to explain anything on the UI side," [ref=e1549]
+                    - button "like how to develop this kind of UI website by using react library." [ref=e1551]
+                    - button "I'm going to simply provide you a react project code." [ref=e1553]
+                    - button "You just have to start the UI project" [ref=e1555]
+                    - button "and with that, you should be good to test your backend REST APIs." [ref=e1557]
+                    - button "In case if you are interested to learn about full stack development, I have a full stack" [ref=e1559]
+                    - button "course as well. Inside my website," [ref=e1561]
+                    - button "If you look for a course with the name, Become a Java Full Stack Developer with React and SpringBoot," [ref=e1563]
+                    - button "As soon as you click on this enroll now, it will take you to the Udemy website where you" [ref=e1565]
+                    - button "can enroll into the full stack course, where the focus will be on both react and SpringBoot." [ref=e1567]
+                    - button "The prerequisites for this course are you need to know the Java." [ref=e1569]
+                    - button "If you know how to create Java classes, objects, and basic Java syntax, you're good to go." [ref=e1571]
+                    - button "I'm going to teach you everything else around the spring and SpringBoot ecosystem." [ref=e1573]
+                    - button "Apart from Java knowledge, you should also have a laptop and willingness or interest" [ref=e1575]
+                    - button "to learn and break things." [ref=e1577]
+                    - button "Since this is a very lengthy course, I make sure to engage you as much as possible by" [ref=e1579]
+                    - button "explaining all the concepts by using beautiful presentations." [ref=e1581]
+                    - button "I'm also going to share all the slides and the code that we are going to discuss inside this course." [ref=e1583]
+                    - button "So don't worry, you are in safe hands." [ref=e1585]
+                    - button "By the end of this course, you're going to become the master of the Spring and SpringBoot frameworks." [ref=e1587]
+                    - button "So what are you waiting for ?" [ref=e1589]
+                    - button "If you are ready to level up from Java developer to SpringBoot backend engineer, and if you're" [ref=e1591]
+                    - button "ready to build something real, something you can show in interviews or use as a portfolio" [ref=e1593]
+                    - button "project, then let's get started." [ref=e1595]
+                    - button "Let's build something amazing together." [ref=e1597]
+                    - button "So grab your coffee, fire up your IDE, and let's turn you into a SpringBoot hero." [ref=e1599]
+                    - button "Hope to see you in the next lecture." [ref=e1601]
+                  - generic [ref=e1603] [cursor=pointer]:
+                    - checkbox "Autoscroll" [checked] [ref=e1604]
+                    - img [ref=e1605]
+                    - text: Autoscroll
+              - generic [ref=e701]:
+                - button "Expand panel" [ref=e703] [cursor=pointer]:
+                  - img "Expand panel" [ref=e704]
+                - button "Close Course content sidebar" [ref=e707] [cursor=pointer]:
+                  - img "Close Course content sidebar" [ref=e708]
+          - region "Additional course options" [ref=e713]:
+            - generic [ref=e714]:
+              - tablist [ref=e715]:
+                - region "Tab Navigation" [ref=e716]:
+                  - generic [ref=e718]:
+                    - heading "Search" [level=2] [ref=e721]:
+                      - tab "Search" [ref=e722] [cursor=pointer]:
+                        - img "Search" [ref=e723]
+                    - heading "Course content" [level=2] [ref=e1607]:
+                      - tab "Course content" [ref=e1608] [cursor=pointer]:
+                        - generic [ref=e729]: Course content
+                    - heading "Overview" [level=2] [ref=e1609]:
+                      - tab "Overview" [selected] [ref=e1610]:
+                        - generic [ref=e734]: Overview
+                    - heading "Questions and answers" [level=2] [ref=e1611]:
+                      - tab "Questions and answers" [ref=e1612] [cursor=pointer]:
+                        - generic [ref=e740]:
+                          - text: Q&A
+                          - generic [ref=e1613]: Questions and answers
+                    - heading "Notes" [level=2] [ref=e1614]:
+                      - tab "Notes" [ref=e1615] [cursor=pointer]:
+                        - generic [ref=e745]: Notes
+                    - heading "Announcements" [level=2] [ref=e1616]:
+                      - tab "Announcements" [ref=e1617] [cursor=pointer]:
+                        - generic [ref=e750]: Announcements
+                    - heading "Reviews" [level=2] [ref=e1618]:
+                      - tab "Reviews" [ref=e1619] [cursor=pointer]:
+                        - generic [ref=e755]: Reviews
+                    - heading "Learning tools" [level=2] [ref=e1622]:
+                      - tab "Learning tools" [ref=e1623] [cursor=pointer]:
+                        - generic [ref=e1624]: Learning tools
+              - 'group "Section 1: Spring Core & Maven — The Fast-Track Foundation"':
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic [ref=e1625] [cursor=pointer]:
+                        - generic [ref=e1627]:
+                          - checkbox "Mark lecture Course Introduction as complete" [ref=e1628]
+                          - img [ref=e1629]
+                        - generic [ref=e1631]: Play
+                        - generic [ref=e1632]:
+                          - generic [ref=e1636]: 1. Course Introduction
+                          - generic [ref=e1638]:
+                            - button "Play Course Introduction" [ref=e1639]:
+                              - img [ref=e1640]
+                            - generic [ref=e1642]: 10min
+                    - listitem:
+                      - generic [ref=e1643] [cursor=pointer]:
+                        - generic [ref=e1645]:
+                          - checkbox "Mark lecture Details of Source Code, PDF Content & other instructions for the course as complete" [ref=e1646]
+                          - img [ref=e1647]
+                        - generic [ref=e1649]: Start
+                        - generic [ref=e1650]:
+                          - generic [ref=e1654]: 2. Details of Source Code, PDF Content & other instructions for the course
+                          - generic [ref=e1655]:
+                            - generic [ref=e1656]:
+                              - button "Start Details of Source Code, PDF Content & other instructions for the course" [ref=e1657]:
+                                - img [ref=e1658]
+                              - generic [ref=e1660]: 1min
+                            - button "Resource list" [ref=e1663]:
+                              - img [ref=e1664]
+                              - generic [ref=e1666]: Resources
+                              - img [ref=e1667]
+                    - listitem:
+                      - generic [ref=e1669] [cursor=pointer]:
+                        - generic [ref=e1671]:
+                          - checkbox "Mark lecture Why Core Java Alone Isn’t Enough for Web Development as complete" [ref=e1672]
+                          - img [ref=e1673]
+                        - generic [ref=e1675]: Play
+                        - generic [ref=e1676]:
+                          - generic [ref=e1680]: 3. Why Core Java Alone Isn’t Enough for Web Development
+                          - generic [ref=e1682]:
+                            - button "Play Why Core Java Alone Isn’t Enough for Web Development" [ref=e1683]:
+                              - img [ref=e1684]
+                            - generic [ref=e1686]: 8min
+                    - listitem:
+                      - generic [ref=e1687] [cursor=pointer]:
+                        - generic [ref=e1689]:
+                          - checkbox "Mark lecture Meet Spring and Spring Boot - The Superpowers of Java Dev as complete" [ref=e1690]
+                          - img [ref=e1691]
+                        - generic [ref=e1693]: Play
+                        - generic [ref=e1694]:
+                          - generic [ref=e1698]: 4. Meet Spring and Spring Boot - The Superpowers of Java Dev
+                          - generic [ref=e1700]:
+                            - button "Play Meet Spring and Spring Boot - The Superpowers of Java Dev" [ref=e1701]:
+                              - img [ref=e1702]
+                            - generic [ref=e1704]: 16min
+                    - listitem:
+                      - generic [ref=e1705] [cursor=pointer]:
+                        - generic [ref=e1707]:
+                          - checkbox "Mark lecture IntelliJ IDEA Ultimate as complete" [ref=e1708]
+                          - img [ref=e1709]
+                        - generic [ref=e1711]: Start
+                        - generic [ref=e1712]:
+                          - generic [ref=e1716]: 5. IntelliJ IDEA Ultimate
+                          - generic [ref=e1718]:
+                            - button "Start IntelliJ IDEA Ultimate" [ref=e1719]:
+                              - img [ref=e1720]
+                            - generic [ref=e1722]: 1min
+                    - listitem:
+                      - generic [ref=e1723] [cursor=pointer]:
+                        - generic [ref=e1725]:
+                          - checkbox "Mark lecture Spring Project Setup - The Maven Way as complete" [ref=e1726]
+                          - img [ref=e1727]
+                        - generic [ref=e1729]: Play
+                        - generic [ref=e1730]:
+                          - generic [ref=e1734]: 6. Spring Project Setup - The Maven Way
+                          - generic [ref=e1736]:
+                            - button "Play Spring Project Setup - The Maven Way" [ref=e1737]:
+                              - img [ref=e1738]
+                            - generic [ref=e1740]: 16min
+                    - listitem:
+                      - generic [ref=e1741] [cursor=pointer]:
+                        - generic [ref=e1743]:
+                          - checkbox "Mark lecture Maven Crash Course - Part 1 as complete" [ref=e1744]
+                          - img [ref=e1745]
+                        - generic [ref=e1747]: Play
+                        - generic [ref=e1748]:
+                          - generic [ref=e1752]: 7. Maven Crash Course - Part 1
+                          - generic [ref=e1754]:
+                            - button "Play Maven Crash Course - Part 1" [ref=e1755]:
+                              - img [ref=e1756]
+                            - generic [ref=e1758]: 10min
+                    - listitem:
+                      - generic [ref=e1759] [cursor=pointer]:
+                        - generic [ref=e1761]:
+                          - checkbox "Mark lecture Maven Crash Course - Part 2 as complete" [ref=e1762]
+                          - img [ref=e1763]
+                        - generic [ref=e1765]: Play
+                        - generic [ref=e1766]:
+                          - generic [ref=e1770]: 8. Maven Crash Course - Part 2
+                          - generic [ref=e1772]:
+                            - button "Play Maven Crash Course - Part 2" [ref=e1773]:
+                              - img [ref=e1774]
+                            - generic [ref=e1776]: 14min
+                    - listitem:
+                      - generic [ref=e1777] [cursor=pointer]:
+                        - generic [ref=e1779]:
+                          - checkbox "Mark lecture Maven Crash Course - Part 3 as complete" [ref=e1780]
+                          - img [ref=e1781]
+                        - generic [ref=e1783]: Play
+                        - generic [ref=e1784]:
+                          - generic [ref=e1788]: 9. Maven Crash Course - Part 3
+                          - generic [ref=e1790]:
+                            - button "Play Maven Crash Course - Part 3" [ref=e1791]:
+                              - img [ref=e1792]
+                            - generic [ref=e1794]: 15min
+                    - listitem:
+                      - generic [ref=e1795] [cursor=pointer]:
+                        - generic [ref=e1797]:
+                          - checkbox "Mark lecture Spring Core - IoC and DI Explained the Easy Way as complete" [ref=e1798]
+                          - img [ref=e1799]
+                        - generic [ref=e1801]: Play
+                        - generic [ref=e1802]:
+                          - generic [ref=e1806]: 10. Spring Core - IoC and DI Explained the Easy Way
+                          - generic [ref=e1808]:
+                            - button "Play Spring Core - IoC and DI Explained the Easy Way" [ref=e1809]:
+                              - img [ref=e1810]
+                            - generic [ref=e1812]: 10min
+                    - listitem:
+                      - generic [ref=e1813] [cursor=pointer]:
+                        - generic [ref=e1815]:
+                          - checkbox "Mark lecture Inside Spring - Beans, IoC Container and ApplicationContext as complete" [ref=e1816]
+                          - img [ref=e1817]
+                        - generic [ref=e1819]: Play
+                        - generic [ref=e1820]:
+                          - generic [ref=e1824]: 11. Inside Spring - Beans, IoC Container and ApplicationContext
+                          - generic [ref=e1826]:
+                            - button "Play Inside Spring - Beans, IoC Container and ApplicationContext" [ref=e1827]:
+                              - img [ref=e1828]
+                            - generic [ref=e1830]: 9min
+                    - listitem:
+                      - generic [ref=e1831] [cursor=pointer]:
+                        - generic [ref=e1833]:
+                          - checkbox "Mark lecture Let's Create Beans - @Bean and @Configuration in Action as complete" [ref=e1834]
+                          - img [ref=e1835]
+                        - generic [ref=e1837]: Play
+                        - generic [ref=e1838]:
+                          - generic [ref=e1842]: 12. Let's Create Beans - @Bean and @Configuration in Action
+                          - generic [ref=e1844]:
+                            - button "Play Let's Create Beans - @Bean and @Configuration in Action" [ref=e1845]:
+                              - img [ref=e1846]
+                            - generic [ref=e1848]: 18min
+              - tabpanel "Overview" [ref=e1849]:
+                - generic [ref=e1850]:
+                  - generic [ref=e1854]:
+                    - img [ref=e1855]
+                    - generic [ref=e1857]:
+                      - generic [ref=e1858]:
+                        - generic [ref=e1859]: information alert
+                        - heading "Schedule learning time" [level=2] [ref=e1860]
+                        - generic [ref=e1861]: Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+                      - generic [ref=e1862]:
+                        - button "Get started" [ref=e1863] [cursor=pointer]:
+                          - generic [ref=e1864]: Get started
+                        - button "Dismiss" [ref=e1865] [cursor=pointer]:
+                          - generic [ref=e1866]: Dismiss
+                  - generic [ref=e1867]:
+                    - generic [ref=e1868]: Become a Java Backend Engineer with Spring Boot, Spring Security, JPA, REST APIs, Docker, AWS & Production-Ready Skills
+                    - generic [ref=e1869]:
+                      - generic [ref=e1870]:
+                        - generic [ref=e1871]:
+                          - generic [ref=e1872]: "Rating: 4.6 out of 5"
+                          - generic [ref=e1873]: "4.6"
+                          - img [ref=e1874]
+                        - generic [ref=e1879]: 6,534 ratings
+                      - generic [ref=e1880]:
+                        - generic [ref=e1881]: 43,084
+                        - generic [ref=e1882]: Students
+                      - generic [ref=e1883]:
+                        - generic [ref=e1884]: 37 hours
+                        - generic [ref=e1885]: Total
+                    - generic [ref=e1886]:
+                      - img "true" [ref=e1887]
+                      - text: Last updated February 2026
+                    - generic [ref=e1889]:
+                      - generic [ref=e1890]:
+                        - img "true" [ref=e1891]
+                        - text: English
+                      - generic [ref=e1893]:
+                        - img "Closed Caption Language" [ref=e1894]
+                        - generic [ref=e1896]: English, Dutch [Auto]
+                        - generic [ref=e1897]: ","
+                        - button "14 more" [ref=e1898] [cursor=pointer]:
+                          - generic [ref=e1899]: 14 more
+                  - generic [ref=e1901]:
+                    - heading "What you'll learn" [level=2] [ref=e1902]
+                    - list [ref=e1904]:
+                      - listitem [ref=e1905]:
+                        - generic [ref=e1906]:
+                          - img [ref=e1907]
+                          - generic [ref=e1910]: What is Spring & different projects inside Spring ecosystem
+                      - listitem [ref=e1911]:
+                        - generic [ref=e1912]:
+                          - img [ref=e1913]
+                          - generic [ref=e1916]: Spring Core Concepts like Inversion of Control (IoC), Dependency Injection (DI) & Aspect-Oriented Programming (AOP)
+                      - listitem [ref=e1917]:
+                        - generic [ref=e1918]:
+                          - img [ref=e1919]
+                          - generic [ref=e1922]: How to build web applications using Spring MVC
+                      - listitem [ref=e1923]:
+                        - generic [ref=e1924]:
+                          - img [ref=e1925]
+                          - generic [ref=e1928]: How to build web applications using Spring Boot
+                      - listitem [ref=e1929]:
+                        - generic [ref=e1930]:
+                          - img [ref=e1931]
+                          - generic [ref=e1934]: Securing Web applications using Spring Security
+                      - listitem [ref=e1935]:
+                        - generic [ref=e1936]:
+                          - img [ref=e1937]
+                          - generic [ref=e1940]: Database operations using Spring JDBC, Spring Data JPA, Hibernate
+                      - listitem [ref=e1941]:
+                        - generic [ref=e1942]:
+                          - img [ref=e1943]
+                          - generic [ref=e1946]: Building & Consuming REST services using SpringBoot
+                      - listitem [ref=e1947]:
+                        - generic [ref=e1948]:
+                          - img [ref=e1949]
+                          - generic [ref=e1952]: Spring Data Rest, Spring Boot Actuator
+                      - listitem [ref=e1953]:
+                        - generic [ref=e1954]:
+                          - img [ref=e1955]
+                          - generic [ref=e1958]: Logging and properties configuration inside Spring Boot applications
+                      - listitem [ref=e1959]:
+                        - generic [ref=e1960]:
+                          - img [ref=e1961]
+                          - generic [ref=e1964]: Spring Boot profiles
+                  - generic [ref=e1965]:
+                    - heading "Description" [level=2] [ref=e1966]
+                    - generic [ref=e1967]:
+                      - generic [ref=e1969]:
+                        - generic [ref=e1970]:
+                          - paragraph [ref=e1971]:
+                            - strong [ref=e1972]: Master Java Backend Development with Spring & Spring Boot — From Foundations to Production
+                          - paragraph [ref=e1973]:
+                            - text: This is not just another Spring Boot course — it’s a
+                            - strong [ref=e1974]: complete backend engineering journey
+                            - text: designed to help you think, design, and build applications like a real
+                            - strong [ref=e1975]: Java Backend Engineer
+                            - text: .
+                          - paragraph [ref=e1976]:
+                            - text: You will start from Spring Core fundamentals and gradually build a
+                            - strong [ref=e1977]: production-ready backend
+                            - text: featuring REST APIs, database integrations, security, performance optimization, caching, transactions, observability, and cloud deployment.
+                          - paragraph [ref=e1978]: Every concept is explained with real-world reasoning — not just syntax.
+                          - paragraph [ref=e1979]:
+                            - strong [ref=e1980]: What You Will Learn — Section by Section
+                          - paragraph [ref=e1981]:
+                            - strong [ref=e1982]: "Section 1 — Spring Core & Maven: The Fast-Track Foundation"
+                          - paragraph [ref=e1983]: "Start with the backbone of Spring development:"
+                          - list [ref=e1984]:
+                            - listitem [ref=e1985]:
+                              - paragraph [ref=e1986]: Why Core Java alone is not enough for modern backend apps
+                            - listitem [ref=e1987]:
+                              - paragraph [ref=e1988]: Maven fundamentals and dependency management
+                            - listitem [ref=e1989]:
+                              - paragraph [ref=e1990]: IoC, Dependency Injection, Beans & ApplicationContext
+                            - listitem [ref=e1991]:
+                              - paragraph [ref=e1992]: Creating beans using @Bean and @Configuration
+                          - paragraph [ref=e1993]:
+                            - text: You’ll understand
+                            - strong [ref=e1994]: how Spring really works internally
+                            - text: .
+                          - paragraph [ref=e1995]:
+                            - strong [ref=e1996]: Section 2 — Spring Beans Deep Dive
+                          - paragraph [ref=e1997]: "Move beyond basics into advanced bean management:"
+                          - list [ref=e1998]:
+                            - listitem [ref=e1999]:
+                              - paragraph [ref=e2000]: Autowiring strategies, @Primary, @Qualifier
+                            - listitem [ref=e2001]:
+                              - paragraph [ref=e2002]: Bean scopes (Singleton, Prototype)
+                            - listitem [ref=e2003]:
+                              - paragraph [ref=e2004]: Lifecycle hooks with @PostConstruct & @PreDestroy
+                            - listitem [ref=e2005]:
+                              - paragraph [ref=e2006]: Constructor vs Setter vs Field injection
+                            - listitem [ref=e2007]:
+                              - paragraph [ref=e2008]: Programmatic bean registration
+                          - paragraph [ref=e2009]: Learn to solve real problems like NoUniqueBeanDefinitionException.
+                          - paragraph [ref=e2010]:
+                            - strong [ref=e2011]: Section 3 — Mastering Spring Boot REST API Development
+                          - paragraph [ref=e2012]: "Build professional REST APIs:"
+                          - list [ref=e2013]:
+                            - listitem [ref=e2014]:
+                              - paragraph [ref=e2015]: "@RestController, @SpringBootApplication, Auto-Configuration"
+                            - listitem [ref=e2016]:
+                              - paragraph [ref=e2017]: Request handling (@PathVariable, @RequestBody, Headers, Params)
+                            - listitem [ref=e2018]:
+                              - paragraph [ref=e2019]: API Versioning strategies
+                            - listitem [ref=e2020]:
+                              - paragraph [ref=e2021]: RequestEntity & ResponseEntity
+                            - listitem [ref=e2022]:
+                              - paragraph [ref=e2023]: HTTP fundamentals & best practices
+                          - paragraph [ref=e2024]: You’ll build APIs like production systems.
+                          - paragraph [ref=e2025]:
+                            - strong [ref=e2026]: Section 4 — Spring Boot Essentials
+                          - paragraph [ref=e2027]: "Improve project structure and developer experience:"
+                          - list [ref=e2028]:
+                            - listitem [ref=e2029]:
+                              - paragraph [ref=e2030]: Clean package architecture
+                            - listitem [ref=e2031]:
+                              - paragraph [ref=e2032]: Spring Boot DevTools
+                            - listitem [ref=e2033]:
+                              - paragraph [ref=e2034]: H2 Database setup & data loading
+                            - listitem [ref=e2035]:
+                              - paragraph [ref=e2036]: Better logging & development workflow
+                          - paragraph [ref=e2037]:
+                            - strong [ref=e2038]: Section 5 — Spring Data JPA
+                          - paragraph [ref=e2039]: "Learn database interaction the modern way:"
+                          - list [ref=e2040]:
+                            - listitem [ref=e2041]:
+                              - paragraph [ref=e2042]: ORM fundamentals
+                            - listitem [ref=e2043]:
+                              - paragraph [ref=e2044]: Entities, Repositories & DTO pattern
+                            - listitem [ref=e2045]:
+                              - paragraph [ref=e2046]: Lombok usage
+                            - listitem [ref=e2047]:
+                              - paragraph [ref=e2048]: Derived queries & data mapping
+                            - listitem [ref=e2049]:
+                              - paragraph [ref=e2050]: CORS handling
+                          - paragraph [ref=e2051]: Stop writing boilerplate SQL.
+                          - paragraph [ref=e2052]:
+                            - strong [ref=e2053]: Section 6 — Databases with Docker
+                          - paragraph [ref=e2054]: "Move from local DB to containerized environments:"
+                          - list [ref=e2055]:
+                            - listitem [ref=e2056]:
+                              - paragraph [ref=e2057]: Docker fundamentals for backend developers
+                            - listitem [ref=e2058]:
+                              - paragraph [ref=e2059]: Running MySQL with Docker
+                            - listitem [ref=e2060]:
+                              - paragraph [ref=e2061]: Docker Compose with Spring Boot
+                            - listitem [ref=e2062]:
+                              - paragraph [ref=e2063]: Persistent volumes & configuration
+                          - paragraph [ref=e2064]:
+                            - strong [ref=e2065]: Section 7 — Building Real Backend Features
+                          - paragraph [ref=e2066]: "Hands-on feature development:"
+                          - list [ref=e2067]:
+                            - listitem [ref=e2068]:
+                              - paragraph [ref=e2069]: Contact API implementation
+                            - listitem [ref=e2070]:
+                              - paragraph [ref=e2071]: Hibernate schema generation
+                            - listitem [ref=e2072]:
+                              - paragraph [ref=e2073]: End-to-end API testing with UI
+                          - paragraph [ref=e2074]:
+                            - strong [ref=e2075]: Section 8 — Essential Backend Skills
+                          - paragraph [ref=e2076]: "Learn production-ready practices:"
+                          - list [ref=e2077]:
+                            - listitem [ref=e2078]:
+                              - paragraph [ref=e2079]: Global exception handling
+                            - listitem [ref=e2080]:
+                              - paragraph [ref=e2081]: Backend validations
+                            - listitem [ref=e2082]:
+                              - paragraph [ref=e2083]: JPA Auditing
+                            - listitem [ref=e2084]:
+                              - paragraph [ref=e2085]: OpenAPI / Swagger documentation
+                            - listitem [ref=e2086]:
+                              - paragraph [ref=e2087]: Web scopes (Request, Session, Application)
+                          - paragraph [ref=e2088]:
+                            - strong [ref=e2089]: Section 9 — Mastering JPA Relationships
+                          - paragraph [ref=e2090]: "Deep dive into entity mappings:"
+                          - list [ref=e2091]:
+                            - listitem [ref=e2092]:
+                              - paragraph [ref=e2093]: OneToMany & ManyToOne relationships
+                            - listitem [ref=e2094]:
+                              - paragraph [ref=e2095]: Fetch vs Cascade explained clearly
+                            - listitem [ref=e2096]:
+                              - paragraph [ref=e2097]: Deletion strategies
+                            - listitem [ref=e2098]:
+                              - paragraph [ref=e2099]: Real-world relationship modelling
+                          - paragraph [ref=e2100]:
+                            - strong [ref=e2101]: Section 10 — Spring Security Essentials
+                          - paragraph [ref=e2102]: "Understand how Spring Security behaves internally:"
+                          - list [ref=e2103]:
+                            - listitem [ref=e2104]:
+                              - paragraph [ref=e2105]: Default security behavior
+                            - listitem [ref=e2106]:
+                              - paragraph [ref=e2107]: Custom configurations
+                            - listitem [ref=e2108]:
+                              - paragraph [ref=e2109]: CORS setup
+                            - listitem [ref=e2110]:
+                              - paragraph [ref=e2111]: Internal authentication flow explained
+                          - paragraph [ref=e2112]:
+                            - strong [ref=e2113]: "Section 11 — Authentication: From Passwords to JWT"
+                          - paragraph [ref=e2114]: "Modern backend authentication:"
+                          - list [ref=e2115]:
+                            - listitem [ref=e2116]:
+                              - paragraph [ref=e2117]: Hashing vs Encryption vs Encoding
+                            - listitem [ref=e2118]:
+                              - paragraph [ref=e2119]: Password encoders
+                            - listitem [ref=e2120]:
+                              - paragraph [ref=e2121]: JWT token generation & validation
+                            - listitem [ref=e2122]:
+                              - paragraph [ref=e2123]: Custom filters for authentication flow
+                          - paragraph [ref=e2124]:
+                            - strong [ref=e2125]: Section 12 — Database Authentication & CSRF Protection
+                          - paragraph [ref=e2126]: "Build secure real-world login systems:"
+                          - list [ref=e2127]:
+                            - listitem [ref=e2128]:
+                              - paragraph [ref=e2129]: Users & Roles design
+                            - listitem [ref=e2130]:
+                              - paragraph [ref=e2131]: Custom AuthenticationProvider
+                            - listitem [ref=e2132]:
+                              - paragraph [ref=e2133]: Derived queries for validation
+                            - listitem [ref=e2134]:
+                              - paragraph [ref=e2135]: CSRF attack theory & implementation
+                          - paragraph [ref=e2136]:
+                            - strong [ref=e2137]: Section 13 — Logging in Spring Boot
+                          - paragraph [ref=e2138]: "Design production-grade logging:"
+                          - list [ref=e2139]:
+                            - listitem [ref=e2140]:
+                              - paragraph [ref=e2141]: Logback configuration
+                            - listitem [ref=e2142]:
+                              - paragraph [ref=e2143]: Structured logging strategies
+                            - listitem [ref=e2144]:
+                              - paragraph [ref=e2145]: Debugging and monitoring techniques
+                          - paragraph [ref=e2146]:
+                            - strong [ref=e2147]: Section 14 — Aspect-Oriented Programming (AOP)
+                          - paragraph [ref=e2148]: "Handle cross-cutting concerns:"
+                          - list [ref=e2149]:
+                            - listitem [ref=e2150]:
+                              - paragraph [ref=e2151]: Aspect, Advice & Pointcuts
+                            - listitem [ref=e2152]:
+                              - paragraph [ref=e2153]: "@Around, @Before, @AfterReturning, @AfterThrowing"
+                            - listitem [ref=e2154]:
+                              - paragraph [ref=e2155]: Performance logging and centralized exception handling
+                          - paragraph [ref=e2156]:
+                            - strong [ref=e2157]: Section 15 — Advanced Queries in Spring Data JPA
+                          - paragraph [ref=e2158]: "Improve database performance:"
+                          - list [ref=e2159]:
+                            - listitem [ref=e2160]:
+                              - paragraph [ref=e2161]: JPQL & Native Queries
+                            - listitem [ref=e2162]:
+                              - paragraph [ref=e2163]: Named Queries
+                            - listitem [ref=e2164]:
+                              - paragraph [ref=e2165]: Solving N+1 problems
+                            - listitem [ref=e2166]:
+                              - paragraph [ref=e2167]: Batch fetching strategies
+                          - paragraph [ref=e2168]:
+                            - strong [ref=e2169]: Section 16 — Authorization, Sorting & Pagination
+                          - paragraph [ref=e2170]: "Enhance API security & data handling:"
+                          - list [ref=e2171]:
+                            - listitem [ref=e2172]:
+                              - paragraph [ref=e2173]: Roles vs Authorities
+                            - listitem [ref=e2174]:
+                              - paragraph [ref=e2175]: Securing APIs
+                            - listitem [ref=e2176]:
+                              - paragraph [ref=e2177]: Sorting & Pagination implementation
+                          - paragraph [ref=e2178]:
+                            - strong [ref=e2179]: Section 17 — Mastering Transactions
+                          - paragraph [ref=e2180]: "Understand real transaction behavior:"
+                          - list [ref=e2181]:
+                            - listitem [ref=e2182]:
+                              - paragraph [ref=e2183]: "@Transactional internals"
+                            - listitem [ref=e2184]:
+                              - paragraph [ref=e2185]: Propagation & Isolation levels
+                            - listitem [ref=e2186]:
+                              - paragraph [ref=e2187]: Rollback rules
+                            - listitem [ref=e2188]:
+                              - paragraph [ref=e2189]: Production pitfalls
+                          - paragraph [ref=e2190]:
+                            - strong [ref=e2191]: Section 18 — Spring Cache & Performance Optimization
+                          - paragraph [ref=e2192]: "Make APIs faster:"
+                          - list [ref=e2193]:
+                            - listitem [ref=e2194]:
+                              - paragraph [ref=e2195]: "@Cacheable, @CachePut, @CacheEvict"
+                            - listitem [ref=e2196]:
+                              - paragraph [ref=e2197]: TTL-based caching
+                            - listitem [ref=e2198]:
+                              - paragraph [ref=e2199]: Caffeine integration
+                          - paragraph [ref=e2200]:
+                            - strong [ref=e2201]: Section 19 — Real Feature Development
+                          - paragraph [ref=e2202]: "Build advanced backend workflows:"
+                          - list [ref=e2203]:
+                            - listitem [ref=e2204]:
+                              - paragraph [ref=e2205]: User profile management
+                            - listitem [ref=e2206]:
+                              - paragraph [ref=e2207]: Resume uploads
+                            - listitem [ref=e2208]:
+                              - paragraph [ref=e2209]: Job bookmarking & application APIs
+                            - listitem [ref=e2210]:
+                              - paragraph [ref=e2211]: ManyToMany best practices
+                          - paragraph [ref=e2212]:
+                            - strong [ref=e2213]: Section 20 — Configuration & Profiles
+                          - paragraph [ref=e2214]: "Master environment-based backend setups:"
+                          - list [ref=e2215]:
+                            - listitem [ref=e2216]:
+                              - paragraph [ref=e2217]: "@ConfigurationProperties"
+                            - listitem [ref=e2218]:
+                              - paragraph [ref=e2219]: Externalized configuration
+                            - listitem [ref=e2220]:
+                              - paragraph [ref=e2221]: Profiles for DEV/QA/PROD
+                            - listitem [ref=e2222]:
+                              - paragraph [ref=e2223]: Conditional bean creation
+                          - paragraph [ref=e2224]:
+                            - strong [ref=e2225]: Section 21 — Production-Ready Observability
+                          - paragraph [ref=e2226]: "Monitor backend systems like industry experts:"
+                          - list [ref=e2227]:
+                            - listitem [ref=e2228]:
+                              - paragraph [ref=e2229]: Spring Boot Actuator
+                            - listitem [ref=e2230]:
+                              - paragraph [ref=e2231]: Metrics, logs & tracing
+                            - listitem [ref=e2232]:
+                              - paragraph [ref=e2233]: OpenTelemetry & Micrometer
+                          - paragraph [ref=e2234]:
+                            - strong [ref=e2235]: Section 22 — Consuming REST APIs
+                          - paragraph [ref=e2236]: "Learn how backend services communicate:"
+                          - list [ref=e2237]:
+                            - listitem [ref=e2238]:
+                              - paragraph [ref=e2239]: RestClient usage
+                            - listitem [ref=e2240]:
+                              - paragraph [ref=e2241]: HTTP Service Client
+                            - listitem [ref=e2242]:
+                              - paragraph [ref=e2243]: Service grouping strategies
+                          - paragraph [ref=e2244]:
+                            - strong [ref=e2245]: Section 23 — Deploying to AWS
+                          - paragraph [ref=e2246]: "Take your backend to the cloud:"
+                          - list [ref=e2247]:
+                            - listitem [ref=e2248]:
+                              - paragraph [ref=e2249]: AWS RDS setup
+                            - listitem [ref=e2250]:
+                              - paragraph [ref=e2251]: Elastic Beanstalk deployment
+                            - listitem [ref=e2252]:
+                              - paragraph [ref=e2253]: Production configuration
+                        - generic [ref=e2254]:
+                          - heading "Who this course is for:" [level=2] [ref=e2255]
+                          - list [ref=e2256]:
+                            - listitem [ref=e2257]: Beginner students who want to learn Spring framework and it's projects like Spring Boot
+                            - listitem [ref=e2258]: Developers who already know basics of Spring framework but looking to master Spring & Spring Boot
+                      - button "Show more description" [ref=e2259] [cursor=pointer]:
+                        - generic [ref=e2260]: Show more
+                        - img [ref=e2261]
+                  - generic [ref=e2263]:
+                    - heading "Instructors" [level=2] [ref=e2264]
+                    - generic [ref=e2265]:
+                      - generic [ref=e2266]:
+                        - link "Eazy Bytes" [ref=e2268] [cursor=pointer]:
+                          - /url: /user/552e9eb07495d/
+                        - generic [ref=e2269]: Training on Java , Full Stack, Spring & ORM
+                      - list [ref=e2271]:
+                        - listitem [ref=e2272]:
+                          - generic [ref=e2273]:
+                            - img [ref=e2274]
+                            - generic [ref=e2276]: 4.6 Instructor Rating
+                        - listitem [ref=e2277]:
+                          - generic [ref=e2278]:
+                            - img [ref=e2279]
+                            - generic [ref=e2281]: 47,236 Reviews
+                        - listitem [ref=e2282]:
+                          - generic [ref=e2283]:
+                            - img [ref=e2284]
+                            - generic [ref=e2286]: 232,353 Students
+                        - listitem [ref=e2287]:
+                          - generic [ref=e2288]:
+                            - img [ref=e2289]
+                            - generic [ref=e2291]: 12 Courses
+                      - generic [ref=e2296]:
+                        - paragraph [ref=e2297]: The target of the Eazy Bytes is to educate Students, Developers and Architects on designing and implementing web applications focusing modularity, scalability, security and performance by using Java, Angular, Spring, JPA, Hibernate, Microservices, SpringBoot and Cloud.
+                        - paragraph [ref=e2298]: As the name indicates the knowledge sharing will be in byte sized which can be easily understand by anyone who spends quality time during the trainings.
+                    - generic [ref=e2299]:
+                      - generic [ref=e2300]:
+                        - link "Madan Reddy" [ref=e2302] [cursor=pointer]:
+                          - /url: /user/challa-madan/
+                        - generic [ref=e2303]: Java Full stack | Cloud enthusiast | Learner | Instructor
+                      - list [ref=e2305]:
+                        - listitem [ref=e2306]:
+                          - generic [ref=e2307]:
+                            - img [ref=e2308]
+                            - generic [ref=e2310]: 4.6 Instructor Rating
+                        - listitem [ref=e2311]:
+                          - generic [ref=e2312]:
+                            - img [ref=e2313]
+                            - generic [ref=e2315]: 47,236 Reviews
+                        - listitem [ref=e2316]:
+                          - generic [ref=e2317]:
+                            - img [ref=e2318]
+                            - generic [ref=e2320]: 232,251 Students
+                        - listitem [ref=e2321]:
+                          - generic [ref=e2322]:
+                            - img [ref=e2323]
+                            - generic [ref=e2325]: 12 Courses
+                      - generic [ref=e2327]:
+                        - paragraph [ref=e2331]:
+                          - text: Madan Reddy is the founder of
+                          - strong [ref=e2332]: eazybytes
+                          - text: ", who boasts over 15 years of experience creating and distributing enterprise web applications using Java, Spring, SpringBoot, Microservices, React, Angular, Cloud & Generative AI. He is consistently enthusiastic about staying current and imparting his knowledge with others. With his remarkable talent for simplifying complex concepts, he has been able to instruct novice software developers for many years, and has recently extended his knowledge to Udemy, where he has created top-rated courses. Through his teachings on Udemy, he intends to impart the knowledge he has acquired to other software engineers and college students."
+                        - button "Show more about the instructor" [ref=e2333] [cursor=pointer]:
+                          - generic [ref=e2334]: Show more
+                          - img [ref=e2335]
+                  - generic [ref=e2337]:
+                    - heading "Requirements" [level=2] [ref=e2338]
+                    - list [ref=e2339]:
+                      - listitem [ref=e2340]:
+                        - generic [ref=e2341]:
+                          - img [ref=e2342]
+                          - generic [ref=e2344]: Java
+                      - listitem [ref=e2345]:
+                        - generic [ref=e2346]:
+                          - img [ref=e2347]
+                          - generic [ref=e2349]: Basic knowledge around HTML, CSS
+    - contentinfo [ref=e1258]:
+      - generic [ref=e1259]:
+        - generic [ref=e1260]:
+          - generic [ref=e1261]: Teach the world online
+          - generic [ref=e1262]: Create an online video course, reach students across the globe, and earn money
+        - link "Teach on Udemy" [ref=e1264] [cursor=pointer]:
+          - /url: /teaching/?ref=bai-sub-footer
+          - generic [ref=e1265]: Teach on Udemy
+      - generic [ref=e1266]:
+        - generic [ref=e1268]:
+          - text: Top companies choose
+          - link "Udemy Business" [ref=e1269] [cursor=pointer]:
+            - /url: /udemy-business/?locale=en_US&path=request-demo-in-mx%2F&ref=footer-ad
+          - text: to build in-demand career skills.
+        - generic [ref=e1270]:
+          - img "Nasdaq" [ref=e1271]
+          - img "Volkswagen" [ref=e1272]
+          - img "NetApp" [ref=e1273]
+          - img "Eventbrite" [ref=e1274]
+      - generic [ref=e1275]:
+        - generic [ref=e1276]:
+          - button "English" [ref=e1278] [cursor=pointer]:
+            - img [ref=e1279]
+            - generic [ref=e1281]: English
+          - list [ref=e1282]:
+            - listitem [ref=e1283]:
+              - link "Udemy Business" [ref=e1284] [cursor=pointer]:
+                - /url: /udemy-business/?locale=en_US&mx_pg=index&path=%2F&ref=footer
+            - listitem [ref=e1285]:
+              - link "Teach on Udemy" [ref=e1286] [cursor=pointer]:
+                - /url: /teaching/?ref=teach_footer
+            - listitem [ref=e1287]:
+              - link "Get the app" [ref=e1288] [cursor=pointer]:
+                - /url: /mobile/
+            - listitem [ref=e1289]:
+              - link "About us" [ref=e1290] [cursor=pointer]:
+                - /url: https://about.udemy.com/?locale=en-us
+            - listitem [ref=e1291]:
+              - link "Contact us" [ref=e1292] [cursor=pointer]:
+                - /url: https://about.udemy.com/company?locale=en-us#offices
+          - list [ref=e1293]:
+            - listitem [ref=e1294]:
+              - link "Careers" [ref=e1295] [cursor=pointer]:
+                - /url: https://about.udemy.com/careers?locale=en-us
+            - listitem [ref=e1296]:
+              - link "Blog" [ref=e1297] [cursor=pointer]:
+                - /url: https://blog.udemy.com/?ref=footer
+            - listitem [ref=e1298]:
+              - link "Help and Support" [ref=e1299] [cursor=pointer]:
+                - /url: /support/
+            - listitem [ref=e1300]:
+              - link "Affiliate" [ref=e1301] [cursor=pointer]:
+                - /url: /affiliate/
+            - listitem [ref=e1302]:
+              - link "Investors" [ref=e1303] [cursor=pointer]:
+                - /url: https://investors.udemy.com
+          - list [ref=e1304]:
+            - listitem [ref=e1305]:
+              - link "Terms" [ref=e1306] [cursor=pointer]:
+                - /url: https://www.udemy.com/terms/terms-of-use/
+            - listitem [ref=e1307]:
+              - link "Privacy policy" [ref=e1308] [cursor=pointer]:
+                - /url: https://www.udemy.com/terms/privacy/
+            - listitem [ref=e1309]:
+              - button "Cookie settings" [ref=e1310] [cursor=pointer]
+            - listitem [ref=e1311]:
+              - link "Sitemap" [ref=e1312] [cursor=pointer]:
+                - /url: /sitemap/
+            - listitem [ref=e1313]:
+              - link "Accessibility statement" [ref=e1314] [cursor=pointer]:
+                - /url: https://about.udemy.com/accessibility-statement?locale=en-us
+        - generic [ref=e1315]:
+          - link "Udemy" [ref=e1317] [cursor=pointer]:
+            - /url: /
+            - img "Udemy" [ref=e1318]
+          - generic [ref=e1319]: © 2026 Udemy, Inc.
+  - generic:
+    - status
+  - generic "Save" [ref=e1320]:
+    - generic [ref=e1324]:
+      - generic [ref=e1325]: Organize and save courses to lists
+      - generic [ref=e1326]: Save to list
+      - button "Dismiss" [ref=e1327] [cursor=pointer]:
+        - generic [ref=e1328]: Dismiss
