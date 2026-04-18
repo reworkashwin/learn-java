@@ -1,0 +1,16 @@
+{
+  "name": "udemy-to-notes",
+  "version": "1.0.0",
+  "description": "Extract Udemy course transcripts and convert to learning notes using AI",
+  "main": "extract-course.js",
+  "scripts": {
+    "extract": "node extract-course.js",
+    "generate": "node generate-notes.js"
+  },
+  "keywords": ["udemy", "transcript", "notes", "ai", "learning"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
