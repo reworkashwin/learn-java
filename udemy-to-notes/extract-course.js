@@ -163,40 +163,7 @@ async function getCurriculum(page, courseId) {
 }
 
 // ─── Get Transcript ──────────────────────────────────────────────────────────
-async function getTranscript(page, lectureId) {
-  const lectureUrl = `https://www.udemy.com/course/${COURSE_SLUG}/learn/lecture/${lectureId}`;
-
-  try {
-    await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-  } catch (e) {}
-
-  await sleep(3000);
-
-  // Open transcript panel
-  try {
-    const transcriptBtn = page.getByRole('button', { name: 'Transcript in sidebar region' });
-    if (await transcriptBtn.isVisible({ timeout: 5000 })) {
-      await transcriptBtn.click();
-      await sleep(2000);
-    }
-  } catch (e) {
-    try {
-      const transcriptTab = page.getByRole('tab', { name: 'Transcript' });
-      if (await transcriptTab.isVisible({ timeout: 2000 })) {
-        await transcriptTab.click();
-        await sleep(2000);
-      }
-    } catch (e2) {
-      return null;
-    }
-  }
-
-  await sleep(2000);
-  try {
-    await page.waitForSelector('[class*="transcript--cue-container"]', { timeout: 5000 });
-  } catch (e) {}
-  await sleep(1000);
-
+async function extractTranscriptText(page) {
   return await page.evaluate(() => {
     const cues = document.querySelectorAll('[class*="transcript--cue-container"]');
     if (cues.length > 0) {
@@ -221,6 +188,93 @@ async function getTranscript(page, lectureId) {
 
     return null;
   });
+}
+
+async function openTranscriptPanel(page) {
+  try {
+    const transcriptBtn = page.getByRole('button', { name: 'Transcript in sidebar region' });
+    if (await transcriptBtn.isVisible({ timeout: 5000 })) {
+      await transcriptBtn.click();
+      await sleep(2000);
+      return true;
+    }
+  } catch (e) {}
+  try {
+    const transcriptTab = page.getByRole('tab', { name: 'Transcript' });
+    if (await transcriptTab.isVisible({ timeout: 2000 })) {
+      await transcriptTab.click();
+      await sleep(2000);
+      return true;
+    }
+  } catch (e) {}
+  return false;
+}
+
+async function playVideo(page) {
+  try {
+    // Try clicking the play button
+    const playBtn = page.locator('[data-purpose="play-button"], button[aria-label="Play"], button[aria-label="play"], [class*="play-button"], [class*="control-bar"] button:first-child');
+    if (await playBtn.first().isVisible({ timeout: 3000 })) {
+      await playBtn.first().click();
+      await sleep(1000);
+      return;
+    }
+  } catch (e) {}
+  try {
+    // Try clicking on the video element itself
+    const video = page.locator('video');
+    if (await video.isVisible({ timeout: 2000 })) {
+      await video.click();
+      await sleep(1000);
+      return;
+    }
+  } catch (e) {}
+  try {
+    // Try pressing space or using keyboard shortcut
+    await page.keyboard.press('Space');
+    await sleep(1000);
+  } catch (e) {}
+}
+
+async function getTranscript(page, lectureId) {
+  const lectureUrl = `https://www.udemy.com/course/${COURSE_SLUG}/learn/lecture/${lectureId}`;
+
+  try {
+    await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  } catch (e) {}
+
+  await sleep(3000);
+
+  // Step 1: Play the video immediately — transcript only loads after video starts
+  await playVideo(page);
+  await sleep(2000);
+
+  // Step 2: Open transcript panel
+  await openTranscriptPanel(page);
+  await sleep(2000);
+
+  // Step 3: Poll for transcript — check every 5 seconds for up to 60 seconds
+  for (let attempt = 1; attempt <= 12; attempt++) {
+    try {
+      await page.waitForSelector('[class*="transcript--cue-container"]', { timeout: 5000 });
+    } catch (e) {}
+
+    let transcript = await extractTranscriptText(page);
+    if (transcript && transcript.length > 50) return transcript;
+
+    // Every 3rd attempt, try re-opening the transcript panel and re-playing
+    if (attempt % 3 === 0) {
+      await playVideo(page);
+      await sleep(1000);
+      await openTranscriptPanel(page);
+    }
+
+    await sleep(3000);
+  }
+
+  // Final attempt after full wait
+  let transcript = await extractTranscriptText(page);
+  return transcript;
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────

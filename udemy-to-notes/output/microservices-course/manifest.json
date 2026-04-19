@@ -1,0 +1,2630 @@
+{
+  "courseSlug": "master-microservices-with-spring-docker-kubernetes",
+  "courseId": 3984552,
+  "totalLectures": 277,
+  "totalWithTranscripts": 277,
+  "outputDir": "/Users/ashwin-14876/My Files/udemy-to-notes/output/microservices-course",
+  "sections": [
+    {
+      "index": 1,
+      "title": "Introduction to Microservices Architecture",
+      "lectureCount": 4,
+      "dir": "section-01"
+    },
+    {
+      "index": 2,
+      "title": "Building microservices using Spring Boot",
+      "lectureCount": 27,
+      "dir": "section-02"
+    },
+    {
+      "index": 3,
+      "title": "How do we right size our microservices & identify boundaries",
+      "lectureCount": 4,
+      "dir": "section-03"
+    },
+    {
+      "index": 4,
+      "title": "Handle deployment, portability &  scalability of microservices using Docker",
+      "lectureCount": 21,
+      "dir": "section-04"
+    },
+    {
+      "index": 5,
+      "title": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "lectureCount": 7,
+      "dir": "section-05"
+    },
+    {
+      "index": 6,
+      "title": "Configurations Management in Microservices",
+      "lectureCount": 30,
+      "dir": "section-06"
+    },
+    {
+      "index": 7,
+      "title": "Using MySQL Database inside microservices",
+      "lectureCount": 5,
+      "dir": "section-07"
+    },
+    {
+      "index": 8,
+      "title": "Service Discovery & Service Registration in microservices",
+      "lectureCount": 18,
+      "dir": "section-08"
+    },
+    {
+      "index": 9,
+      "title": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "lectureCount": 14,
+      "dir": "section-09"
+    },
+    {
+      "index": 10,
+      "title": "Making Microservices Resilient",
+      "lectureCount": 20,
+      "dir": "section-10"
+    },
+    {
+      "index": 11,
+      "title": "Observability and monitoring of microservices",
+      "lectureCount": 24,
+      "dir": "section-11"
+    },
+    {
+      "index": 12,
+      "title": "Microservices Security",
+      "lectureCount": 21,
+      "dir": "section-12"
+    },
+    {
+      "index": 13,
+      "title": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "lectureCount": 14,
+      "dir": "section-13"
+    },
+    {
+      "index": 14,
+      "title": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "lectureCount": 6,
+      "dir": "section-14"
+    },
+    {
+      "index": 15,
+      "title": "Container Orchestration using Kubernetes",
+      "lectureCount": 15,
+      "dir": "section-15"
+    },
+    {
+      "index": 16,
+      "title": "Deep dive on Helm",
+      "lectureCount": 19,
+      "dir": "section-16"
+    },
+    {
+      "index": 17,
+      "title": "Server-side service discovery and load balancing using Kubernetes",
+      "lectureCount": 7,
+      "dir": "section-17"
+    },
+    {
+      "index": 18,
+      "title": "Deploying microservices into cloud Kubernetes cluster",
+      "lectureCount": 7,
+      "dir": "section-18"
+    },
+    {
+      "index": 19,
+      "title": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "lectureCount": 7,
+      "dir": "section-19"
+    },
+    {
+      "index": 20,
+      "title": "Tips for the microservices developers",
+      "lectureCount": 6,
+      "dir": "section-20"
+    },
+    {
+      "index": 21,
+      "title": "Thank You & Congratulations",
+      "lectureCount": 1,
+      "dir": "section-21"
+    }
+  ],
+  "lectures": [
+    {
+      "noteNumber": "001",
+      "lectureId": 27348378,
+      "title": "Introduction to the course & Agenda",
+      "section": "Introduction to Microservices Architecture",
+      "sectionIndex": 1,
+      "transcriptFile": "section-01/01-introduction-to-the-course-agenda.txt",
+      "noteFile": "001-introduction-to-the-course-agenda.md"
+    },
+    {
+      "noteNumber": "002",
+      "lectureId": 26024406,
+      "title": "Evolution of Microservices architecture",
+      "section": "Introduction to Microservices Architecture",
+      "sectionIndex": 1,
+      "transcriptFile": "section-01/03-evolution-of-microservices-architecture.txt",
+      "noteFile": "002-evolution-of-microservices-architecture.md"
+    },
+    {
+      "noteNumber": "003",
+      "lectureId": 26042764,
+      "title": "Comparisons between Monolithic, SOA & Microservices architecture",
+      "section": "Introduction to Microservices Architecture",
+      "sectionIndex": 1,
+      "transcriptFile": "section-01/04-comparisons-between-monolithic-soa-microservices-architecture.txt",
+      "noteFile": "003-comparisons-between-monolithic-soa-microservices-architecture.md"
+    },
+    {
+      "noteNumber": "004",
+      "lectureId": 26043108,
+      "title": "Definition of Microservices",
+      "section": "Introduction to Microservices Architecture",
+      "sectionIndex": 1,
+      "transcriptFile": "section-01/05-definition-of-microservices.txt",
+      "noteFile": "004-definition-of-microservices.md"
+    },
+    {
+      "noteNumber": "005",
+      "lectureId": 39943070,
+      "title": "How to build microservices",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/06-how-to-build-microservices.txt",
+      "noteFile": "005-how-to-build-microservices.md"
+    },
+    {
+      "noteNumber": "006",
+      "lectureId": 39943078,
+      "title": "Introduction to SpringBoot framework",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/07-introduction-to-springboot-framework.txt",
+      "noteFile": "006-introduction-to-springboot-framework.md"
+    },
+    {
+      "noteNumber": "007",
+      "lectureId": 39943086,
+      "title": "Funny memes of SpringBoot framework",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/08-funny-memes-of-springboot-framework.txt",
+      "noteFile": "007-funny-memes-of-springboot-framework.md"
+    },
+    {
+      "noteNumber": "008",
+      "lectureId": 39943090,
+      "title": "Introduction to REST APIs & best practices",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/09-introduction-to-rest-apis-best-practices.txt",
+      "noteFile": "008-introduction-to-rest-apis-best-practices.md"
+    },
+    {
+      "noteNumber": "009",
+      "lectureId": 39943134,
+      "title": "Creating a Spring Boot project",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/11-creating-a-spring-boot-project.txt",
+      "noteFile": "009-creating-a-spring-boot-project.md"
+    },
+    {
+      "noteNumber": "010",
+      "lectureId": 39943140,
+      "title": "Creating Hello World REST API using @RestController",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/12-creating-hello-world-rest-api-using-restcontroller.txt",
+      "noteFile": "010-creating-hello-world-rest-api-using-restcontroller.md"
+    },
+    {
+      "noteNumber": "011",
+      "lectureId": 39943150,
+      "title": "Configuring H2 DB & YAML properties",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/13-configuring-h2-db-yaml-properties.txt",
+      "noteFile": "011-configuring-h2-db-yaml-properties.md"
+    },
+    {
+      "noteNumber": "012",
+      "lectureId": 39943154,
+      "title": "Writing Spring Data JPA entities & repositories to interact with DB tables",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/15-writing-spring-data-jpa-entities-repositories-to-interact-with-db-tables.txt",
+      "noteFile": "012-writing-spring-data-jpa-entities-repositories-to-interact-with-db-tables.md"
+    },
+    {
+      "noteNumber": "013",
+      "lectureId": 39943156,
+      "title": "Introduction to DTO (Data Transfer Object) pattern",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/16-introduction-to-dto-data-transfer-object-pattern.txt",
+      "noteFile": "013-introduction-to-dto-data-transfer-object-pattern.md"
+    },
+    {
+      "noteNumber": "014",
+      "lectureId": 39943158,
+      "title": "Creating DTOs inside accounts microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/17-creating-dtos-inside-accounts-microservice.txt",
+      "noteFile": "014-creating-dtos-inside-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "015",
+      "lectureId": 39943164,
+      "title": "CREATE API inside accounts microservice - Part 1",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/18-create-api-inside-accounts-microservice---part-1.txt",
+      "noteFile": "015-create-api-inside-accounts-microservice---part-1.md"
+    },
+    {
+      "noteNumber": "016",
+      "lectureId": 39943170,
+      "title": "CREATE API inside accounts microservice - Part 2",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/19-create-api-inside-accounts-microservice---part-2.txt",
+      "noteFile": "016-create-api-inside-accounts-microservice---part-2.md"
+    },
+    {
+      "noteNumber": "017",
+      "lectureId": 39943178,
+      "title": "READ API inside accounts microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/20-read-api-inside-accounts-microservice.txt",
+      "noteFile": "017-read-api-inside-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "018",
+      "lectureId": 39943182,
+      "title": "UPDATE API inside accounts microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/21-update-api-inside-accounts-microservice.txt",
+      "noteFile": "018-update-api-inside-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "019",
+      "lectureId": 39943192,
+      "title": "DELETE API inside accounts microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/22-delete-api-inside-accounts-microservice.txt",
+      "noteFile": "019-delete-api-inside-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "020",
+      "lectureId": 39943196,
+      "title": "Handle all types of runtime exceptions using global logic inside accounts",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/23-handle-all-types-of-runtime-exceptions-using-global-logic-inside-accounts.txt",
+      "noteFile": "020-handle-all-types-of-runtime-exceptions-using-global-logic-inside-accounts.md"
+    },
+    {
+      "noteNumber": "021",
+      "lectureId": 39943206,
+      "title": "Perform input data validations inside accounts microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/24-perform-input-data-validations-inside-accounts-microservice.txt",
+      "noteFile": "021-perform-input-data-validations-inside-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "022",
+      "lectureId": 39943208,
+      "title": "Update audit columns using Spring Data",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/25-update-audit-columns-using-spring-data.txt",
+      "noteFile": "022-update-audit-columns-using-spring-data.md"
+    },
+    {
+      "noteNumber": "023",
+      "lectureId": 39943212,
+      "title": "Introduction to documentation of REST APIs using springdoc openapi",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/26-introduction-to-documentation-of-rest-apis-using-springdoc-openapi.txt",
+      "noteFile": "023-introduction-to-documentation-of-rest-apis-using-springdoc-openapi.md"
+    },
+    {
+      "noteNumber": "024",
+      "lectureId": 39943214,
+      "title": "Enhancing documentation of REST APIs using @OpenAPIDefinition",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/27-enhancing-documentation-of-rest-apis-using-openapidefinition.txt",
+      "noteFile": "024-enhancing-documentation-of-rest-apis-using-openapidefinition.md"
+    },
+    {
+      "noteNumber": "025",
+      "lectureId": 39943222,
+      "title": "Enhancing documentation of REST APIs using @Tag, @Operation, @ApiResponse",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/28-enhancing-documentation-of-rest-apis-using-tag-operation-apiresponse.txt",
+      "noteFile": "025-enhancing-documentation-of-rest-apis-using-tag-operation-apiresponse.md"
+    },
+    {
+      "noteNumber": "026",
+      "lectureId": 39943226,
+      "title": "Enhancing documentation of REST APIs using @Schema & example data - Part 1",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/29-enhancing-documentation-of-rest-apis-using-schema-example-data---part-1.txt",
+      "noteFile": "026-enhancing-documentation-of-rest-apis-using-schema-example-data---part-1.md"
+    },
+    {
+      "noteNumber": "027",
+      "lectureId": 39943232,
+      "title": "Enhancing documentation of REST APIs using @Schema & example data - Part 2",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/30-enhancing-documentation-of-rest-apis-using-schema-example-data---part-2.txt",
+      "noteFile": "027-enhancing-documentation-of-rest-apis-using-schema-example-data---part-2.md"
+    },
+    {
+      "noteNumber": "028",
+      "lectureId": 39943236,
+      "title": "Important Annotations & Classes that supports building REST services",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/31-important-annotations-classes-that-supports-building-rest-services.txt",
+      "noteFile": "028-important-annotations-classes-that-supports-building-rest-services.md"
+    },
+    {
+      "noteNumber": "029",
+      "lectureId": 39943242,
+      "title": "Assignment to build Loans & Cards microservices",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/32-assignment-to-build-loans-cards-microservices.txt",
+      "noteFile": "029-assignment-to-build-loans-cards-microservices.md"
+    },
+    {
+      "noteNumber": "030",
+      "lectureId": 39943248,
+      "title": "Deep dive and demo of Loans microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/33-deep-dive-and-demo-of-loans-microservice.txt",
+      "noteFile": "030-deep-dive-and-demo-of-loans-microservice.md"
+    },
+    {
+      "noteNumber": "031",
+      "lectureId": 39943252,
+      "title": "Deep dive and demo of Cards microservice",
+      "section": "Building microservices using Spring Boot",
+      "sectionIndex": 2,
+      "transcriptFile": "section-02/34-deep-dive-and-demo-of-cards-microservice.txt",
+      "noteFile": "031-deep-dive-and-demo-of-cards-microservice.md"
+    },
+    {
+      "noteNumber": "032",
+      "lectureId": 39943496,
+      "title": "Approaches to identify boundaries & right size microservices",
+      "section": "How do we right size our microservices & identify boundaries",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/35-approaches-to-identify-boundaries-right-size-microservices.txt",
+      "noteFile": "032-approaches-to-identify-boundaries-right-size-microservices.md"
+    },
+    {
+      "noteNumber": "033",
+      "lectureId": 39943498,
+      "title": "Sizing & identifying boundaries with a Bank App use case",
+      "section": "How do we right size our microservices & identify boundaries",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/36-sizing-identifying-boundaries-with-a-bank-app-use-case.txt",
+      "noteFile": "033-sizing-identifying-boundaries-with-a-bank-app-use-case.md"
+    },
+    {
+      "noteNumber": "034",
+      "lectureId": 39943504,
+      "title": "Sizing & identifying boundaries with a ecommerce migration use case",
+      "section": "How do we right size our microservices & identify boundaries",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/37-sizing-identifying-boundaries-with-a-ecommerce-migration-use-case.txt",
+      "noteFile": "034-sizing-identifying-boundaries-with-a-ecommerce-migration-use-case.md"
+    },
+    {
+      "noteNumber": "035",
+      "lectureId": 46135223,
+      "title": "Strangler Fig pattern",
+      "section": "How do we right size our microservices & identify boundaries",
+      "sectionIndex": 3,
+      "transcriptFile": "section-03/38-strangler-fig-pattern.txt",
+      "noteFile": "035-strangler-fig-pattern.md"
+    },
+    {
+      "noteNumber": "036",
+      "lectureId": 39943784,
+      "title": "Introduction to challenges while building, deploying microservices",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/39-introduction-to-challenges-while-building-deploying-microservices.txt",
+      "noteFile": "036-introduction-to-challenges-while-building-deploying-microservices.md"
+    },
+    {
+      "noteNumber": "037",
+      "lectureId": 39943796,
+      "title": "What are Containers & how they are different from VMs",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/40-what-are-containers-how-they-are-different-from-vms.txt",
+      "noteFile": "037-what-are-containers-how-they-are-different-from-vms.md"
+    },
+    {
+      "noteNumber": "038",
+      "lectureId": 39943808,
+      "title": "Definition of Containers, Containerization, Docker",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/41-definition-of-containers-containerization-docker.txt",
+      "noteFile": "038-definition-of-containers-containerization-docker.md"
+    },
+    {
+      "noteNumber": "039",
+      "lectureId": 39943814,
+      "title": "Introduction to Docker components & its architecture",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/42-introduction-to-docker-components-its-architecture.txt",
+      "noteFile": "039-introduction-to-docker-components-its-architecture.md"
+    },
+    {
+      "noteNumber": "040",
+      "lectureId": 39943830,
+      "title": "Docker installation & docker hub introduction",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/43-docker-installation-docker-hub-introduction.txt",
+      "noteFile": "040-docker-installation-docker-hub-introduction.md"
+    },
+    {
+      "noteNumber": "041",
+      "lectureId": 39943854,
+      "title": "Introduction to the three approaches for Docker image generation",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/44-introduction-to-the-three-approaches-for-docker-image-generation.txt",
+      "noteFile": "041-introduction-to-the-three-approaches-for-docker-image-generation.md"
+    },
+    {
+      "noteNumber": "042",
+      "lectureId": 39943862,
+      "title": "Generate Docker Image of Accounts microservice with Dockerfile - Part 1",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/45-generate-docker-image-of-accounts-microservice-with-dockerfile---part-1.txt",
+      "noteFile": "042-generate-docker-image-of-accounts-microservice-with-dockerfile---part-1.md"
+    },
+    {
+      "noteNumber": "043",
+      "lectureId": 39943866,
+      "title": "Generate Docker Image of Accounts microservice with Dockerfile - Part 2",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/46-generate-docker-image-of-accounts-microservice-with-dockerfile---part-2.txt",
+      "noteFile": "043-generate-docker-image-of-accounts-microservice-with-dockerfile---part-2.md"
+    },
+    {
+      "noteNumber": "044",
+      "lectureId": 39943870,
+      "title": "Generate Docker Image of Accounts microservice with Dockerfile - Part 3",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/47-generate-docker-image-of-accounts-microservice-with-dockerfile---part-3.txt",
+      "noteFile": "044-generate-docker-image-of-accounts-microservice-with-dockerfile---part-3.md"
+    },
+    {
+      "noteNumber": "045",
+      "lectureId": 39943876,
+      "title": "Running accounts microservice as a Docker container",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/48-running-accounts-microservice-as-a-docker-container.txt",
+      "noteFile": "045-running-accounts-microservice-as-a-docker-container.md"
+    },
+    {
+      "noteNumber": "046",
+      "lectureId": 39943886,
+      "title": "Challenges with Dockerfile approach to generate a Docker image",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/49-challenges-with-dockerfile-approach-to-generate-a-docker-image.txt",
+      "noteFile": "046-challenges-with-dockerfile-approach-to-generate-a-docker-image.md"
+    },
+    {
+      "noteNumber": "047",
+      "lectureId": 39943898,
+      "title": "Generate Docker Image of Loans microservice with Buildpacks",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/50-generate-docker-image-of-loans-microservice-with-buildpacks.txt",
+      "noteFile": "047-generate-docker-image-of-loans-microservice-with-buildpacks.md"
+    },
+    {
+      "noteNumber": "048",
+      "lectureId": 39943910,
+      "title": "Generate Docker Image of Cards microservice with Google Jib",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/51-generate-docker-image-of-cards-microservice-with-google-jib.txt",
+      "noteFile": "048-generate-docker-image-of-cards-microservice-with-google-jib.md"
+    },
+    {
+      "noteNumber": "049",
+      "lectureId": 39943924,
+      "title": "Compare Dockerfile, Buildpacks, Jib approaches",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/52-compare-dockerfile-buildpacks-jib-approaches.txt",
+      "noteFile": "049-compare-dockerfile-buildpacks-jib-approaches.md"
+    },
+    {
+      "noteNumber": "050",
+      "lectureId": 39943952,
+      "title": "Pushing Docker images from your local to remote Docker hub repository",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/53-pushing-docker-images-from-your-local-to-remote-docker-hub-repository.txt",
+      "noteFile": "050-pushing-docker-images-from-your-local-to-remote-docker-hub-repository.md"
+    },
+    {
+      "noteNumber": "051",
+      "lectureId": 39943980,
+      "title": "Introduction to Docker Compose",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/54-introduction-to-docker-compose.txt",
+      "noteFile": "051-introduction-to-docker-compose.md"
+    },
+    {
+      "noteNumber": "052",
+      "lectureId": 39943994,
+      "title": "Running all microservice containers using Docker Compose command",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/55-running-all-microservice-containers-using-docker-compose-command.txt",
+      "noteFile": "052-running-all-microservice-containers-using-docker-compose-command.md"
+    },
+    {
+      "noteNumber": "053",
+      "lectureId": 39944000,
+      "title": "Demo of docker compose commands",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/56-demo-of-docker-compose-commands.txt",
+      "noteFile": "053-demo-of-docker-compose-commands.md"
+    },
+    {
+      "noteNumber": "054",
+      "lectureId": 39944012,
+      "title": "Deep dive on Docker commands",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/57-deep-dive-on-docker-commands.txt",
+      "noteFile": "054-deep-dive-on-docker-commands.md"
+    },
+    {
+      "noteNumber": "055",
+      "lectureId": 39944026,
+      "title": "Introduction to Docker extensions and LogsExplorer",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/58-introduction-to-docker-extensions-and-logsexplorer.txt",
+      "noteFile": "055-introduction-to-docker-extensions-and-logsexplorer.md"
+    },
+    {
+      "noteNumber": "056",
+      "lectureId": 39944034,
+      "title": "Funny memes of Docker",
+      "section": "Handle deployment, portability &  scalability of microservices using Docker",
+      "sectionIndex": 4,
+      "transcriptFile": "section-04/59-funny-memes-of-docker.txt",
+      "noteFile": "056-funny-memes-of-docker.md"
+    },
+    {
+      "noteNumber": "057",
+      "lectureId": 26546432,
+      "title": "Introduction to Cloud-native applications",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/60-introduction-to-cloud-native-applications.txt",
+      "noteFile": "057-introduction-to-cloud-native-applications.md"
+    },
+    {
+      "noteNumber": "058",
+      "lectureId": 39944364,
+      "title": "Important characteristics of cloud-native applications",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/61-important-characteristics-of-cloud-native-applications.txt",
+      "noteFile": "058-important-characteristics-of-cloud-native-applications.md"
+    },
+    {
+      "noteNumber": "059",
+      "lectureId": 26546770,
+      "title": "Differences between cloud-native Apps & Traditional enterprise Apps",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/62-differences-between-cloud-native-apps-traditional-enterprise-apps.txt",
+      "noteFile": "059-differences-between-cloud-native-apps-traditional-enterprise-apps.md"
+    },
+    {
+      "noteNumber": "060",
+      "lectureId": 39944382,
+      "title": "Introduction to 12-factor & 15-factor methodologies",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/63-introduction-to-12-factor-15-factor-methodologies.txt",
+      "noteFile": "060-introduction-to-12-factor-15-factor-methodologies.md"
+    },
+    {
+      "noteNumber": "061",
+      "lectureId": 39944388,
+      "title": "Deepdive on 15-factor methodology - Part 1",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/64-deepdive-on-15-factor-methodology---part-1.txt",
+      "noteFile": "061-deepdive-on-15-factor-methodology---part-1.md"
+    },
+    {
+      "noteNumber": "062",
+      "lectureId": 39944406,
+      "title": "Deepdive on 15-factor methodology - Part 2",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/65-deepdive-on-15-factor-methodology---part-2.txt",
+      "noteFile": "062-deepdive-on-15-factor-methodology---part-2.md"
+    },
+    {
+      "noteNumber": "063",
+      "lectureId": 39944412,
+      "title": "Deepdive on 15-factor methodology - Part 3",
+      "section": "Deep Dive on Cloud Native Apps & 15-Factor methodology",
+      "sectionIndex": 5,
+      "transcriptFile": "section-05/66-deepdive-on-15-factor-methodology---part-3.txt",
+      "noteFile": "063-deepdive-on-15-factor-methodology---part-3.md"
+    },
+    {
+      "noteNumber": "064",
+      "lectureId": 39944438,
+      "title": "Introduction to Configurations Management challenges inside microservices",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/67-introduction-to-configurations-management-challenges-inside-microservices.txt",
+      "noteFile": "064-introduction-to-configurations-management-challenges-inside-microservices.md"
+    },
+    {
+      "noteNumber": "065",
+      "lectureId": 39944446,
+      "title": "How Configurations work in Spring Boot",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/68-how-configurations-work-in-spring-boot.txt",
+      "noteFile": "065-how-configurations-work-in-spring-boot.md"
+    },
+    {
+      "noteNumber": "066",
+      "lectureId": 39944458,
+      "title": "Reading configurations using @Value annotation",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/69-reading-configurations-using-value-annotation.txt",
+      "noteFile": "066-reading-configurations-using-value-annotation.md"
+    },
+    {
+      "noteNumber": "067",
+      "lectureId": 39944466,
+      "title": "Reading configurations using Environment interface",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/70-reading-configurations-using-environment-interface.txt",
+      "noteFile": "067-reading-configurations-using-environment-interface.md"
+    },
+    {
+      "noteNumber": "068",
+      "lectureId": 39944470,
+      "title": "Reading configurations using @ConfigurationProperties",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/71-reading-configurations-using-configurationproperties.txt",
+      "noteFile": "068-reading-configurations-using-configurationproperties.md"
+    },
+    {
+      "noteNumber": "069",
+      "lectureId": 39944474,
+      "title": "Introduction to Spring Boot profiles",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/72-introduction-to-spring-boot-profiles.txt",
+      "noteFile": "069-introduction-to-spring-boot-profiles.md"
+    },
+    {
+      "noteNumber": "070",
+      "lectureId": 39944478,
+      "title": "Demo of Spring Boot profiles inside accounts microservice",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/73-demo-of-spring-boot-profiles-inside-accounts-microservice.txt",
+      "noteFile": "070-demo-of-spring-boot-profiles-inside-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "071",
+      "lectureId": 39944484,
+      "title": "Externalizing configurations using command-line, JVM & environment options",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/74-externalizing-configurations-using-command-line-jvm-environment-options.txt",
+      "noteFile": "071-externalizing-configurations-using-command-line-jvm-environment-options.md"
+    },
+    {
+      "noteNumber": "072",
+      "lectureId": 39944496,
+      "title": "Activating the profile using command-line, JVM & environment options",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/75-activating-the-profile-using-command-line-jvm-environment-options.txt",
+      "noteFile": "072-activating-the-profile-using-command-line-jvm-environment-options.md"
+    },
+    {
+      "noteNumber": "073",
+      "lectureId": 39944516,
+      "title": "Assignment to make SpringBoot profile changes inside loans & cards microservices",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/76-assignment-to-make-springboot-profile-changes-inside-loans-cards-microservices.txt",
+      "noteFile": "073-assignment-to-make-springboot-profile-changes-inside-loans-cards-microservices.md"
+    },
+    {
+      "noteNumber": "074",
+      "lectureId": 39944524,
+      "title": "Demo of Spring Boot profile changes inside loans & cards microservices",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/77-demo-of-spring-boot-profile-changes-inside-loans-cards-microservices.txt",
+      "noteFile": "074-demo-of-spring-boot-profile-changes-inside-loans-cards-microservices.md"
+    },
+    {
+      "noteNumber": "075",
+      "lectureId": 39944532,
+      "title": "Drawbacks of externalized configurations using SpringBoot alone",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/78-drawbacks-of-externalized-configurations-using-springboot-alone.txt",
+      "noteFile": "075-drawbacks-of-externalized-configurations-using-springboot-alone.md"
+    },
+    {
+      "noteNumber": "076",
+      "lectureId": 39944544,
+      "title": "Introduction to Spring Cloud Config",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/79-introduction-to-spring-cloud-config.txt",
+      "noteFile": "076-introduction-to-spring-cloud-config.md"
+    },
+    {
+      "noteNumber": "077",
+      "lectureId": 39944572,
+      "title": "Building Config Server using Spring Cloud Config",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/80-building-config-server-using-spring-cloud-config.txt",
+      "noteFile": "077-building-config-server-using-spring-cloud-config.md"
+    },
+    {
+      "noteNumber": "078",
+      "lectureId": 39944582,
+      "title": "Reading configurations from the class path location of Config Server",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/81-reading-configurations-from-the-class-path-location-of-config-server.txt",
+      "noteFile": "078-reading-configurations-from-the-class-path-location-of-config-server.md"
+    },
+    {
+      "noteNumber": "079",
+      "lectureId": 39944588,
+      "title": "Updating Accounts Microservice to read properties from Config Server",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/82-updating-accounts-microservice-to-read-properties-from-config-server.txt",
+      "noteFile": "079-updating-accounts-microservice-to-read-properties-from-config-server.md"
+    },
+    {
+      "noteNumber": "080",
+      "lectureId": 39944604,
+      "title": "Updating Loans & Cards Microservice to read properties from Config Server",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/83-updating-loans-cards-microservice-to-read-properties-from-config-server.txt",
+      "noteFile": "080-updating-loans-cards-microservice-to-read-properties-from-config-server.md"
+    },
+    {
+      "noteNumber": "081",
+      "lectureId": 39944610,
+      "title": "Reading configurations from a file system location",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/84-reading-configurations-from-a-file-system-location.txt",
+      "noteFile": "081-reading-configurations-from-a-file-system-location.md"
+    },
+    {
+      "noteNumber": "082",
+      "lectureId": 39944634,
+      "title": "Reading configurations from a GitHub repository",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/85-reading-configurations-from-a-github-repository.txt",
+      "noteFile": "082-reading-configurations-from-a-github-repository.md"
+    },
+    {
+      "noteNumber": "083",
+      "lectureId": 39944642,
+      "title": "Encryption & Decryption of properties inside Config server",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/86-encryption-decryption-of-properties-inside-config-server.txt",
+      "noteFile": "083-encryption-decryption-of-properties-inside-config-server.md"
+    },
+    {
+      "noteNumber": "084",
+      "lectureId": 39944644,
+      "title": "Refresh configurations at runtime using refresh actuator path",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/87-refresh-configurations-at-runtime-using-refresh-actuator-path.txt",
+      "noteFile": "084-refresh-configurations-at-runtime-using-refresh-actuator-path.md"
+    },
+    {
+      "noteNumber": "085",
+      "lectureId": 39944646,
+      "title": "Refresh configurations at runtime using Spring Cloud Bus",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/88-refresh-configurations-at-runtime-using-spring-cloud-bus.txt",
+      "noteFile": "085-refresh-configurations-at-runtime-using-spring-cloud-bus.md"
+    },
+    {
+      "noteNumber": "086",
+      "lectureId": 39944648,
+      "title": "Refresh config at runtime using Spring Cloud Bus & Spring Cloud Config monitor",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/89-refresh-config-at-runtime-using-spring-cloud-bus-spring-cloud-config-monitor.txt",
+      "noteFile": "086-refresh-config-at-runtime-using-spring-cloud-bus-spring-cloud-config-monitor.md"
+    },
+    {
+      "noteNumber": "087",
+      "lectureId": 39944652,
+      "title": "Updating Docker Compose file to adapt Config Server changes - Part 1",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/90-updating-docker-compose-file-to-adapt-config-server-changes---part-1.txt",
+      "noteFile": "087-updating-docker-compose-file-to-adapt-config-server-changes---part-1.md"
+    },
+    {
+      "noteNumber": "088",
+      "lectureId": 39944656,
+      "title": "Introduction to Liveness and Readiness probes",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/91-introduction-to-liveness-and-readiness-probes.txt",
+      "noteFile": "088-introduction-to-liveness-and-readiness-probes.md"
+    },
+    {
+      "noteNumber": "089",
+      "lectureId": 39944658,
+      "title": "Updating Docker Compose file to adapt Config Server changes - Part 2",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/92-updating-docker-compose-file-to-adapt-config-server-changes---part-2.txt",
+      "noteFile": "089-updating-docker-compose-file-to-adapt-config-server-changes---part-2.md"
+    },
+    {
+      "noteNumber": "090",
+      "lectureId": 39944662,
+      "title": "Optimizing Docker Compose file",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/93-optimizing-docker-compose-file.txt",
+      "noteFile": "090-optimizing-docker-compose-file.md"
+    },
+    {
+      "noteNumber": "091",
+      "lectureId": 39944664,
+      "title": "Generating Docker images and pushing them into Docker Hub",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/94-generating-docker-images-and-pushing-them-into-docker-hub.txt",
+      "noteFile": "091-generating-docker-images-and-pushing-them-into-docker-hub.md"
+    },
+    {
+      "noteNumber": "092",
+      "lectureId": 39944668,
+      "title": "Testing Config Server changes end to end using Docker compose & default profile",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/95-testing-config-server-changes-end-to-end-using-docker-compose-default-profile.txt",
+      "noteFile": "092-testing-config-server-changes-end-to-end-using-docker-compose-default-profile.md"
+    },
+    {
+      "noteNumber": "093",
+      "lectureId": 39944670,
+      "title": "Preparing Docker Compose files for QA & prod profiles",
+      "section": "Configurations Management in Microservices",
+      "sectionIndex": 6,
+      "transcriptFile": "section-06/96-preparing-docker-compose-files-for-qa-prod-profiles.txt",
+      "noteFile": "093-preparing-docker-compose-files-for-qa-prod-profiles.md"
+    },
+    {
+      "noteNumber": "094",
+      "lectureId": 39944686,
+      "title": "Create MySQL DB containers for microservices",
+      "section": "Using MySQL Database inside microservices",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/97-create-mysql-db-containers-for-microservices.txt",
+      "noteFile": "094-create-mysql-db-containers-for-microservices.md"
+    },
+    {
+      "noteNumber": "095",
+      "lectureId": 39944690,
+      "title": "Update microservices code to replace H2 DB with MySQL DB",
+      "section": "Using MySQL Database inside microservices",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/98-update-microservices-code-to-replace-h2-db-with-mysql-db.txt",
+      "noteFile": "095-update-microservices-code-to-replace-h2-db-with-mysql-db.md"
+    },
+    {
+      "noteNumber": "096",
+      "lectureId": 39944694,
+      "title": "Update docker compose file to create & use MySQL DB",
+      "section": "Using MySQL Database inside microservices",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/99-update-docker-compose-file-to-create-use-mysql-db.txt",
+      "noteFile": "096-update-docker-compose-file-to-create-use-mysql-db.md"
+    },
+    {
+      "noteNumber": "097",
+      "lectureId": 39944698,
+      "title": "Running microservices & MySQL DB containers using docker compose file",
+      "section": "Using MySQL Database inside microservices",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/100-running-microservices-mysql-db-containers-using-docker-compose-file.txt",
+      "noteFile": "097-running-microservices-mysql-db-containers-using-docker-compose-file.md"
+    },
+    {
+      "noteNumber": "098",
+      "lectureId": 39944704,
+      "title": "Demo of Docker network concept",
+      "section": "Using MySQL Database inside microservices",
+      "sectionIndex": 7,
+      "transcriptFile": "section-07/101-demo-of-docker-network-concept.txt",
+      "noteFile": "098-demo-of-docker-network-concept.md"
+    },
+    {
+      "noteNumber": "099",
+      "lectureId": 39944732,
+      "title": "Brief introduction about microservices traffic",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/102-brief-introduction-about-microservices-traffic.txt",
+      "noteFile": "099-brief-introduction-about-microservices-traffic.md"
+    },
+    {
+      "noteNumber": "100",
+      "lectureId": 39944738,
+      "title": "Introduction to the Service Discovery & Registration inside microservices",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/103-introduction-to-the-service-discovery-registration-inside-microservices.txt",
+      "noteFile": "100-introduction-to-the-service-discovery-registration-inside-microservices.md"
+    },
+    {
+      "noteNumber": "101",
+      "lectureId": 39944742,
+      "title": "Why not traditional load balancers for Microservices",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/104-why-not-traditional-load-balancers-for-microservices.txt",
+      "noteFile": "101-why-not-traditional-load-balancers-for-microservices.md"
+    },
+    {
+      "noteNumber": "102",
+      "lectureId": 39944748,
+      "title": "Service Discovery & Registration inside microservices",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/105-service-discovery-registration-inside-microservices.txt",
+      "noteFile": "102-service-discovery-registration-inside-microservices.md"
+    },
+    {
+      "noteNumber": "103",
+      "lectureId": 39944754,
+      "title": "How Client side Service Discovery & Load-balancing works",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/106-how-client-side-service-discovery-load-balancing-works.txt",
+      "noteFile": "103-how-client-side-service-discovery-load-balancing-works.md"
+    },
+    {
+      "noteNumber": "104",
+      "lectureId": 39944758,
+      "title": "Spring Cloud support for Service Discovery & Registration",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/107-spring-cloud-support-for-service-discovery-registration.txt",
+      "noteFile": "104-spring-cloud-support-for-service-discovery-registration.md"
+    },
+    {
+      "noteNumber": "105",
+      "lectureId": 39944768,
+      "title": "Setup Service Discovery agent using Eureka server",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/108-setup-service-discovery-agent-using-eureka-server.txt",
+      "noteFile": "105-setup-service-discovery-agent-using-eureka-server.md"
+    },
+    {
+      "noteNumber": "106",
+      "lectureId": 39944772,
+      "title": "Make code changes in Accounts microservice to connect Eureka Server",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/109-make-code-changes-in-accounts-microservice-to-connect-eureka-server.txt",
+      "noteFile": "106-make-code-changes-in-accounts-microservice-to-connect-eureka-server.md"
+    },
+    {
+      "noteNumber": "107",
+      "lectureId": 39944776,
+      "title": "Make code changes in Loans & Cards microservice to connect Eureka Server",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/110-make-code-changes-in-loans-cards-microservice-to-connect-eureka-server.txt",
+      "noteFile": "107-make-code-changes-in-loans-cards-microservice-to-connect-eureka-server.md"
+    },
+    {
+      "noteNumber": "108",
+      "lectureId": 39944790,
+      "title": "De-registration from Eureka server when microservices shutdown",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/111-de-registration-from-eureka-server-when-microservices-shutdown.txt",
+      "noteFile": "108-de-registration-from-eureka-server-when-microservices-shutdown.md"
+    },
+    {
+      "noteNumber": "109",
+      "lectureId": 39944798,
+      "title": "Demo of heartbeats mechanism to Eureka server from clients",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/112-demo-of-heartbeats-mechanism-to-eureka-server-from-clients.txt",
+      "noteFile": "109-demo-of-heartbeats-mechanism-to-eureka-server-from-clients.md"
+    },
+    {
+      "noteNumber": "110",
+      "lectureId": 39944810,
+      "title": "Feign Client code changes to invoke other microservices - Part 1",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/113-feign-client-code-changes-to-invoke-other-microservices---part-1.txt",
+      "noteFile": "110-feign-client-code-changes-to-invoke-other-microservices---part-1.md"
+    },
+    {
+      "noteNumber": "111",
+      "lectureId": 39944814,
+      "title": "Feign Client code changes to invoke other microservices - Part 2",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/114-feign-client-code-changes-to-invoke-other-microservices---part-2.txt",
+      "noteFile": "111-feign-client-code-changes-to-invoke-other-microservices---part-2.md"
+    },
+    {
+      "noteNumber": "112",
+      "lectureId": 39944828,
+      "title": "Eureka Self-Preservation mode to avoid network trap issues",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/115-eureka-self-preservation-mode-to-avoid-network-trap-issues.txt",
+      "noteFile": "112-eureka-self-preservation-mode-to-avoid-network-trap-issues.md"
+    },
+    {
+      "noteNumber": "113",
+      "lectureId": 39944836,
+      "title": "Generating Docker images with Service Discovery changes & push them into Dock",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/116-generating-docker-images-with-service-discovery-changes-push-them-into-dock.txt",
+      "noteFile": "113-generating-docker-images-with-service-discovery-changes-push-them-into-dock.md"
+    },
+    {
+      "noteNumber": "114",
+      "lectureId": 39944846,
+      "title": "Updating Docker Compose file to adapt Service Discovery changes",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/117-updating-docker-compose-file-to-adapt-service-discovery-changes.txt",
+      "noteFile": "114-updating-docker-compose-file-to-adapt-service-discovery-changes.md"
+    },
+    {
+      "noteNumber": "115",
+      "lectureId": 39944854,
+      "title": "Starting all the microservices using docker compose file",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/118-starting-all-the-microservices-using-docker-compose-file.txt",
+      "noteFile": "115-starting-all-the-microservices-using-docker-compose-file.md"
+    },
+    {
+      "noteNumber": "116",
+      "lectureId": 39944862,
+      "title": "Demo of Client Side Service Discovery & Load balancing",
+      "section": "Service Discovery & Service Registration in microservices",
+      "sectionIndex": 8,
+      "transcriptFile": "section-08/119-demo-of-client-side-service-discovery-load-balancing.txt",
+      "noteFile": "116-demo-of-client-side-service-discovery-load-balancing.md"
+    },
+    {
+      "noteNumber": "117",
+      "lectureId": 39944950,
+      "title": "Challenges while dealing external communication in microservices",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/121-challenges-while-dealing-external-communication-in-microservices.txt",
+      "noteFile": "117-challenges-while-dealing-external-communication-in-microservices.md"
+    },
+    {
+      "noteNumber": "118",
+      "lectureId": 39944956,
+      "title": "Why we need a Edge Server or API Gateway inside microservices",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/122-why-we-need-a-edge-server-or-api-gateway-inside-microservices.txt",
+      "noteFile": "118-why-we-need-a-edge-server-or-api-gateway-inside-microservices.md"
+    },
+    {
+      "noteNumber": "119",
+      "lectureId": 39944972,
+      "title": "Introduction to Spring Cloud Gateway",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/123-introduction-to-spring-cloud-gateway.txt",
+      "noteFile": "119-introduction-to-spring-cloud-gateway.md"
+    },
+    {
+      "noteNumber": "120",
+      "lectureId": 39944984,
+      "title": "Deep dive on Spring Cloud Gateway internal architecture",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/124-deep-dive-on-spring-cloud-gateway-internal-architecture.txt",
+      "noteFile": "120-deep-dive-on-spring-cloud-gateway-internal-architecture.md"
+    },
+    {
+      "noteNumber": "121",
+      "lectureId": 39944988,
+      "title": "Building Edge Server using Spring Cloud Gateway",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/125-building-edge-server-using-spring-cloud-gateway.txt",
+      "noteFile": "121-building-edge-server-using-spring-cloud-gateway.md"
+    },
+    {
+      "noteNumber": "122",
+      "lectureId": 39944992,
+      "title": "Demo of Edge Server with default routing configs",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/126-demo-of-edge-server-with-default-routing-configs.txt",
+      "noteFile": "122-demo-of-edge-server-with-default-routing-configs.md"
+    },
+    {
+      "noteNumber": "123",
+      "lectureId": 39944994,
+      "title": "Make changes inside Gateway server to accept service names with lower case",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/127-make-changes-inside-gateway-server-to-accept-service-names-with-lower-case.txt",
+      "noteFile": "123-make-changes-inside-gateway-server-to-accept-service-names-with-lower-case.md"
+    },
+    {
+      "noteNumber": "124",
+      "lectureId": 39945000,
+      "title": "Implementing Custom Routing using Spring Cloud Gateway",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/128-implementing-custom-routing-using-spring-cloud-gateway.txt",
+      "noteFile": "124-implementing-custom-routing-using-spring-cloud-gateway.md"
+    },
+    {
+      "noteNumber": "125",
+      "lectureId": 39945002,
+      "title": "Demo of addResponseHeader filter",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/129-demo-of-addresponseheader-filter.txt",
+      "noteFile": "125-demo-of-addresponseheader-filter.md"
+    },
+    {
+      "noteNumber": "126",
+      "lectureId": 39945018,
+      "title": "Implementing Cross cutting concerns Tracing & Logging using Gateway - Part 1",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/130-implementing-cross-cutting-concerns-tracing-logging-using-gateway---part-1.txt",
+      "noteFile": "126-implementing-cross-cutting-concerns-tracing-logging-using-gateway---part-1.md"
+    },
+    {
+      "noteNumber": "127",
+      "lectureId": 39945020,
+      "title": "Implementing Cross cutting concerns Tracing & Logging using Gateway - Part 2",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/131-implementing-cross-cutting-concerns-tracing-logging-using-gateway---part-2.txt",
+      "noteFile": "127-implementing-cross-cutting-concerns-tracing-logging-using-gateway---part-2.md"
+    },
+    {
+      "noteNumber": "128",
+      "lectureId": 46135647,
+      "title": "Design patterns around API Gateway",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/132-design-patterns-around-api-gateway.txt",
+      "noteFile": "128-design-patterns-around-api-gateway.md"
+    },
+    {
+      "noteNumber": "129",
+      "lectureId": 39945022,
+      "title": "Generating and pushing Docker images with Spring Cloud Gateway changes",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/133-generating-and-pushing-docker-images-with-spring-cloud-gateway-changes.txt",
+      "noteFile": "129-generating-and-pushing-docker-images-with-spring-cloud-gateway-changes.md"
+    },
+    {
+      "noteNumber": "130",
+      "lectureId": 39945028,
+      "title": "Updating Docker Compose file to adapt Spring Cloud Gateway changes",
+      "section": "Gateway, Routing & Cross cutting concerns in Microservices",
+      "sectionIndex": 9,
+      "transcriptFile": "section-09/134-updating-docker-compose-file-to-adapt-spring-cloud-gateway-changes.txt",
+      "noteFile": "130-updating-docker-compose-file-to-adapt-spring-cloud-gateway-changes.md"
+    },
+    {
+      "noteNumber": "131",
+      "lectureId": 39945080,
+      "title": "Introduction to the need of Resiliency inside microservices",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/135-introduction-to-the-need-of-resiliency-inside-microservices.txt",
+      "noteFile": "131-introduction-to-the-need-of-resiliency-inside-microservices.md"
+    },
+    {
+      "noteNumber": "132",
+      "lectureId": 39945094,
+      "title": "Typical use case or scenario for the need of Resiliency",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/136-typical-use-case-or-scenario-for-the-need-of-resiliency.txt",
+      "noteFile": "132-typical-use-case-or-scenario-for-the-need-of-resiliency.md"
+    },
+    {
+      "noteNumber": "133",
+      "lectureId": 39945102,
+      "title": "Deepdive on Circuit Breaker pattern",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/137-deepdive-on-circuit-breaker-pattern.txt",
+      "noteFile": "133-deepdive-on-circuit-breaker-pattern.md"
+    },
+    {
+      "noteNumber": "134",
+      "lectureId": 39945112,
+      "title": "Three states of Circuit Breaker pattern",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/138-three-states-of-circuit-breaker-pattern.txt",
+      "noteFile": "134-three-states-of-circuit-breaker-pattern.md"
+    },
+    {
+      "noteNumber": "135",
+      "lectureId": 39945122,
+      "title": "Implementing Circuit Breaker pattern in Gateway - Part 1",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/139-implementing-circuit-breaker-pattern-in-gateway---part-1.txt",
+      "noteFile": "135-implementing-circuit-breaker-pattern-in-gateway---part-1.md"
+    },
+    {
+      "noteNumber": "136",
+      "lectureId": 39945130,
+      "title": "Implementing Circuit Breaker pattern in Gateway - Part 2",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/140-implementing-circuit-breaker-pattern-in-gateway---part-2.txt",
+      "noteFile": "136-implementing-circuit-breaker-pattern-in-gateway---part-2.md"
+    },
+    {
+      "noteNumber": "137",
+      "lectureId": 39945142,
+      "title": "Implementing Circuit Breaker pattern with Feign Client - Part 1",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/141-implementing-circuit-breaker-pattern-with-feign-client---part-1.txt",
+      "noteFile": "137-implementing-circuit-breaker-pattern-with-feign-client---part-1.md"
+    },
+    {
+      "noteNumber": "138",
+      "lectureId": 39945146,
+      "title": "Implementing Circuit Breaker pattern with Feign Client - Part 2",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/142-implementing-circuit-breaker-pattern-with-feign-client---part-2.txt",
+      "noteFile": "138-implementing-circuit-breaker-pattern-with-feign-client---part-2.md"
+    },
+    {
+      "noteNumber": "139",
+      "lectureId": 39945154,
+      "title": "Http timeout configurations",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/143-http-timeout-configurations.txt",
+      "noteFile": "139-http-timeout-configurations.md"
+    },
+    {
+      "noteNumber": "140",
+      "lectureId": 39945166,
+      "title": "Introduction to Retry pattern",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/144-introduction-to-retry-pattern.txt",
+      "noteFile": "140-introduction-to-retry-pattern.md"
+    },
+    {
+      "noteNumber": "141",
+      "lectureId": 39945172,
+      "title": "Implementing Retry pattern in Gateway",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/145-implementing-retry-pattern-in-gateway.txt",
+      "noteFile": "141-implementing-retry-pattern-in-gateway.md"
+    },
+    {
+      "noteNumber": "142",
+      "lectureId": 39945174,
+      "title": "Implementing Retry pattern in accounts - Part 1",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/146-implementing-retry-pattern-in-accounts---part-1.txt",
+      "noteFile": "142-implementing-retry-pattern-in-accounts---part-1.md"
+    },
+    {
+      "noteNumber": "143",
+      "lectureId": 39945182,
+      "title": "Implementing Retry pattern in accounts - Part 2",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/147-implementing-retry-pattern-in-accounts---part-2.txt",
+      "noteFile": "143-implementing-retry-pattern-in-accounts---part-2.md"
+    },
+    {
+      "noteNumber": "144",
+      "lectureId": 39945186,
+      "title": "Introduction to Rate Limitter pattern",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/148-introduction-to-rate-limitter-pattern.txt",
+      "noteFile": "144-introduction-to-rate-limitter-pattern.md"
+    },
+    {
+      "noteNumber": "145",
+      "lectureId": 39945188,
+      "title": "Introduction to Redis RateLimiter in Gateway Server",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/149-introduction-to-redis-ratelimiter-in-gateway-server.txt",
+      "noteFile": "145-introduction-to-redis-ratelimiter-in-gateway-server.md"
+    },
+    {
+      "noteNumber": "146",
+      "lectureId": 39945190,
+      "title": "Implementing Redis RateLimiter in Gateway Server",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/150-implementing-redis-ratelimiter-in-gateway-server.txt",
+      "noteFile": "146-implementing-redis-ratelimiter-in-gateway-server.md"
+    },
+    {
+      "noteNumber": "147",
+      "lectureId": 39945194,
+      "title": "Implementing RateLimiter pattern in accounts",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/151-implementing-ratelimiter-pattern-in-accounts.txt",
+      "noteFile": "147-implementing-ratelimiter-pattern-in-accounts.md"
+    },
+    {
+      "noteNumber": "148",
+      "lectureId": 39945198,
+      "title": "Introduction to Bulkhead pattern",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/152-introduction-to-bulkhead-pattern.txt",
+      "noteFile": "148-introduction-to-bulkhead-pattern.md"
+    },
+    {
+      "noteNumber": "149",
+      "lectureId": 39945204,
+      "title": "Aspect order of Resiliency patterns",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/153-aspect-order-of-resiliency-patterns.txt",
+      "noteFile": "149-aspect-order-of-resiliency-patterns.md"
+    },
+    {
+      "noteNumber": "150",
+      "lectureId": 39945208,
+      "title": "Demo of Resiliency patterns using Docker containers & Docker compose",
+      "section": "Making Microservices Resilient",
+      "sectionIndex": 10,
+      "transcriptFile": "section-10/154-demo-of-resiliency-patterns-using-docker-containers-docker-compose.txt",
+      "noteFile": "150-demo-of-resiliency-patterns-using-docker-containers-docker-compose.md"
+    },
+    {
+      "noteNumber": "151",
+      "lectureId": 39945218,
+      "title": "Introduction to Observability And Monitoring Of Microservices",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/155-introduction-to-observability-and-monitoring-of-microservices.txt",
+      "noteFile": "151-introduction-to-observability-and-monitoring-of-microservices.md"
+    },
+    {
+      "noteNumber": "152",
+      "lectureId": 39945226,
+      "title": "Observability vs. Monitoring",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/156-observability-vs-monitoring.txt",
+      "noteFile": "152-observability-vs-monitoring.md"
+    },
+    {
+      "noteNumber": "153",
+      "lectureId": 39945232,
+      "title": "Introduction to centralized logging or Log Aggregation in microservices",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/157-introduction-to-centralized-logging-or-log-aggregation-in-microservices.txt",
+      "noteFile": "153-introduction-to-centralized-logging-or-log-aggregation-in-microservices.md"
+    },
+    {
+      "noteNumber": "154",
+      "lectureId": 39945236,
+      "title": "Introduction to managing logs with Grafana, Loki & Promtail",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/158-introduction-to-managing-logs-with-grafana-loki-promtail.txt",
+      "noteFile": "154-introduction-to-managing-logs-with-grafana-loki-promtail.md"
+    },
+    {
+      "noteNumber": "155",
+      "lectureId": 39945254,
+      "title": "Sample demo of logging using Grafana, Loki & promtail - Theory",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/160-sample-demo-of-logging-using-grafana-loki-promtail---theory.txt",
+      "noteFile": "155-sample-demo-of-logging-using-grafana-loki-promtail---theory.md"
+    },
+    {
+      "noteNumber": "156",
+      "lectureId": 39945256,
+      "title": "Implementing logging using Grafana, Loki & promtail - Part 1",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/161-implementing-logging-using-grafana-loki-promtail---part-1.txt",
+      "noteFile": "156-implementing-logging-using-grafana-loki-promtail---part-1.md"
+    },
+    {
+      "noteNumber": "157",
+      "lectureId": 39945258,
+      "title": "Implementing logging using Grafana, Loki & promtail - Part 2",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/162-implementing-logging-using-grafana-loki-promtail---part-2.txt",
+      "noteFile": "157-implementing-logging-using-grafana-loki-promtail---part-2.md"
+    },
+    {
+      "noteNumber": "158",
+      "lectureId": 39945264,
+      "title": "Implementing logging using Grafana, Loki & promtail - Part 3",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/163-implementing-logging-using-grafana-loki-promtail---part-3.txt",
+      "noteFile": "158-implementing-logging-using-grafana-loki-promtail---part-3.md"
+    },
+    {
+      "noteNumber": "159",
+      "lectureId": 39945268,
+      "title": "Managing metrics & monitoring with Actuator, Micrometer, Prometheus & Grafana",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/164-managing-metrics-monitoring-with-actuator-micrometer-prometheus-grafana.txt",
+      "noteFile": "159-managing-metrics-monitoring-with-actuator-micrometer-prometheus-grafana.md"
+    },
+    {
+      "noteNumber": "160",
+      "lectureId": 39945270,
+      "title": "Setup of micrometer inside microservices",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/165-setup-of-micrometer-inside-microservices.txt",
+      "noteFile": "160-setup-of-micrometer-inside-microservices.md"
+    },
+    {
+      "noteNumber": "161",
+      "lectureId": 39945274,
+      "title": "Setup of prometheus inside microservices",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/166-setup-of-prometheus-inside-microservices.txt",
+      "noteFile": "161-setup-of-prometheus-inside-microservices.md"
+    },
+    {
+      "noteNumber": "162",
+      "lectureId": 39945278,
+      "title": "Demo of Prometheus",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/167-demo-of-prometheus.txt",
+      "noteFile": "162-demo-of-prometheus.md"
+    },
+    {
+      "noteNumber": "163",
+      "lectureId": 39945282,
+      "title": "Demo of Prometheus & Grafana integration",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/168-demo-of-prometheus-grafana-integration.txt",
+      "noteFile": "163-demo-of-prometheus-grafana-integration.md"
+    },
+    {
+      "noteNumber": "164",
+      "lectureId": 39945288,
+      "title": "Demo of Grafana inbuilt & custom Dashboards",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/169-demo-of-grafana-inbuilt-custom-dashboards.txt",
+      "noteFile": "164-demo-of-grafana-inbuilt-custom-dashboards.md"
+    },
+    {
+      "noteNumber": "165",
+      "lectureId": 39945290,
+      "title": "Create Alerts & Send notifications using Grafana - Approach 1",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/170-create-alerts-send-notifications-using-grafana---approach-1.txt",
+      "noteFile": "165-create-alerts-send-notifications-using-grafana---approach-1.md"
+    },
+    {
+      "noteNumber": "166",
+      "lectureId": 39945298,
+      "title": "Create Alerts & Send notifications using Grafana - Approach 2",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/171-create-alerts-send-notifications-using-grafana---approach-2.txt",
+      "noteFile": "166-create-alerts-send-notifications-using-grafana---approach-2.md"
+    },
+    {
+      "noteNumber": "167",
+      "lectureId": 39945300,
+      "title": "Introduction to Distributed Tracing in microservices",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/172-introduction-to-distributed-tracing-in-microservices.txt",
+      "noteFile": "167-introduction-to-distributed-tracing-in-microservices.md"
+    },
+    {
+      "noteNumber": "168",
+      "lectureId": 39945308,
+      "title": "Introduction to OpenTelemetry",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/173-introduction-to-opentelemetry.txt",
+      "noteFile": "168-introduction-to-opentelemetry.md"
+    },
+    {
+      "noteNumber": "169",
+      "lectureId": 39945310,
+      "title": "Implement OpenTelemetry changes inside microservices",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/174-implement-opentelemetry-changes-inside-microservices.txt",
+      "noteFile": "169-implement-opentelemetry-changes-inside-microservices.md"
+    },
+    {
+      "noteNumber": "170",
+      "lectureId": 39945312,
+      "title": "Implementing Tracing using Grafana, Tempo & OpenTelemetry - Part 1",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/175-implementing-tracing-using-grafana-tempo-opentelemetry---part-1.txt",
+      "noteFile": "170-implementing-tracing-using-grafana-tempo-opentelemetry---part-1.md"
+    },
+    {
+      "noteNumber": "171",
+      "lectureId": 39945314,
+      "title": "Implementing Tracing using Grafana, Tempo & OpenTelemetry - Part 2",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/176-implementing-tracing-using-grafana-tempo-opentelemetry---part-2.txt",
+      "noteFile": "171-implementing-tracing-using-grafana-tempo-opentelemetry---part-2.md"
+    },
+    {
+      "noteNumber": "172",
+      "lectureId": 39945320,
+      "title": "Implementing Tracing using Grafana, Tempo & OpenTelemetry - Part 3",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/177-implementing-tracing-using-grafana-tempo-opentelemetry---part-3.txt",
+      "noteFile": "172-implementing-tracing-using-grafana-tempo-opentelemetry---part-3.md"
+    },
+    {
+      "noteNumber": "173",
+      "lectureId": 39945322,
+      "title": "Navigating to Tempo from Loki logs",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/178-navigating-to-tempo-from-loki-logs.txt",
+      "noteFile": "173-navigating-to-tempo-from-loki-logs.md"
+    },
+    {
+      "noteNumber": "174",
+      "lectureId": 39945330,
+      "title": "Conclusion of Observability and Monitoring",
+      "section": "Observability and monitoring of microservices",
+      "sectionIndex": 11,
+      "transcriptFile": "section-11/179-conclusion-of-observability-and-monitoring.txt",
+      "noteFile": "174-conclusion-of-observability-and-monitoring.md"
+    },
+    {
+      "noteNumber": "175",
+      "lectureId": 39945416,
+      "title": "Introduction to Microservices Security",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/180-introduction-to-microservices-security.txt",
+      "noteFile": "175-introduction-to-microservices-security.md"
+    },
+    {
+      "noteNumber": "176",
+      "lectureId": 39945424,
+      "title": "Problems that OAuth2 solves",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/181-problems-that-oauth2-solves.txt",
+      "noteFile": "176-problems-that-oauth2-solves.md"
+    },
+    {
+      "noteNumber": "177",
+      "lectureId": 39945434,
+      "title": "Introduction to OAuth2",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/182-introduction-to-oauth2.txt",
+      "noteFile": "177-introduction-to-oauth2.md"
+    },
+    {
+      "noteNumber": "178",
+      "lectureId": 39945440,
+      "title": "OAuth2 jargons or terminologies or roles",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/183-oauth2-jargons-or-terminologies-or-roles.txt",
+      "noteFile": "178-oauth2-jargons-or-terminologies-or-roles.md"
+    },
+    {
+      "noteNumber": "179",
+      "lectureId": 39945446,
+      "title": "What is OpenID Connect & why it is important",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/184-what-is-openid-connect-why-it-is-important.txt",
+      "noteFile": "179-what-is-openid-connect-why-it-is-important.md"
+    },
+    {
+      "noteNumber": "180",
+      "lectureId": 39945450,
+      "title": "Introduction to IAM products & why KeyCloak",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/185-introduction-to-iam-products-why-keycloak.txt",
+      "noteFile": "180-introduction-to-iam-products-why-keycloak.md"
+    },
+    {
+      "noteNumber": "181",
+      "lectureId": 39945452,
+      "title": "Deep dive of Client Credentials grant type flow",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/186-deep-dive-of-client-credentials-grant-type-flow.txt",
+      "noteFile": "181-deep-dive-of-client-credentials-grant-type-flow.md"
+    },
+    {
+      "noteNumber": "182",
+      "lectureId": 39945454,
+      "title": "Securing Gateway server using Client Credentials grant type flow - Theory",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/187-securing-gateway-server-using-client-credentials-grant-type-flow---theory.txt",
+      "noteFile": "182-securing-gateway-server-using-client-credentials-grant-type-flow---theory.md"
+    },
+    {
+      "noteNumber": "183",
+      "lectureId": 39945464,
+      "title": "Setup Auth server using KeyCloak",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/188-setup-auth-server-using-keycloak.txt",
+      "noteFile": "183-setup-auth-server-using-keycloak.md"
+    },
+    {
+      "noteNumber": "184",
+      "lectureId": 39945472,
+      "title": "Register client details inside KeyCloak for Client credentials grant flow",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/189-register-client-details-inside-keycloak-for-client-credentials-grant-flow.txt",
+      "noteFile": "184-register-client-details-inside-keycloak-for-client-credentials-grant-flow.md"
+    },
+    {
+      "noteNumber": "185",
+      "lectureId": 39945476,
+      "title": "Getting Access token from Auth Server in Client credentials grant flow",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/190-getting-access-token-from-auth-server-in-client-credentials-grant-flow.txt",
+      "noteFile": "185-getting-access-token-from-auth-server-in-client-credentials-grant-flow.md"
+    },
+    {
+      "noteNumber": "186",
+      "lectureId": 39945480,
+      "title": "Securing Gateway server as a Resource server - Part 1",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/191-securing-gateway-server-as-a-resource-server---part-1.txt",
+      "noteFile": "186-securing-gateway-server-as-a-resource-server---part-1.md"
+    },
+    {
+      "noteNumber": "187",
+      "lectureId": 39945484,
+      "title": "Securing Gateway server as a Resource server - Part 2",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/192-securing-gateway-server-as-a-resource-server---part-2.txt",
+      "noteFile": "187-securing-gateway-server-as-a-resource-server---part-2.md"
+    },
+    {
+      "noteNumber": "188",
+      "lectureId": 39945500,
+      "title": "Implement Authorization inside Gateway server using Roles - Part 1",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/193-implement-authorization-inside-gateway-server-using-roles---part-1.txt",
+      "noteFile": "188-implement-authorization-inside-gateway-server-using-roles---part-1.md"
+    },
+    {
+      "noteNumber": "189",
+      "lectureId": 39945508,
+      "title": "Implement Authorization inside Gateway server using Roles - Part 2",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/194-implement-authorization-inside-gateway-server-using-roles---part-2.txt",
+      "noteFile": "189-implement-authorization-inside-gateway-server-using-roles---part-2.md"
+    },
+    {
+      "noteNumber": "190",
+      "lectureId": 39945514,
+      "title": "Deep dive of Authorization Code grant type flow",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/195-deep-dive-of-authorization-code-grant-type-flow.txt",
+      "noteFile": "190-deep-dive-of-authorization-code-grant-type-flow.md"
+    },
+    {
+      "noteNumber": "191",
+      "lectureId": 39945526,
+      "title": "Securing Gateway server using Authorization Code grant type flow - Theory",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/196-securing-gateway-server-using-authorization-code-grant-type-flow---theory.txt",
+      "noteFile": "191-securing-gateway-server-using-authorization-code-grant-type-flow---theory.md"
+    },
+    {
+      "noteNumber": "192",
+      "lectureId": 39945534,
+      "title": "Register client & end user inside KeyCloak for Authorization code grant flow",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/197-register-client-end-user-inside-keycloak-for-authorization-code-grant-flow.txt",
+      "noteFile": "192-register-client-end-user-inside-keycloak-for-authorization-code-grant-flow.md"
+    },
+    {
+      "noteNumber": "193",
+      "lectureId": 39945540,
+      "title": "Demo of Authorization code grant type flow",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/198-demo-of-authorization-code-grant-type-flow.txt",
+      "noteFile": "193-demo-of-authorization-code-grant-type-flow.md"
+    },
+    {
+      "noteNumber": "194",
+      "lectureId": 39945542,
+      "title": "Demo of Microservices Security using Docker containers & Docker compose - Part 1",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/199-demo-of-microservices-security-using-docker-containers-docker-compose---part-1.txt",
+      "noteFile": "194-demo-of-microservices-security-using-docker-containers-docker-compose---part-1.md"
+    },
+    {
+      "noteNumber": "195",
+      "lectureId": 39945548,
+      "title": "Demo of Microservices Security using Docker containers & Docker compose - Part 2",
+      "section": "Microservices Security",
+      "sectionIndex": 12,
+      "transcriptFile": "section-12/200-demo-of-microservices-security-using-docker-containers-docker-compose---part-2.txt",
+      "noteFile": "195-demo-of-microservices-security-using-docker-containers-docker-compose---part-2.md"
+    },
+    {
+      "noteNumber": "196",
+      "lectureId": 39945766,
+      "title": "Introduction to Event-driven microservices",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/201-introduction-to-event-driven-microservices.txt",
+      "noteFile": "196-introduction-to-event-driven-microservices.md"
+    },
+    {
+      "noteNumber": "197",
+      "lectureId": 39945774,
+      "title": "Introduction to Event-driven models",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/202-introduction-to-event-driven-models.txt",
+      "noteFile": "197-introduction-to-event-driven-models.md"
+    },
+    {
+      "noteNumber": "198",
+      "lectureId": 39945784,
+      "title": "What we are going to build using a pub sub model",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/203-what-we-are-going-to-build-using-a-pub-sub-model.txt",
+      "noteFile": "198-what-we-are-going-to-build-using-a-pub-sub-model.md"
+    },
+    {
+      "noteNumber": "199",
+      "lectureId": 39945790,
+      "title": "Introduction to RabbitMQ",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/204-introduction-to-rabbitmq.txt",
+      "noteFile": "199-introduction-to-rabbitmq.md"
+    },
+    {
+      "noteNumber": "200",
+      "lectureId": 39945794,
+      "title": "Why to use Spring Cloud Function",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/205-why-to-use-spring-cloud-function.txt",
+      "noteFile": "200-why-to-use-spring-cloud-function.md"
+    },
+    {
+      "noteNumber": "201",
+      "lectureId": 39945796,
+      "title": "Develop message microservice using Spring Cloud Functions - Part 1",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/206-develop-message-microservice-using-spring-cloud-functions---part-1.txt",
+      "noteFile": "201-develop-message-microservice-using-spring-cloud-functions---part-1.md"
+    },
+    {
+      "noteNumber": "202",
+      "lectureId": 39945806,
+      "title": "Develop message microservice using Spring Cloud Functions - Part 2",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/207-develop-message-microservice-using-spring-cloud-functions---part-2.txt",
+      "noteFile": "202-develop-message-microservice-using-spring-cloud-functions---part-2.md"
+    },
+    {
+      "noteNumber": "203",
+      "lectureId": 39945816,
+      "title": "Develop message microservice using Spring Cloud Functions - Part 3",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/208-develop-message-microservice-using-spring-cloud-functions---part-3.txt",
+      "noteFile": "203-develop-message-microservice-using-spring-cloud-functions---part-3.md"
+    },
+    {
+      "noteNumber": "204",
+      "lectureId": 39945822,
+      "title": "Why to use Spring Cloud Stream",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/209-why-to-use-spring-cloud-stream.txt",
+      "noteFile": "204-why-to-use-spring-cloud-stream.md"
+    },
+    {
+      "noteNumber": "205",
+      "lectureId": 39945828,
+      "title": "Update message & accounts microservices to stream & process the events - Part 1",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/210-update-message-accounts-microservices-to-stream-process-the-events---part-1.txt",
+      "noteFile": "205-update-message-accounts-microservices-to-stream-process-the-events---part-1.md"
+    },
+    {
+      "noteNumber": "206",
+      "lectureId": 39945836,
+      "title": "Demo of Async communication or event streaming using Rabbit MQ - Part 1",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/211-demo-of-async-communication-or-event-streaming-using-rabbit-mq---part-1.txt",
+      "noteFile": "206-demo-of-async-communication-or-event-streaming-using-rabbit-mq---part-1.md"
+    },
+    {
+      "noteNumber": "207",
+      "lectureId": 39945842,
+      "title": "Update message & accounts microservices to stream & process the events - Part 2",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/212-update-message-accounts-microservices-to-stream-process-the-events---part-2.txt",
+      "noteFile": "207-update-message-accounts-microservices-to-stream-process-the-events---part-2.md"
+    },
+    {
+      "noteNumber": "208",
+      "lectureId": 39945848,
+      "title": "Demo of Async communication or event streaming using Rabbit MQ - Part 2",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/213-demo-of-async-communication-or-event-streaming-using-rabbit-mq---part-2.txt",
+      "noteFile": "208-demo-of-async-communication-or-event-streaming-using-rabbit-mq---part-2.md"
+    },
+    {
+      "noteNumber": "209",
+      "lectureId": 39945860,
+      "title": "Demo of Async comm or event streaming using Docker containers & Docker compose",
+      "section": "Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream",
+      "sectionIndex": 13,
+      "transcriptFile": "section-13/214-demo-of-async-comm-or-event-streaming-using-docker-containers-docker-compose.txt",
+      "noteFile": "209-demo-of-async-comm-or-event-streaming-using-docker-containers-docker-compose.md"
+    },
+    {
+      "noteNumber": "210",
+      "lectureId": 39945868,
+      "title": "Apache Kafka Vs RabbitMQ",
+      "section": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/215-apache-kafka-vs-rabbitmq.txt",
+      "noteFile": "210-apache-kafka-vs-rabbitmq.md"
+    },
+    {
+      "noteNumber": "211",
+      "lectureId": 39945872,
+      "title": "Introduction to Apache Kafka",
+      "section": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/216-introduction-to-apache-kafka.txt",
+      "noteFile": "211-introduction-to-apache-kafka.md"
+    },
+    {
+      "noteNumber": "212",
+      "lectureId": 39945880,
+      "title": "Producer and Consumer side stories",
+      "section": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/217-producer-and-consumer-side-stories.txt",
+      "noteFile": "212-producer-and-consumer-side-stories.md"
+    },
+    {
+      "noteNumber": "213",
+      "lectureId": 39945884,
+      "title": "Installation of Apache Kafka",
+      "section": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/218-installation-of-apache-kafka.txt",
+      "noteFile": "213-installation-of-apache-kafka.md"
+    },
+    {
+      "noteNumber": "214",
+      "lectureId": 39945892,
+      "title": "Implement & Demo of Async communication or event streaming using Kafka",
+      "section": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/219-implement-demo-of-async-communication-or-event-streaming-using-kafka.txt",
+      "noteFile": "214-implement-demo-of-async-communication-or-event-streaming-using-kafka.md"
+    },
+    {
+      "noteNumber": "215",
+      "lectureId": 39945898,
+      "title": "Demo of Async comm or event streaming using Docker containers & Docker Compose",
+      "section": "Event Driven microservices using Kafka, Spring Cloud Functions & Stream",
+      "sectionIndex": 14,
+      "transcriptFile": "section-14/220-demo-of-async-comm-or-event-streaming-using-docker-containers-docker-compose.txt",
+      "noteFile": "215-demo-of-async-comm-or-event-streaming-using-docker-containers-docker-compose.md"
+    },
+    {
+      "noteNumber": "216",
+      "lectureId": 39946222,
+      "title": "Introduction to the challenges related to container orchestration",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/221-introduction-to-the-challenges-related-to-container-orchestration.txt",
+      "noteFile": "216-introduction-to-the-challenges-related-to-container-orchestration.md"
+    },
+    {
+      "noteNumber": "217",
+      "lectureId": 39947430,
+      "title": "Introduction to Kubernetes",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/222-introduction-to-kubernetes.txt",
+      "noteFile": "217-introduction-to-kubernetes.md"
+    },
+    {
+      "noteNumber": "218",
+      "lectureId": 39947438,
+      "title": "Deep dive on Kubernetes internal architecture",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/223-deep-dive-on-kubernetes-internal-architecture.txt",
+      "noteFile": "218-deep-dive-on-kubernetes-internal-architecture.md"
+    },
+    {
+      "noteNumber": "219",
+      "lectureId": 39947442,
+      "title": "Setup a local Kubernetes cluster using Docker Desktop",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/224-setup-a-local-kubernetes-cluster-using-docker-desktop.txt",
+      "noteFile": "219-setup-a-local-kubernetes-cluster-using-docker-desktop.md"
+    },
+    {
+      "noteNumber": "220",
+      "lectureId": 39947446,
+      "title": "Deploying the Kubernetes Dashboard UI",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/225-deploying-the-kubernetes-dashboard-ui.txt",
+      "noteFile": "220-deploying-the-kubernetes-dashboard-ui.md"
+    },
+    {
+      "noteNumber": "221",
+      "lectureId": 39947454,
+      "title": "Deep dive on Kubernetes YAML configurations to deploy a microservice",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/226-deep-dive-on-kubernetes-yaml-configurations-to-deploy-a-microservice.txt",
+      "noteFile": "221-deep-dive-on-kubernetes-yaml-configurations-to-deploy-a-microservice.md"
+    },
+    {
+      "noteNumber": "222",
+      "lectureId": 39947464,
+      "title": "Deploying ConfigServer into Kubernetes Cluster",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/227-deploying-configserver-into-kubernetes-cluster.txt",
+      "noteFile": "222-deploying-configserver-into-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "223",
+      "lectureId": 39947494,
+      "title": "Create environment variables inside Kubernetes Cluster using ConfigMap",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/228-create-environment-variables-inside-kubernetes-cluster-using-configmap.txt",
+      "noteFile": "223-create-environment-variables-inside-kubernetes-cluster-using-configmap.md"
+    },
+    {
+      "noteNumber": "224",
+      "lectureId": 39947506,
+      "title": "Preparing Kubernetes manifest files for remaining microservices",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/229-preparing-kubernetes-manifest-files-for-remaining-microservices.txt",
+      "noteFile": "224-preparing-kubernetes-manifest-files-for-remaining-microservices.md"
+    },
+    {
+      "noteNumber": "225",
+      "lectureId": 39947526,
+      "title": "Deploying remaining microservices into Kubernetes Cluster",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/230-deploying-remaining-microservices-into-kubernetes-cluster.txt",
+      "noteFile": "225-deploying-remaining-microservices-into-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "226",
+      "lectureId": 39947542,
+      "title": "Automatic Self healing inside Kubernetes cluster",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/231-automatic-self-healing-inside-kubernetes-cluster.txt",
+      "noteFile": "226-automatic-self-healing-inside-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "227",
+      "lectureId": 39947548,
+      "title": "Automatic Rollout & Rollback inside Kubernetes cluster",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/232-automatic-rollout-rollback-inside-kubernetes-cluster.txt",
+      "noteFile": "227-automatic-rollout-rollback-inside-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "228",
+      "lectureId": 39947558,
+      "title": "Introduction to Kubernetes Service types",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/233-introduction-to-kubernetes-service-types.txt",
+      "noteFile": "228-introduction-to-kubernetes-service-types.md"
+    },
+    {
+      "noteNumber": "229",
+      "lectureId": 39947568,
+      "title": "Demo of Kubernetes Service types",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/234-demo-of-kubernetes-service-types.txt",
+      "noteFile": "229-demo-of-kubernetes-service-types.md"
+    },
+    {
+      "noteNumber": "230",
+      "lectureId": 39947578,
+      "title": "Problems with manually created Kubernetes manifest files",
+      "section": "Container Orchestration using Kubernetes",
+      "sectionIndex": 15,
+      "transcriptFile": "section-15/235-problems-with-manually-created-kubernetes-manifest-files.txt",
+      "noteFile": "230-problems-with-manually-created-kubernetes-manifest-files.md"
+    },
+    {
+      "noteNumber": "231",
+      "lectureId": 39947732,
+      "title": "Introduction to Helm & the problems that it solves",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/236-introduction-to-helm-the-problems-that-it-solves.txt",
+      "noteFile": "231-introduction-to-helm-the-problems-that-it-solves.md"
+    },
+    {
+      "noteNumber": "232",
+      "lectureId": 39947740,
+      "title": "Installing Helm",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/237-installing-helm.txt",
+      "noteFile": "232-installing-helm.md"
+    },
+    {
+      "noteNumber": "233",
+      "lectureId": 39947750,
+      "title": "Installing a sample Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/239-installing-a-sample-helm-chart.txt",
+      "noteFile": "233-installing-a-sample-helm-chart.md"
+    },
+    {
+      "noteNumber": "234",
+      "lectureId": 39947764,
+      "title": "Understanding Helm Chart structure",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/240-understanding-helm-chart-structure.txt",
+      "noteFile": "234-understanding-helm-chart-structure.md"
+    },
+    {
+      "noteNumber": "235",
+      "lectureId": 39947776,
+      "title": "Creating our own Helm chart & template files",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/241-creating-our-own-helm-chart-template-files.txt",
+      "noteFile": "235-creating-our-own-helm-chart-template-files.md"
+    },
+    {
+      "noteNumber": "236",
+      "lectureId": 39947786,
+      "title": "Creating Helm chart for Accounts microservice",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/242-creating-helm-chart-for-accounts-microservice.txt",
+      "noteFile": "236-creating-helm-chart-for-accounts-microservice.md"
+    },
+    {
+      "noteNumber": "237",
+      "lectureId": 39947796,
+      "title": "Creating Helm charts for other microservices",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/243-creating-helm-charts-for-other-microservices.txt",
+      "noteFile": "237-creating-helm-charts-for-other-microservices.md"
+    },
+    {
+      "noteNumber": "238",
+      "lectureId": 39947806,
+      "title": "Creating Helm charts for Dev, QA and Prod environment",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/244-creating-helm-charts-for-dev-qa-and-prod-environment.txt",
+      "noteFile": "238-creating-helm-charts-for-dev-qa-and-prod-environment.md"
+    },
+    {
+      "noteNumber": "239",
+      "lectureId": 39947816,
+      "title": "Demo of helm template command",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/245-demo-of-helm-template-command.txt",
+      "noteFile": "239-demo-of-helm-template-command.md"
+    },
+    {
+      "noteNumber": "240",
+      "lectureId": 39947824,
+      "title": "Install KeyCloak in Kubernetes Cluster using Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/246-install-keycloak-in-kubernetes-cluster-using-helm-chart.txt",
+      "noteFile": "240-install-keycloak-in-kubernetes-cluster-using-helm-chart.md"
+    },
+    {
+      "noteNumber": "241",
+      "lectureId": 39947842,
+      "title": "Install Kafka in Kubernetes Cluster using Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/247-install-kafka-in-kubernetes-cluster-using-helm-chart.txt",
+      "noteFile": "241-install-kafka-in-kubernetes-cluster-using-helm-chart.md"
+    },
+    {
+      "noteNumber": "242",
+      "lectureId": 39947850,
+      "title": "Install Prometheus in Kubernetes Cluster using Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/248-install-prometheus-in-kubernetes-cluster-using-helm-chart.txt",
+      "noteFile": "242-install-prometheus-in-kubernetes-cluster-using-helm-chart.md"
+    },
+    {
+      "noteNumber": "243",
+      "lectureId": 39947856,
+      "title": "Install Grafana Loki & Tempo in Kubernetes Cluster using Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/249-install-grafana-loki-tempo-in-kubernetes-cluster-using-helm-chart.txt",
+      "noteFile": "243-install-grafana-loki-tempo-in-kubernetes-cluster-using-helm-chart.md"
+    },
+    {
+      "noteNumber": "244",
+      "lectureId": 39947868,
+      "title": "Install Grafana in Kubernetes Cluster using Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/250-install-grafana-in-kubernetes-cluster-using-helm-chart.txt",
+      "noteFile": "244-install-grafana-in-kubernetes-cluster-using-helm-chart.md"
+    },
+    {
+      "noteNumber": "245",
+      "lectureId": 39947882,
+      "title": "Install eazybank microservices in Kubernetes Cluster using Helm Chart",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/251-install-eazybank-microservices-in-kubernetes-cluster-using-helm-chart.txt",
+      "noteFile": "245-install-eazybank-microservices-in-kubernetes-cluster-using-helm-chart.md"
+    },
+    {
+      "noteNumber": "246",
+      "lectureId": 39947892,
+      "title": "Demo of helm upgrade command",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/252-demo-of-helm-upgrade-command.txt",
+      "noteFile": "246-demo-of-helm-upgrade-command.md"
+    },
+    {
+      "noteNumber": "247",
+      "lectureId": 39947898,
+      "title": "Demo of helm history and rollback commands",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/253-demo-of-helm-history-and-rollback-commands.txt",
+      "noteFile": "247-demo-of-helm-history-and-rollback-commands.md"
+    },
+    {
+      "noteNumber": "248",
+      "lectureId": 39947908,
+      "title": "Demo of helm uninstall command",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/254-demo-of-helm-uninstall-command.txt",
+      "noteFile": "248-demo-of-helm-uninstall-command.md"
+    },
+    {
+      "noteNumber": "249",
+      "lectureId": 39947912,
+      "title": "Quick revision of important helm commands",
+      "section": "Deep dive on Helm",
+      "sectionIndex": 16,
+      "transcriptFile": "section-16/255-quick-revision-of-important-helm-commands.txt",
+      "noteFile": "249-quick-revision-of-important-helm-commands.md"
+    },
+    {
+      "noteNumber": "250",
+      "lectureId": 39947942,
+      "title": "Introduction to Server-side service discovery and load balancing",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/256-introduction-to-server-side-service-discovery-and-load-balancing.txt",
+      "noteFile": "250-introduction-to-server-side-service-discovery-and-load-balancing.md"
+    },
+    {
+      "noteNumber": "251",
+      "lectureId": 39947954,
+      "title": "How to setup discovery server in K8s cluster using spring cloud kubernetes",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/257-how-to-setup-discovery-server-in-k8s-cluster-using-spring-cloud-kubernetes.txt",
+      "noteFile": "251-how-to-setup-discovery-server-in-k8s-cluster-using-spring-cloud-kubernetes.md"
+    },
+    {
+      "noteNumber": "252",
+      "lectureId": 39947958,
+      "title": "Install spring cloud kubernetes discovery server in K8s cluster",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/258-install-spring-cloud-kubernetes-discovery-server-in-k8s-cluster.txt",
+      "noteFile": "252-install-spring-cloud-kubernetes-discovery-server-in-k8s-cluster.md"
+    },
+    {
+      "noteNumber": "253",
+      "lectureId": 39947966,
+      "title": "Making Kubernetes Discovery Client changes in microservices - Part 1",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/259-making-kubernetes-discovery-client-changes-in-microservices---part-1.txt",
+      "noteFile": "253-making-kubernetes-discovery-client-changes-in-microservices---part-1.md"
+    },
+    {
+      "noteNumber": "254",
+      "lectureId": 39947974,
+      "title": "Making Kubernetes Discovery Client changes in microservices - Part 2",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/260-making-kubernetes-discovery-client-changes-in-microservices---part-2.txt",
+      "noteFile": "254-making-kubernetes-discovery-client-changes-in-microservices---part-2.md"
+    },
+    {
+      "noteNumber": "255",
+      "lectureId": 39947976,
+      "title": "Updating Helm charts for Kubernetes Discovery Server changes",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/261-updating-helm-charts-for-kubernetes-discovery-server-changes.txt",
+      "noteFile": "255-updating-helm-charts-for-kubernetes-discovery-server-changes.md"
+    },
+    {
+      "noteNumber": "256",
+      "lectureId": 39947980,
+      "title": "Demo of Server-side service discovery and load balancing",
+      "section": "Server-side service discovery and load balancing using Kubernetes",
+      "sectionIndex": 17,
+      "transcriptFile": "section-17/262-demo-of-server-side-service-discovery-and-load-balancing.txt",
+      "noteFile": "256-demo-of-server-side-service-discovery-and-load-balancing.md"
+    },
+    {
+      "noteNumber": "257",
+      "lectureId": 39947988,
+      "title": "Kubernetes support by Cloud providers",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/263-kubernetes-support-by-cloud-providers.txt",
+      "noteFile": "257-kubernetes-support-by-cloud-providers.md"
+    },
+    {
+      "noteNumber": "258",
+      "lectureId": 39947994,
+      "title": "Set up Google Cloud account & install Google Cloud SDK",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/264-set-up-google-cloud-account-install-google-cloud-sdk.txt",
+      "noteFile": "258-set-up-google-cloud-account-install-google-cloud-sdk.md"
+    },
+    {
+      "noteNumber": "259",
+      "lectureId": 39948006,
+      "title": "Create a Kubernetes cluster in Google Cloud",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/265-create-a-kubernetes-cluster-in-google-cloud.txt",
+      "noteFile": "259-create-a-kubernetes-cluster-in-google-cloud.md"
+    },
+    {
+      "noteNumber": "260",
+      "lectureId": 39948014,
+      "title": "Installing all our microservices and supporting components in Google Cloud K8s",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/266-installing-all-our-microservices-and-supporting-components-in-google-cloud-k8s.txt",
+      "noteFile": "260-installing-all-our-microservices-and-supporting-components-in-google-cloud-k8s.md"
+    },
+    {
+      "noteNumber": "261",
+      "lectureId": 39948022,
+      "title": "Demo of eazybank microservices using Google Cloud Kubernetes Cluster",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/267-demo-of-eazybank-microservices-using-google-cloud-kubernetes-cluster.txt",
+      "noteFile": "261-demo-of-eazybank-microservices-using-google-cloud-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "262",
+      "lectureId": 39948032,
+      "title": "Validate Grafana components in Google Cloud Kubernetes Cluster",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/268-validate-grafana-components-in-google-cloud-kubernetes-cluster.txt",
+      "noteFile": "262-validate-grafana-components-in-google-cloud-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "263",
+      "lectureId": 39948038,
+      "title": "Deleting the Google Cloud Kubernetes Cluster",
+      "section": "Deploying microservices into cloud Kubernetes cluster",
+      "sectionIndex": 18,
+      "transcriptFile": "section-18/269-deleting-the-google-cloud-kubernetes-cluster.txt",
+      "noteFile": "263-deleting-the-google-cloud-kubernetes-cluster.md"
+    },
+    {
+      "noteNumber": "264",
+      "lectureId": 39948056,
+      "title": "Quick introduction to Kubernetes Ingress",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/270-quick-introduction-to-kubernetes-ingress.txt",
+      "noteFile": "264-quick-introduction-to-kubernetes-ingress.md"
+    },
+    {
+      "noteNumber": "265",
+      "lectureId": 39948062,
+      "title": "Deep dive on Kubernetes Ingress & Ingress Controller",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/271-deep-dive-on-kubernetes-ingress-ingress-controller.txt",
+      "noteFile": "265-deep-dive-on-kubernetes-ingress-ingress-controller.md"
+    },
+    {
+      "noteNumber": "266",
+      "lectureId": 39948066,
+      "title": "Benefits of Kubernetes Ingress & the kind of traffic it handles",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/272-benefits-of-kubernetes-ingress-the-kind-of-traffic-it-handles.txt",
+      "noteFile": "266-benefits-of-kubernetes-ingress-the-kind-of-traffic-it-handles.md"
+    },
+    {
+      "noteNumber": "267",
+      "lectureId": 39948070,
+      "title": "Introduction to Service Mesh & it's capabilities",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/273-introduction-to-service-mesh-its-capabilities.txt",
+      "noteFile": "267-introduction-to-service-mesh-its-capabilities.md"
+    },
+    {
+      "noteNumber": "268",
+      "lectureId": 39948074,
+      "title": "Introduction to Service mesh components",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/274-introduction-to-service-mesh-components.txt",
+      "noteFile": "268-introduction-to-service-mesh-components.md"
+    },
+    {
+      "noteNumber": "269",
+      "lectureId": 39948082,
+      "title": "Introduction to mTLS & deep dive on how TLS works",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/275-introduction-to-mtls-deep-dive-on-how-tls-works.txt",
+      "noteFile": "269-introduction-to-mtls-deep-dive-on-how-tls-works.md"
+    },
+    {
+      "noteNumber": "270",
+      "lectureId": 39948088,
+      "title": "How does mTLS works",
+      "section": "Introduction to Kubernetes Ingress, Service Mesh (Istio) & mTLS",
+      "sectionIndex": 19,
+      "transcriptFile": "section-19/276-how-does-mtls-works.txt",
+      "noteFile": "270-how-does-mtls-works.md"
+    },
+    {
+      "noteNumber": "271",
+      "lectureId": 46134543,
+      "title": "Optimizing Microservices Development with Spring Boot BOM - Part 1",
+      "section": "Tips for the microservices developers",
+      "sectionIndex": 20,
+      "transcriptFile": "section-20/277-optimizing-microservices-development-with-spring-boot-bom---part-1.txt",
+      "noteFile": "271-optimizing-microservices-development-with-spring-boot-bom---part-1.md"
+    },
+    {
+      "noteNumber": "272",
+      "lectureId": 46134545,
+      "title": "Optimizing Microservices Development with Spring Boot BOM - Part 2",
+      "section": "Tips for the microservices developers",
+      "sectionIndex": 20,
+      "transcriptFile": "section-20/278-optimizing-microservices-development-with-spring-boot-bom---part-2.txt",
+      "noteFile": "272-optimizing-microservices-development-with-spring-boot-bom---part-2.md"
+    },
+    {
+      "noteNumber": "273",
+      "lectureId": 46134555,
+      "title": "Optimizing Microservices Development with Spring Boot BOM - Part 3",
+      "section": "Tips for the microservices developers",
+      "sectionIndex": 20,
+      "transcriptFile": "section-20/279-optimizing-microservices-development-with-spring-boot-bom---part-3.txt",
+      "noteFile": "273-optimizing-microservices-development-with-spring-boot-bom---part-3.md"
+    },
+    {
+      "noteNumber": "274",
+      "lectureId": 46134585,
+      "title": "Optimizing Microservices Development with Spring Boot BOM - Part 4",
+      "section": "Tips for the microservices developers",
+      "sectionIndex": 20,
+      "transcriptFile": "section-20/280-optimizing-microservices-development-with-spring-boot-bom---part-4.txt",
+      "noteFile": "274-optimizing-microservices-development-with-spring-boot-bom---part-4.md"
+    },
+    {
+      "noteNumber": "275",
+      "lectureId": 46134615,
+      "title": "Shared Libraries in Microservices - Part 1",
+      "section": "Tips for the microservices developers",
+      "sectionIndex": 20,
+      "transcriptFile": "section-20/281-shared-libraries-in-microservices---part-1.txt",
+      "noteFile": "275-shared-libraries-in-microservices---part-1.md"
+    },
+    {
+      "noteNumber": "276",
+      "lectureId": 46134657,
+      "title": "Shared Libraries in Microservices - Part 2",
+      "section": "Tips for the microservices developers",
+      "sectionIndex": 20,
+      "transcriptFile": "section-20/282-shared-libraries-in-microservices---part-2.txt",
+      "noteFile": "276-shared-libraries-in-microservices---part-2.md"
+    },
+    {
+      "noteNumber": "277",
+      "lectureId": 27372328,
+      "title": "Congratulations & Thank You",
+      "section": "Thank You & Congratulations",
+      "sectionIndex": 21,
+      "transcriptFile": "section-21/283-congratulations-thank-you.txt",
+      "noteFile": "277-congratulations-thank-you.md"
+    }
+  ]
+}
