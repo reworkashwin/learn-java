@@ -1,0 +1,83 @@
+- [Instructor] So our
+filter is now working, but we can actually select
+values where we have no data. but we can actually select
+values where we have no data. And we might wanna show
+an appropriate message in such cases, and that leads us to the
+second part of this module, conditional content,
+which is also important. Conditional content is about
+rendering different output under different conditions. under different conditions. So I'm not talking about lists, but about rendering either A
+or B or C, whatever you need. And that's something I wanna do here, in Expenses.js, we render
+our list of expense items, but if our filtered expenses,
+array turns out to be empty, we render nothing. Now, we might wanna instead render a message telling the
+user that we have no items render a message telling the
+user that we have no items for the chosen filter. for the chosen filter. And for that, we wanna
+render content conditionally. And for that, we wanna
+render content conditionally. How can we do that? Well, we can again add a
+dynamic expression here in our JSX code and simply
+use a condition here. in our JSX code and simply
+use a condition here. I'm not talking about an if condition because long statements like this, the same is true for four loops are actually not allowed here
+between these curly braces, are actually not allowed here
+between these curly braces, but we can use a ternary expression here. but we can use a ternary expression here. And we could check if our
+filtered expenses length is equal to zero, is equal to zero, which means we have no items in that filtered expenses array. And if that's the case,
+after a question mark, which is the default JavaScript
+ternary expression syntax which is the default JavaScript
+ternary expression syntax we render a simple message and a paragraph where we say, no expenses found. Otherwise after the
+colon, we render our list. Otherwise after the
+colon, we render our list. So we grab this year, cut it and removed as empty
+pair of curly braces now, and removed as empty
+pair of curly braces now, and we render this mapping
+expression in the else case. And again, that's the default JavaScript
+ternary expression syntax, that's the default JavaScript
+ternary expression syntax, condition, question mark
+then what we wanna do if the condition is met,
+colon for the else case, if the condition is met,
+colon for the else case, what we wanna do, if it's not met. And if you save this, you see, I got no expenses found here for 2022, but for 2020, I do have my expense. but for 2020, I do have my expense. Of course, that's a bit hard to read, we can fine-tune this in a second, but that's how we can render
+content conditionally. Of course, long ternary
+expressions like this can be a bit hard to read though. So we can also fine-tune
+this or restructure this and reuse this condition, but then abuse a little
+trick in JavaScript. but then abuse a little
+trick in JavaScript. We can add the end operator
+and then use the content, the JSX content we wanna render
+if this condition is met, the JSX content we wanna render
+if this condition is met, JavaScript works such that
+if you use the end operator, JavaScript works such that
+if you use the end operator, it basically will return the
+part after the end operator, as a result of this overall check here, if the first condition is met. if the first condition is met. So if this first condition is met, it moves on to the part
+after the end operator and it then returns, that value. And that's what we're abusing here. And that's what we're abusing here. And abusing sounds like a bad thing, this is actually something
+which is fine to use, you'll see it in a lot of React projects. And it simply allows you to
+write shorter expressions, because now we can do the
+same here for our alternative. There we wanna check if we
+got more than zero items, and then we use && to
+output our list here. So now I basically split
+that long ternary expression into two stand-alone expressions, which check different conditions, which check different conditions, using this & trick here, where the part after & is rendered if the part before & returns true. if the part before & returns true. And with that, we got the
+same behavior as before, as you can tell. But even that might be too
+much logic in the JSX code. So we also got a totally
+alternative way of handling this. So we also got a totally
+alternative way of handling this. We can add a variable, maybe name it, expensesContent,
+but the name is up to you. And we assign a default value here. And the default value could be our message that no content was found. that no content was found. And we can store JSX content
+like this in variables. And we can store JSX content
+like this in variables. We can return it and we can
+also use it anywhere else, where we work with values. where we work with values. So we can store JSX
+content in the variables, as I'm doing it here,
+this is absolutely fine. as I'm doing it here,
+this is absolutely fine. You are not limited to using
+JSX only if you return, you can also use it to create a value, which is stored in a variable. which is stored in a variable. Now, why am I doing that though? Because now we can edit if check here, before we return and we can check if
+filtered expenses length is greater than zero, is greater than zero, so if we do have filtered expenses. so if we do have filtered expenses. And if that's the case, I wanna overwrite expensesContent. So I will change the
+value of this variable So I will change the
+value of this variable and I will set this then to the result of this map call here like this. So this list of expense items, that's my value stored in expensesContent if we got a length greater than zero. And then down there in
+our returned, JSX code, we can get rid of all that logic. And we just add a simple
+dynamic expression where we point at expensesContent. So add this variable. And this variable holds
+either this JSX code or this array of JSX elements. or this array of JSX elements. Both is a renderable and
+therefore both can be used here. Both is a renderable and
+therefore both can be used here. And now we get a lean JSX
+snippet which we return, and we've got our logic in
+the component function itself. And we could argue that
+this is more readable. And again, if you save that,
+it works just as before. And again, if you save that,
+it works just as before. And it's up to you, which
+approach you prefer. It also depends on the
+length of the conditions and the content which is
+rendered under different cases. But ultimately this is
+probably the cleanest way, but again, it is up to
+you what you prefer. I want to show you all options so that you can go with the way which you personally lik the most. I will go with this approach because I'm a fan of having
+a lean JSX snippet here.

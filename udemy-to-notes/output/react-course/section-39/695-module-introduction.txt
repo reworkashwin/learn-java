@@ -1,0 +1,8 @@
+- [Instructor] By now we
+know how to build components and work with multiple components, and we know how to work with state and how to handle user events. and how to handle user events. In this course section, we're now going to dive
+into rendering lists and rendering conditional content. and rendering conditional content. So we'll have a look at how
+we can output arrays of data on our page and how we
+can show different content based on different conditions, based on different conditions, and that's exactly what we're going to dive into in this module. We're going to continue
+working on the application we already started over
+the last course sections, but in this module we're
+now going to finish it by adding these features.

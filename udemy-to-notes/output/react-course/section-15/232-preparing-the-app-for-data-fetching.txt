@@ -1,0 +1,47 @@
+- [Maximilian] So let's
+establish a connection between the React app
+and this dummy backend. Now, for this you must make sure that the backend server
+is also up and running and therefore when
+following along locally, it's actually not just
+enough to run npm run dev. Instead, in a separate terminal window so that you keep the npm run
+dev process up and running you should cd the into the backend folder and then in there, run npm install to install the dependencies of this backend project. Because it's a separate project, it's a separate server that will start. After running npm install in that backend folder, you must start the backend server because we're dealing with two separate servers now, the frontend Vite development server, which serves the frontend, the React app, and the separate backend server, which exposes this backend API. And you start this backend server by running node app.js in that backend folder, so in that terminal where you navigated into the backend folder. Now for this to work, you
+actually need to install Node.js. Again, on CodeSandbox
+that's not necessary. There it will automatically run, but locally if you
+wanna follow along there you have to install
+Node.js on your system. It is available for Mac
+OS, Windows, and Linux. And once you did that, you
+can and should run node app.js in that backend folder
+and keep that process up and running as well so that you have two running processes because we need both running processes in order to connect to the backend here. And with that, let's connect. And let's start by fetching
+some available places so that here in this bottom box we show a list of places
+that can be picked and selected by the website visitors. Unlike before in this course where we worked on a similar project, those places are now not
+part of the React project. The data and the images for those places are not part of that project. Instead, this data is
+all stored in the backend and it's accessible through that API, through those exposed
+endpoints I mentioned there. So we need to send a HTTP request
+from inside our React code to that backend code to
+fetch that list of data. Now here in this starting application, which I prepared for you there is a separate
+AvailablePlaces component that's responsible for
+displaying those pickable places. And it's here where that
+place data should be fetched from this dummy backend server, that backend API I'm providing
+as part of this project. Now, previously in this course, we for example also fetched
+data from local storage with the getItem method. And the great thing about
+local storage is and was that you can access it synchronously, that the data you're fetching
+is there immediately. You don't need to wait for it. Therefore, when using local
+storage we could for example, manage the available places here with state by importing
+useState from React so that we have our state here. And then here we have the available places in this case here, in this application. And this array of available places, which we have initially could
+be fetched from local storage. So here, if we're fetching those places and we get back those places and let's assume that
+is an array of places, then we could use those places here. Now that works with local storage, but not when getting
+the data from a backend. Because when talking to a backend you are sending an HTTP
+request that needs to travel through the internet
+to that backend server and then that backend
+server needs to do some work and send back a response. And that all may take some time. It's not an instant process. It may take a couple of
+milliseconds or even seconds. But the problem is that
+if this process here takes milliseconds or seconds, you can't wait for that
+data here in this component because this component
+function does not wait for any data to arrive. Instead, it executes pretty much instantly in one single step you could say. So if this places data is
+not available initially, you must first render this
+component without that data and then update it once
+that data is available. So therefore, what we need to do here is we should start with an empty
+array as our initial value and then we can use those
+available places down here. And then we need to send an HTTP request and update this state
+once the data is there so that we re-render the
+UI and update the UI.

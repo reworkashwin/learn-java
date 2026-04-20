@@ -1,0 +1,45 @@
+- [Lecturer] Now, there are a lot of other core TypeScript features which I do explore in greater detail in my TypeScript course. To come to an end here
+for this introduction, so that we can move to our react example and see how we connect
+TypeScript with react, there are just two last features which I wanna cover here. And that would be functions
+combined with types, and then thereafter, generic types. Let's start with functions and types. And I'm saying function and types because when we work with functions there are different places
+where types can be assigned. Let's start by adding a function here. Let's say the add function
+again which we saw before. The add function can get
+parameters of course, like any function just as I did it before. And then for these parameters,
+we can assign types. That's what we saw before
+here in this first example. Just as we can set types for variables we can also set types for parameters. We can make it clear
+that here we wanna allow numbers for example. And then I can return a plus b. But with that we also have one inferred
+type here in this function. And do you see where we're
+using type inference here? Well, here in this function,
+I am returning a value and that tells TypeScript
+something about the return type, the type of the returned
+value of this function. And it infers this type. We can see the type it
+infers if we hover over add. Then we see the TypeScript
+definition of this function and we see that, of
+course, for the parameters, we have the two types. We set up the number types, but then here after this function name
+and the parameter list, this colon here, and this type here, that's not coming from us. We haven't added this code. Instead that's the
+inferred return value type TypeScript infers here. So TypeScript knows that
+here it will get a number as a return value because
+it sees that this code with these parameters which
+are always of type number can only return a number. There's no other value
+that could be returned. And that's why this number
+return value is inferred. We could also explicitly set it though. We can set the return type of a function by adding a colon after
+this function parameter list and then setting the return type here, like number, or a string, or a union type, that would also be possible. That's something we can
+do, but just as before, if you don't have a reason for doing that you shouldn't do that. TypeScript already infers a type here. And if that's the type you wanna stick to then there's no need to
+explicitly define it yourself. Still, I wanna mention
+this, that functions, when we work with types,
+don't just use types for the parameters, but
+also for the return value. That's easy to overlook,
+but it makes a lot of sense because a function after all
+does not have just some input. It also has some output and
+hence it has a return type. Now there is a special return type which is also worth knowing. And for that, let me add a print function where I get a value and that
+could indeed be of type any because the only thing
+I'll do with that value is I'll console log it. So I don't really care
+about the concrete type of this value. I'm just logging it. Now one important note about naming this function "print" though, which I unfortunately only discovered after I named the function like this. Of course, in JavaScript, there's a built-in "print" function already, so now this function will clash with this built-in function and hence if you would try to compile this TypeScript file you would be getting an error because of that, so maybe just name it "printOutput" or something like that. to avoid that error! But the important thing
+about this print function now is that this function
+does not return anything. It has no return statement
+and therefore it has a special return type called void. Void is basically comparable
+to nul and undefined, but it's only used in
+conjunction with functions and it means that this
+function never returns. So if I wanna work with the returned value from that function, I
+will work with undefined and that's that special
+wide type for functions, for the return value of functions.

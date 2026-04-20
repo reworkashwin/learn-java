@@ -1,0 +1,73 @@
+- [Instructor] So, this expense
+tracker has taken some shape and it's basically finished from the core functionality at least from the core functionality at least we got all the core features implemented. We can add expenses, we
+can filter our expenses. But if you remember the original state which I showed you a couple of hours ago then there is one crucial
+element and feature which is missing. which is missing. The chart where we can actually see a graphical representation
+of our expenses per month. And that is therefore what
+we're now going to dive into to then conclude this module
+and this first course project. to then conclude this module
+and this first course project. Now, for this chart I will start by adding
+a new components folder which I'll name Chart because it will hold all the components that
+are related to the chart all the components that
+are related to the chart and I will split up the chart
+into two main components. For one that's the chart
+itself, the chart component which we can add to our application which we can add to our application but then inside of the
+chart we have all these bars and I will actually create a
+separate component for those. The chart bar component. The chart bar component. So, we'll have these two components and we're also going to have some styles so, I'll already add a Chart.css
+and a ChartBar.css file and you find these two files attached. So, as always you can
+copy and paste the styles you find in there or simply use these attached
+CSS files right away. And then let's start with the Chart.js file
+with the chart itself. with the Chart.js file
+with the chart itself. There I will import react from react even though that's technically not required in this set up
+but still and then I'll create not required in this set up
+but still and then I'll create my chart functional
+component here, like this. So, this component function, I should say and export this, like that. and export this, like that. And now with that in the chart we of course wanna render
+all these chart bars. we of course wanna render
+all these chart bars. And the question is now
+how we wanna do that. And the question is now
+how we wanna do that. How we wanna structure the
+JSX code in this component and how that all should work. Well, eventually we're going to import the chart bar component the chart bar component at the moment it's of course empty but we're soon going
+to add something there and hence I can already add this import and hence I can already add this import and I then wanna in the
+end return some JSX code where we have all these chart bars. where we have all these chart bars. So, maybe we, first of all set up a div with a class name of chart to apply that styling. to apply that styling. And for that we then also import oops! import Chart.css like this oops! import Chart.css like this oops! not chart bar but
+Chart.css to applied styles. But instead of the div
+we now wanna have the bars But instead of the div
+we now wanna have the bars and we could simply render
+12 individual chart bars for the 12 months which we have. But I will actually create a
+bit of a more flexible chart which is actually not
+necessarily restricted to months and to 12 data points. Instead, we could say that when the chart component
+is being used somewhere in our application, we wanna
+receive the data points that should be plotted as props. that should be plotted as props. So, that the chart component
+is fairly configurable and the components that
+use the chart component can decide how many data points with which values should be rendered. And therefore, I actually will output the chart bars dynamically
+by going through an array of data points and mapping every data
+point to a chart bar. and mapping every data
+point to a chart bar. And that's of course, basically
+what we already learned in this module how we output
+lists of contents dynamically and that's all why I'm doing it here so that we again practice this. So, on props we could
+expect a data points prop of course, that name is up to
+you since it's your component but I expect the data points prop but I expect the data points prop and I expect that to hold
+a value which is an array. Hence, we can call map on that and then we map every single data point into a chart bar component. into a chart bar component. into a chart bar component. So, that we create as
+many chart bar components as we have data points. And then of course we wanna pass some data into the chart bar to control
+how it will be rendered. So, which value will be rendered there. So, which value will be rendered there. And for that we of course
+wanna extract some data from the incoming data points. from the incoming data points. Now, up to this point we're never using the chart component. So, we as the creator of this component can define which kind of data we expect to extract there in the future. we expect to extract there in the future. And for example, we could say that the chart bar component
+should receive a value prop and there we wanna pass
+data point dot value. Of course, that will require
+that in the chart bar we then read this prop and that when we define
+the data points later that every data point
+has a value property. that every data point
+has a value property. So, that data point is an object
+which has a value property. That's what we're basically defining now since that is how we wanna
+use that chart component and the chart bar component in there. Now, I also wanna make sure that every chart bar plots the value in relation to the maximum
+value in the entire chart. And therefore, I also wanna
+pass in a max value property and that is currently null, let's say that's not data which we
+extract from the data point that's not data which we
+extract from the data point because that is a unique value which is the same for all
+chart bars in a given chart. So, we will need to derive this max value and we'll do this in a second. For the moment, I'll set this to null but that's just a temporary value. We probably also wanna have a label though for example, in this case to have a label of January, February,
+March, April and so on. And therefore I'll add a label prop and pass in dataPoint.label, like that. And since we're mapping this since we're outputting a list
+here we also should add a key because you learned that
+this special key prop helps react render these
+list items efficiently. And therefore I do expect
+that every data point also has a unique ID or maybe
+we actually use the label also has a unique ID or maybe
+we actually use the label so that we say that the
+label should be unique every chart bar has its own unique label and therefore we can also use the label as a unique identifier for
+this special key prop here. That looks good to me. Now, of course, we wanna continue working on the chart bar to bring that to life.

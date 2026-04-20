@@ -1,0 +1,86 @@
+- [Maximilian] So here's our project, and we already got a list of data there, but of course this list is static. It's not dynamic at all at the moment. So for example, if we filter here this does not affect the list at all, and also if we would add a new item here, you would also see that as
+we pick this and add this it's not added to the list
+because we haven't added the logic for this yet. the logic for this yet. So therefore that's
+what we're going to do, and therefore, here in this application we now wanna continue working on that. In the Expenses.js file
+we currently render our list of expenses
+by individually adding these expense item elements
+here in our JSX code, these expense item elements
+here in our JSX code, and that's of course not dynamic at all. In most web applications
+we don't know in advance how many items we wanna render. how many items we wanna render. I mean, here for example, we
+don't know how many expenses the user is going to add
+and how many expenses should be displayed when a
+certain year is selected. should be displayed when a
+certain year is selected. So therefore hard coding
+the number of expense items as we're currently doing it is
+definitely not the way to go. Instead we wanna render
+that list dynamically, and doing that as a standard case, which you'll face in a lot
+of projects and applications, and it's therefore also
+straightforward to do with React. and it's therefore also
+straightforward to do with React. So here is how it does work. We wanna render our expenses
+which are defined in App.js. We wanna render our expenses
+which are defined in App.js. Here we got this expenses array, Here we got this expenses array, and we wanna render this
+in the expenses component, therefore, the first step is to pass our expenses down via props,
+which we're already doing. our expenses down via props,
+which we're already doing. We are passing the items prop, which points at this expenses array. So in the expenses component,
+we do get our list of expenses but we're currently not using that, but we're currently not using that, and that's what we wanna change. and that's what we wanna change. On our props we got this items prop, and the value of that will be that array, which will be in the
+end when I render here, which will be in the
+end when I render here, but we don't wanna output the array as text or anything like that. Instead, we wanna render one expense item per element in the array, and
+that's straightforward to do. per element in the array, and
+that's straightforward to do. For this, we first of all
+need single curly braces, opening and closing,
+because we wanna execute opening and closing,
+because we wanna execute a dynamic expression in our JSX code, a dynamic expression in our JSX code, and you learned that that's
+done with curly braces. Then we can execute
+JavaScript expressions here. Then we can execute
+JavaScript expressions here. Now the expression which
+I do want to execute here is that I reach out to my array of data, in this case the array of expenses, in this case the array of expenses, and that then for every element we wanna create such a JSX element. we wanna create such a JSX element. For this we can access props items, that's our array of items,
+our array of expenses, that's our array of items,
+our array of expenses, and now we can use a
+built in array method, which is built into standard JavaScript, and that's the map method. and that's the map method. You can learn more about this method if you Google for JS array map, and what this method does, is
+that it creates a new array based on another array, and
+that basically transforms every element in that original array. every element in that original array. So here in this example, you, for example, see that we have an array of numbers, and with map we multiply
+every number with two so that we get this new array as a result, and for applying this transformation, map, this method which we can call, takes a function, which
+we pass as an argument, takes a function, which
+we pass as an argument, and that function is then executed for every item in the array
+on which we're calling map, for every item in the array
+on which we're calling map, and the result of this
+function is the element which will be added to
+the newly created array. That's how this works, and
+that's a built in method, That's how this works, and
+that's a built in method, as I said, and we can utilize it here to transform our array of
+objects, which we have here, we got a bunch of objects in there, into an array of JSX
+elements, to be precise, into an array of JSX
+elements, to be precise, into an array full of
+expense item JSX elements, into an array full of
+expense item JSX elements, because if you do output an
+array of JSX elements here, like a couple of cards,
+then React is capable of simply rendering these elements. of simply rendering these elements. So if you had something like this, an array of JSX elements
+as part of your JSX code, react would simply render
+these elements side by side, react would simply render
+these elements side by side, and that's what we
+utilize here to transform our array of objects into such
+an array of expense items, which then are rendered by React. So map, as I just showed
+you, takes a function as a argument, and that function executes for every element in the
+array, and it gets that element for which it's currently
+executing as a parameter. for which it's currently
+executing as a parameter. So here we get our expense, for example, So here we get our expense, for example, and then in the function body, so on the right side of this arrow if we're using our arrow function, we then have to return the JSX element into which we want to map this expense. into which we want to map this expense. So in this case, I wanna map every expense in my expenses array, I
+want to map every expense into an expense item JSX element. So I wanna transform the expense object to this special kind of
+object, to this JSX element, to this special kind of
+object, to this JSX element, and then we can just configure
+this as we did it here. We add a title prop, but the
+title is now expense.title, so this expense, which
+has passed as a parameter into this function automatically, because that's how map works, that expense is used to extract the title, that expense is used to extract the title, and we do the same for the
+amount with expense amount, and of course we do the same for the date by setting the date prop to expense date. by setting the date prop to expense date. Let me reformat this, and this
+is now how that looks like. Now we can get rid of the
+hard coded expense items here, and we're only left with
+this map expression here, where we transform our array
+to an array full of JSX items. Hence, if I now save this, and I reload, we get a warning, which
+you can ignore for now, we get a warning, which
+you can ignore for now, but we also see that we get
+all these items being rendered but we also see that we get
+all these items being rendered just as before but now it's
+actually happening dynamically, which simply means that now
+it's based on the actual array, and that of course means that we can now also change that array and such changes will be reflected in that list, and that's what we're
+going to do next therefore. Of course, feel free to
+try it on your own first. We're going to do it
+together in the next lecture.

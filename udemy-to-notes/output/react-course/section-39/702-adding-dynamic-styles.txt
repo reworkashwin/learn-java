@@ -1,0 +1,73 @@
+- [Instructor] Now, to build
+the chart bar component we again wanna import
+react from react in there and then import the CSS file, of course. So, that we have two styles available. And then we can define our
+component function chart bar and set this equal to props and then simply return our JSX code here and then simply return our JSX code here and we will definitely need props because we are already
+defining some props here in the chart component. Of course, we also wanna export chart bar as a default here. Now, for this JSX code in
+the chart bar which we return I want to have a div
+here with a class name of chart dash bar of chart dash bar since that's one of the CSS
+styles defined in the CSS file and in there then another nested div with a class name of chart bar
+underscore, underscore inner. with a class name of chart bar
+underscore, underscore inner. And this divs and CSS
+classes are simply required to make the provided styles work. Now, in there I will add yet another div with a class name of chart dash bar
+underscore, underscore fill of chart dash bar
+underscore, underscore fill and then next to that div
+so not nested but next to it I'll add another div with a class name of chart dash bar
+underscore, underscore label. And actually that should
+not be in the inner div but side by side to the inner div so, that this is the
+structure we have here. A bunch of divs which
+will then be responsible for rendering this chart correctly. However, like this we wouldn't see much. For one, I of course
+wanna output the label which we receive on the label prop. which we receive on the label prop. And that's why I added this div there we can dynamically output prop store label so that the label is visible. But we also will need to change
+this chart bar fill div here this div is required to basically remember by how much this chart bar will be filled. by how much this chart bar will be filled. And this chart bar fill CSS class will for example define the
+background color for that. But one important piece of information is missing in the CSS class. And that will be the height
+of this filled chart bar. And that will be the height
+of this filled chart bar. The overall chart bar
+has a predefined height 100% of the parent
+container which is the chart which has a height of 10rem. But of course, by how
+much we fill that bar depends on the data we're receiving. depends on the data we're receiving. So, it's depends on the value So, it's depends on the value because we wanna basically
+fill our chart bar by putting the value in
+relation with the max value. by putting the value in
+relation with the max value. So, that if the max value
+for the entire chart is 100 and the value for a given chart bar is 50 we fill that chart bar by 50%. And therefore in the chart bar component we now need to calculate by how much this specific
+chart bar instance should be filled. For this we can add a
+variable, which we could name bar fill height but the name is up to you. bar fill height but the name is up to you. And initially I'll set
+this to 0% as a text because this will be assigned
+as a CSS style in a second. because this will be assigned
+as a CSS style in a second. So, it's 0% like this
+but then I wanna check if we got a max value greater than zero so, at four given data points we do have a max value greater than zero. we do have a max value greater than zero. We could have zero later
+if we filter for a month that has no expenses. that has no expenses. So, we wanna check if
+we do have a max value greater than zero. greater than zero. And if that's the case, I
+wanna set bar fill height equal to math round and
+then in nested brackets equal to math round and
+then in nested brackets props value divided by props max value times 100. This will basically give us the percentage between zero and 100 by which
+this bar should be filled. between zero and 100 by which
+this bar should be filled. And I'm rounding to the
+nearest integer here. And I'm rounding to the
+nearest integer here. And we also wanna convert this to a string with the percentage sign at the end so I will add plus
+percentage here, like this. And now we wanna set this as the height as the CSS style height for this div with the chart bar fill class name. with the chart bar fill class name. And to achieve this we're
+going to do something which we haven't done
+thus far in this course. We're going to set the style
+of an element dynamically We're going to set the style
+of an element dynamically and that can be done by
+adding the style prop here which is of course a default
+HTML attribute as well which is of course a default
+HTML attribute as well but actually that style
+prop, that style attribute works a little bit differently when building a react application. The value is set here should be dynamic because it should be our
+derived fill height here because it should be our
+derived fill height here and indeed you then don't
+generate a dynamic string where you set something like
+height 10% but instead style and that's the special
+thing once an object. So, here we don't have a special
+double curly brace syntax but instead we have to
+single a curly braces for outputting something dynamically but then the dynamic value
+is a JavaScript object which has also created with curly braces. which has also created with curly braces. That's why we overall have
+the double curly braces but it's no special style syntax. The only special thing here is that style wants a JavaScript object as a value. wants a JavaScript object as a value. And then this object you should then use the CSS property names as key names as properties
+and the values as well values. So, for example, here we can
+then set background color to a given value or in our case we can set height to bar fill height. Now, as a side note, if you have something like background color with a dash you need the quotes
+around the property name because otherwise it would
+be an invalid property name or better you use the camel
+case version of that name background, color like this. background, color like this. We don't need the background color here but I want to show this to you. I will come back to this
+later as well in the course but that is how you would
+target such CSS property names which have a dash inside of them if you are setting the
+style prop on an element. But here we don't even need
+that, so I will get rid of it we only need to set the height. And with that, we also finished
+the chart bar component. Now, we just need to use the chart and pass in the data points.

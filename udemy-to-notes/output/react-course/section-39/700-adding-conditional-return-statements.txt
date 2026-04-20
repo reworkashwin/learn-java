@@ -1,0 +1,50 @@
+- [Maximilian SchwarzmÃ¼ller] Now with the conditional content covered here, before we continue, I wanna restructure the
+expenses component a little bit. And I actually wanna
+extract that list logic into a new component into a new component to again, make that expenses
+component a little bit leaner. Therefore, I'll add a
+ExpensesList.js file, Therefore, I'll add a
+expenses list JS file, and also ExpensesList.css file which you also find attached. which you also find attached. And you can already download my CSS file and copy the styles into
+your expenses list CSS file. In the expenses list JS file, I will then add a constant expenses list I will then add a constant expenses list which receives props and return something. which receives props and return something. And of course, we export
+this expenses list And of course, we export
+this expenses list and we can if we want to
+also import React from react. But again, that is optional. Now you're in expenses list, I wanna output my expenses list. I will not filter in there. I will keep the filtering
+logic in expenses I will keep the filtering
+logic in expenses since that's also where I
+managed the filtered year since that's also where I
+managed the filtered year but I will take this fallback
+content, this if check, I will take all of that and move that into my
+expenses list component. That means that we also, of course, wanna import the expense item from ./ExpenseItem here since I'm using that component here. And the filtered expenses
+no longer exist here. I just wanna get, let's say,
+my items here or expenses. It's up to you. I'll name it items as props like this. Now in expenses JS, that, of course, means that here I now wanna output my expenses list down there. And of course, we therefore
+also wanna import expenses list from the expenses list file and we can get rid of
+the expense item import. And the filtered expenses should now be passed to expenses list
+through the items prop, which I'm using inside of expenses list. Like this. Now inside of the expenses list JS file, I also want to make a
+couple of changes now. I also want to make a
+couple of changes now. Of course, we need to return some JSX but I want to return
+an unordered list here but I want to return
+an unordered list here and actually give that list a class name of expenses-list. This is a class to find
+here in my CSS file and therefore, we also wanna import this expenses list CSS file
+into the expenses list JS file. And instead of this unordered list, I now wanna output my map here, my expense item array. So we'll again, grab that and render this
+dynamically here like this. and render this
+dynamically here like this. And I will handle this if case
+a little bit differently now. I will add a if check but I'll check if props items
+length is equal to zero. but I'll check if props items
+length is equal to zero. So if we have no items
+and if that's the case, I will simply return a
+totally different JSX snippet I will simply return a
+totally different JSX snippet because that's yet another way of handling conditional content. of handling conditional content. If what your component
+returns changes entirely based on different conditions,
+you can use this approach. It would have not been appropriate here in expenses JS before, because only a part of the JSX snippet, which we returned changed. which we returned changed. So there, the approach I showed in the last lecture was better, but if your entire JSX content changes, when data is missing, you can always add a if
+check where you return a different JSX block if
+some condition is met. a different JSX block if
+some condition is met. And here, I simply want
+to return an h2 tag with a class name of
+expenses-list__ fallback with a text of found no expenses. So that's what this component,
+expenses list, will render if we got no expenses. Hence, we can also get
+rid of that variable here. And then with that, we see there's found no expenses text or the filtered list if we switch. But now, with help of
+this extra component, which uses a different logic for rendering or for returning different JSX code, and we now also got a little bit of a leaner Expenses.js file again. Now one additional tweak,
+which I want to make here which I almost forgot is that since I'm using unordered list here now for semantic reasons in
+the expense item component, I actually wanna switch away from having a div being
+rendered to a list item instead. So I will just wrap this entire card here with a list item and visually this doesn't change anything but semantically this
+is a little bit better. but semantically this
+is a little bit better. So that's just another tiny tweak which I wanted to make here.

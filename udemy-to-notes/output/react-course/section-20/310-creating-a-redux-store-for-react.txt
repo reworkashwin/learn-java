@@ -1,0 +1,31 @@
+- Now to get started with Redux, in this React application,
+I will create a new folder in the source folder
+and I'll name it, store. This is not something you have to do. It's just a common convention. To store your Redux related code files, in a store folder, in the source folder. And then they are all, just
+create an index.js file. This file name is also up to you, into which I'll put my Redux-logic here. Now in there, I, in the
+end, for the moment, wanna repeat what we did before already. Create a store, create a
+reducer for the counter and then not subscribe though. We'll not do that, but we
+wanna create the store. We wanna create the reducer. And that's of course, also
+a great practice for you. Without looking at the last lectures, try to create that store on your own and try to create that
+reducer for the counter, which has a increment
+and decrement action, which is supported. So basically, what we did before, without looking at those lectures, try to do this on your own first. We'll do it together after a short pause, which you can use to pause the video. Were you successful? Let's try it together. We wanna create a new store. And for that, we need to
+import something from Redux. Now, since we're back in React, our import statements
+again, look like this now. And here we can import Redux from Redux, or we can also pull out specific things from the Redux library,
+with this import syntax. And we can then, for example, import the createStore function. Now, once that's imported, we can call it, to create a new store. And store that store in
+a, well store constant. Now you did learn that
+createStore wants a pointer at a Reducer function as a parameter. So I'll set up my counterReducer here. And that then is a function, which gets the existing state as a first argument. And then the action it wants dispatched, as a second argument. Now, we can give this
+state a default value, so that when the reducer is executed for the first time, we
+have an initial state. And here I'll stick to
+the exact same state we used before. Counter set to zero, in an object. And in the function body of the counterReducer function, we now wanna handle different actions, increment and decrement and then return different state snapshots. So here we can check, if action.type is equal to increment, in which case I wanna return a new
+object, where the counter is set equal to state counter plus one. Else, I check if action.type
+is equal to decrement. In which case I wanna return an object, where the counter is set
+to state.counter minus one. Or, if we make it into neither of these if statements, I'll return
+the unchanged state. So the state, which I get here, I returned that without
+any changes in that case. So now, we can use this
+counterReducer function and point at that function
+here, in our store. When we call createStore, this now creates our Redux store. Now previously, we did now subscribe here and dispatch from inside this file and that's now not what we wanna do here. Instead now, I wanna connect my React app to this Redux store. So that the components of that app can dispatch and listen. And that's now the new part. For this, I'll start by
+exporting this store, which we created here,
+as the default export of this file, so that
+we can use it outside of this index.js file. And now I want to connect
+my React application to that store. For this, we need to provide this store to the React app. And since, remember, we
+only have one Redux store, we only need to provide our store once, the only store we have. The question just is,
+what does provide mean?

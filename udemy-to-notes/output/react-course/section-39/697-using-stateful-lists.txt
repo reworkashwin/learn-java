@@ -1,0 +1,51 @@
+- So how could we now update this expenses array whenever
+a new expense is being added? Well for this, we need to go to App.js because that is where we
+have this expenses array. There, we also have this
+addExpenseHandler function There, we also have this
+addExpenseHandler function which we added in the last course section which has triggered whenever
+a new expenses added. which has triggered whenever
+a new expenses added. And we even received the
+expense as a parameter here. And we even received the
+expense as a parameter here. So all we got to do is we
+have to add this expense to this expenses array. But of course, if we just edit like this nothing would happen
+because you already learned that just because you
+change some variable, React won't update the component. React won't update the component. Instead to achieve that,
+you need to use state. Instead to achieve that,
+you need to use state. And therefore here in App.js, where we manage our expenses, we now wanna import useState from React so that we can register some state here. so that we can register some state here. And I will actually grab this array here, this constant and extract that out of this component function
+and instead store it here and name it Initial Expenses and name it Initial Expenses or Dummy Expenses since that's what it is. or Dummy Expenses since that's what it is. So that this actually
+is just some dummy data which we can use to
+initialize our state with. which we can use to
+initialize our state with. But then inside of the
+app component function we call useState and I'll
+pass my dummy expenses we call useState and I'll
+pass my dummy expenses so this array full of dummy data as an initial state value as an initial state value so that we have some
+initial expenses to display. so that we have some
+initial expenses to display. But then here, we can
+again use de-structuring as I showed it to you in the last section to get access to our expenses and to the set expenses
+state updating function. And now that we got this
+here in the addExpenseHandler where we wanna add a new expense, we can call setExpenses
+to set our expenses array to a new array which
+includes this new expense. So how should we update this? Well, we could pass a new array here and then let's say we
+wanna add the new expense as the first item in the array. For that we could add the
+expense which we're getting here as an item to this array and then use as an item to this array and then use the spread operator on
+the existing expenses to pull out all the
+existing array elements and populate the rest of this new array with those existing elements. with those existing elements. We can use the spread
+operator not just on objects but also on arrays. And again, that's not a React feature. That's a standard JavaScript feature. However, if we would
+update the state like this it would not really be correct, as you learned in the last core section. as you learned in the last core section. Instead, if you update your state depending on the previous state or to previous snapshot of this state, you should use this special function form for this state updating function. for this state updating function. So it would be passed
+a function as argument to this state updating function and that function will
+automatically receive the latest state snapshot. the latest state snapshot. So here we would then
+get our previous expenses automatically by React. automatically by React. And we would return our new array where we add this expense
+which we're getting as a parameter here and where we then add as a parameter here and where we then add our previous expenses
+with that spread operator. And that's the clean way
+of updating our state when it's based on an older
+snapshot of that same state. Now with that, we add our new expense. And now since we're using
+our expenses state here to pass it to expenses, to pass it to expenses, we should automatically
+have a dynamic list which automatically updates
+when items are added. which automatically updates
+when items are added. So if we now add a book for
+$29.99 and pick some date here, we see that being added
+here as a first item. we see that being added
+here as a first item. So this is working and now
+this is a truly dynamic list by using state and by
+outputting these items with this map method. with this map method. And that's how you output
+lists of data dynamically with React. Now let's have a look at this key warning and what that is all about.

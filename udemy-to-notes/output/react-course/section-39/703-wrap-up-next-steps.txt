@@ -1,0 +1,72 @@
+- [Maximilian] So now to use the chart and pass in the data points I will add a new component in the expenses components folder and I'll name it, ExpensesChart.js And here we don't even need a CSS file but I will import React from React to be in line with my other files to be in line with my other files and create the component
+function expenses chart. There I expect to get some
+props and we export this, so basically what we always do. Now in here the goal is to
+overall return the chart. So here we wanna return the chart and therefore you should make sure that you also add the import
+to this chart component in the chart folder like this. But now we need to define the data points which are passed into the chart because there we are referring
+to this data points prop. And to set up the data points
+here in expenses chart, I will actually create a new constant here and name it, chart data points. And this will be an
+array, and in this array I wanna have a bunch of objects I wanna have a bunch of objects because we expect every
+data point to be an object. In the chart JS file, when we map through data points, we then access values like label and value on the given data point. So therefore we wanna have objects and these objects should
+have a label and a value key. Now the value is simply zero
+initially for every data point and the label is something
+like Jan for January. But then I'm going to duplicate this and set up the Feb data point,
+which also initially is zero. And I'll repeat this for the entire year and have a March, April, May, June, July July and so on. Also have August and September and October and then have November and December. So that we have all these data points, which in their initial state
+all have a value of zero. Now, of course we're not done here. We don't wanna have zero
+for every data point. We don't wanna have zero
+for every data point. Instead, now we wanna have a
+look at our filtered expenses and make sure that we basically
+go through all the expenses for a selected year and that
+we then sum up the expenses for all the different months and we assign them here to our data points. So therefore I expect to
+get the filtered expenses as a prop on my expenses chart component because we will use expenses chart in the expenses JS file later. And there we have the filtered expenses. And there we have the filtered expenses. So here in expenses chart I just expect to get
+that list of expenses. And then we can add a for loop where we loop through all our expenses, which we get via props. And then we wanna have
+a look at every expense, get the month of that expense and updates the value of
+the appropriate data point by the expense amount. So here we kinda get our expense
+month inside of that loop by having a look at
+expense.date get month. by having a look at
+expense.date get month. Date is a date object and there we have the
+build in get month method which returns us that month. which returns us that month. Starting at zero though, so January is zero. But we can then use this month later to pick the right data point, since January has the index
+zero in this array as well. So we can basically use
+the month as a index in that array later. And later is actually now I will reach out to my chart data points for the given month. Again, this starts at zero and ends at 11 which is exactly the case for the index of these data points. So we can use that as an index. So we can use that as an index. And I wanna update the value
+of the selected data point by adding something to it with the plus equal shortcut operator. And I wanna add the expense amount so that we increase the
+value of a given month by that expense amount. by that expense amount. And we go through all expenses to sum up all the expenses for the different months and assign the values to
+the appropriate months, to the appropriate data points here. So that after this for loop, we still have this array but now the values will
+not be zero anymore but instead they will
+have the summed up values for the given month expenses. And now we can pass these
+data points to the chart. There we set the data points prop, since that's the prop we're
+expecting their data points and we set this equal to our
+updated chart data points. And this should do the trick. Now we're still not done, we now also wanna go back to the chart and there you might remember that we also need to
+calculate the total max value. So we wanna have a look at all the months and find the biggest value across all months. Because that's the maximum value which should be represented in the chart. And to do this, we can add a
+new constant total maximum. The name is up to you. And here we can use math max
+to find the maximum value but actually max wants a
+number of arguments like this. So comma separated arguments,
+comma separated numbers for which are then
+returns to biggest number. for which are then
+returns to biggest number. Here we have an array though and also not an array of
+numbers, but an array of objects. And we're just interested in a specific property of that object. in a specific property of that object. Nonetheless, we can work around that, we can get our value array
+if we wanna call it like this or our data point values. And here we can simply
+call props data points dot map to call the map method. dot map to call the map method. But now we won't map the data
+points into JSX elements, but instead simply transformed
+them from objects to numbers. but instead simply transformed
+them from objects to numbers. So that for every data point we in the end just return
+data point dot value. So that means that we transform a data point
+object to just the number. The number stored in data point value. The number stored in data point value. And therefore map here on data points will return a brand new array which is just an array of numbers. An array of all these values, for all these data points we're getting. So in our case for the 12 months we'll have an array of 12 values. And now it's the data point values where we wanna find the maximum. But since max wants a list of arguments instead of an array. And since this still is an array, data point values still is an array. We can use the spread operator here to pull out all the array elements and add them as standalone arguments to this max method. to this max method. So now this max method
+will receive 12 arguments which are these 12 values from our array pulled out
+by this spread operator. And now it's this total maximum which I pass in here as a max value. And with that that's all is updated. And now we just wanna make sure that we use our expenses chart component and I wanna do that in
+the Expenses.js file. There we can import expenses chart from expenses. Chart like this. And we now simply add that here between the filter and the list. We render our expenses chart. And of course, very important now we need to pass in the expenses prop because that is expected in
+the expenses chart component. So here all set expenses equal to my filtered expenses. Because of course I only wanna chart the currently filtered expenses. And with all of that we should be done except that I'm getting an error here, cannot read property
+get month of undefined. And that's simply happening because here in the expenses chart component I'm using a for in loop. Of course it should be a for off loop since expenses, props expenses
+is an array, not an object. since expenses, props expenses
+is an array, not an object. So for all these correct
+to loop for all the items. And now this is looking better. Now what we see though or what we don't see is somehow we don't have any fill values. No matter how I switch we never see any of the bars being filled. But the reason for that is that in the chart bar component I'm checking props max for
+being greater than zero. Well, I actually named
+the prop max value though. So we should also check
+props max value here. And now this looks better. Now we see that this looks good and now we got certain
+bars which are filled others which are not filled. Simply depending on what
+we're filtering for. And this is now the
+finished expenses tracker, of course feel free to
+play around with it, to tweak it, to add more features and experiment with it. But we're also going to have
+more projects in this course and we're also going to
+dive deeper into React. For example, we are also
+going to take a closer look at styling React components and how we can scope styles to components. Because actually right now I can tell you all the styles we set up, even though the CSS files have components specific file names, all CSS styles actually up
+to this point are global. If a class is defined here
+in the chart bar CSS file we could add the CSS class to any element in any component and the styles would be applied. Currently, these styles are not scoped and therefore that's one topic we're also going to take a closer look at through out the next modules but of course also plenty of other core React features.
