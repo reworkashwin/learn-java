@@ -1,0 +1,282 @@
+{
+  "courseSlug": "java-functional-programming",
+  "courseId": 6328861,
+  "notesDir": "/Users/ashwin-14876/MyFiles/learn-java/functional-programming-notes",
+  "transcriptsDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming",
+  "totalLectures": 157,
+  "totalWithTranscripts": 3,
+  "sections": [
+    {
+      "index": 1,
+      "title": "Introduction",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-01"
+    },
+    {
+      "index": 2,
+      "title": "Introduction to Functional Programming",
+      "lectureCount": 6,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-02"
+    },
+    {
+      "index": 3,
+      "title": "Lambda Expressions",
+      "lectureCount": 6,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-03"
+    },
+    {
+      "index": 4,
+      "title": "Functional Interfaces - Introduction",
+      "lectureCount": 1,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-04"
+    },
+    {
+      "index": 5,
+      "title": "Functional Interfaces - Function",
+      "lectureCount": 4,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-05"
+    },
+    {
+      "index": 6,
+      "title": "Functional Interfaces - Predicate",
+      "lectureCount": 4,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-06"
+    },
+    {
+      "index": 7,
+      "title": "Functional Interfaces - Supplier",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-07"
+    },
+    {
+      "index": 8,
+      "title": "Functional Interfaces - Consumer",
+      "lectureCount": 1,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-08"
+    },
+    {
+      "index": 9,
+      "title": "Functional Interfaces - BiFunction",
+      "lectureCount": 3,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-09"
+    },
+    {
+      "index": 10,
+      "title": "Functional Interfaces - BiPredicate",
+      "lectureCount": 4,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-10"
+    },
+    {
+      "index": 11,
+      "title": "Functional Interfaces - BiConsumer",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-11"
+    },
+    {
+      "index": 12,
+      "title": "Functional Interfaces - UnaryOperator and BinaryOperator",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-12"
+    },
+    {
+      "index": 13,
+      "title": "Primitive Functional Interfaces",
+      "lectureCount": 5,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-13"
+    },
+    {
+      "index": 14,
+      "title": "Functional Interfaces - Role Play and Quiz",
+      "lectureCount": 0,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-14"
+    },
+    {
+      "index": 15,
+      "title": "Java Stream API - Introduction",
+      "lectureCount": 4,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-15"
+    },
+    {
+      "index": 16,
+      "title": "Java Stream API - filter",
+      "lectureCount": 3,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-16"
+    },
+    {
+      "index": 17,
+      "title": "Java Stream API - map",
+      "lectureCount": 4,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-17"
+    },
+    {
+      "index": 18,
+      "title": "Java Stream API - flatMap",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-18"
+    },
+    {
+      "index": 19,
+      "title": "Java Stream API - sorted",
+      "lectureCount": 5,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-19"
+    },
+    {
+      "index": 20,
+      "title": "Java Stream API - collect",
+      "lectureCount": 5,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-20"
+    },
+    {
+      "index": 21,
+      "title": "Java Stream API - foreach and distinct",
+      "lectureCount": 3,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-21"
+    },
+    {
+      "index": 22,
+      "title": "Java Stream API - limit and skip",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-22"
+    },
+    {
+      "index": 23,
+      "title": "Java Stream API - count, min, and max",
+      "lectureCount": 4,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-23"
+    },
+    {
+      "index": 24,
+      "title": "Java Stream API - anymatch, allmatch, and nonematch",
+      "lectureCount": 3,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-24"
+    },
+    {
+      "index": 25,
+      "title": "Java Stream API - Role Play and Quiz",
+      "lectureCount": 0,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-25"
+    },
+    {
+      "index": 26,
+      "title": "Method References",
+      "lectureCount": 1,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-26"
+    },
+    {
+      "index": 27,
+      "title": "Optional Class",
+      "lectureCount": 1,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-27"
+    },
+    {
+      "index": 28,
+      "title": "Interview Preparation: Java Stream Programs",
+      "lectureCount": 12,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-28"
+    },
+    {
+      "index": 29,
+      "title": "Interview Preparation",
+      "lectureCount": 3,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-29"
+    },
+    {
+      "index": 30,
+      "title": "Java Collections Framework Overview",
+      "lectureCount": 1,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-30"
+    },
+    {
+      "index": 31,
+      "title": "Java Collections Framework - ArrayList",
+      "lectureCount": 10,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-31"
+    },
+    {
+      "index": 32,
+      "title": "Java Collections Framework - LinkedList",
+      "lectureCount": 8,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-32"
+    },
+    {
+      "index": 33,
+      "title": "Java Collections Framework - HashSet",
+      "lectureCount": 7,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-33"
+    },
+    {
+      "index": 34,
+      "title": "Java Collections Framework - TreeSet",
+      "lectureCount": 7,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-34"
+    },
+    {
+      "index": 35,
+      "title": "Java Collections Framework - HashMap",
+      "lectureCount": 8,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-35"
+    },
+    {
+      "index": 36,
+      "title": "Java Collections Framework - LinkedHashMap",
+      "lectureCount": 8,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-36"
+    },
+    {
+      "index": 37,
+      "title": "Java Collections Framework - TreeMap",
+      "lectureCount": 5,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-37"
+    },
+    {
+      "index": 38,
+      "title": "Java Collections Framework - Stack",
+      "lectureCount": 2,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-38"
+    },
+    {
+      "index": 39,
+      "title": "Java Collections Differences - Last-Minute Interview Guides",
+      "lectureCount": 7,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-39"
+    },
+    {
+      "index": 40,
+      "title": "Java Collections Framework - Role Play and Quiz",
+      "lectureCount": 0,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-40"
+    }
+  ],
+  "lectures": [
+    {
+      "noteNumber": "001",
+      "lectureId": 48876789,
+      "title": "Course Introduction",
+      "section": "Introduction",
+      "sectionIndex": 1,
+      "lectureIndex": 1,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-01/01-course-introduction.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/functional-programming-notes/001-course-introduction.md"
+    },
+    {
+      "noteNumber": "002",
+      "lectureId": 48878817,
+      "title": "Why Learn Java Collections Framework Before Functional Programming?",
+      "section": "Introduction",
+      "sectionIndex": 1,
+      "lectureIndex": 3,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-01/03-why-learn-java-collections-framework-before-functional-programming.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/functional-programming-notes/002-why-learn-java-collections-framework-before-functional-programming.md"
+    },
+    {
+      "noteNumber": "003",
+      "lectureId": 48811979,
+      "title": "Section Overview",
+      "section": "Introduction to Functional Programming",
+      "sectionIndex": 2,
+      "lectureIndex": 4,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-functional-programming/section-02/04-section-overview.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/functional-programming-notes/003-section-overview.md"
+    }
+  ]
+}

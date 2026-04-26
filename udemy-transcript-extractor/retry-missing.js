@@ -8,16 +8,25 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const COURSE_SLUG = 'java-collections-framework-core-advanced-interview-prep';
+const COURSE_SLUG = 'java-functional-programming';
 const BASE_DIR = path.join(__dirname, '..');
 const OUTPUT_DIR = path.join(BASE_DIR, 'transcripts', COURSE_SLUG);
 const ALL_TRANSCRIPTS_FILE = path.join(OUTPUT_DIR, 'all-transcripts.json');
 const USER_DATA_DIR = path.join(__dirname, 'chrome-profile');
 
-// The 2 missing lectures
+// Missing lectures from sections 1-29 (11 remaining)
 const MISSING_LECTURES = [
-  { id: 46747019, title: '3.9 TreeSet', sectionIndex: 3, index: 26 },
-  { id: 46747113, title: '7.4 Shifting Reversing and Roatating Operations in Collections', sectionIndex: 7, index: 55 }
+  { id: 47358071, title: 'Understanding Stream map() Method', sectionIndex: 17, index: 51 },
+  { id: 47358127, title: 'Understanding Stream flatMap Method', sectionIndex: 18, index: 55 },
+  { id: 47358155, title: 'Stream sorted() Method Example - Sort User By Age in Asc and Desc Order', sectionIndex: 19, index: 59 },
+  { id: 47358199, title: 'Stream collect() Method Example', sectionIndex: 20, index: 63 },
+  { id: 47358251, title: 'Stream forEach() Method with Example', sectionIndex: 21, index: 67 },
+  { id: 47358277, title: 'Java Stream skip() Method with Example', sectionIndex: 22, index: 71 },
+  { id: 47358285, title: 'Stream max() Method with Example', sectionIndex: 23, index: 75 },
+  { id: 48913737, title: "Method References and it's Types", sectionIndex: 26, index: 79 },
+  { id: 48813401, title: 'Java Stream Program to Find the Second Largest Number in the List of Integers', sectionIndex: 28, index: 83 },
+  { id: 48813451, title: 'Java Stream Program to Sort the List of Strings in Ascending & Descending Order', sectionIndex: 28, index: 89 },
+  { id: 48913333, title: 'Java Lambda Interview Questions and Answers', sectionIndex: 29, index: 93 },
 ];
 
 function sleep(ms) {
@@ -127,17 +136,26 @@ async function getTranscriptWithLongPlay(page, lectureId, title) {
 
   console.log(`\n  Navigating to lecture ${lectureId}: ${title}`);
 
-  try {
-    await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-  } catch (e) {
-    console.log(`  Navigation timeout, continuing...`);
-  }
-
-  await sleep(5000);
-  await page.waitForLoadState('networkidle').catch(() => {});
-
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     console.log(`\n  --- Attempt ${attempt}/${MAX_ATTEMPTS} ---`);
+
+    // Navigate to the lecture
+    try {
+      await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    } catch (e) {
+      console.log(`  Navigation timeout, continuing...`);
+    }
+    await sleep(3000);
+
+    // Hard refresh (Ctrl+Shift+R equivalent)
+    console.log(`  Hard refreshing page...`);
+    try {
+      await page.reload({ waitUntil: 'domcontentloaded', timeout: 30000 });
+    } catch (e) {
+      console.log(`  Reload timeout, continuing...`);
+    }
+    await sleep(5000);
+    await page.waitForLoadState('networkidle').catch(() => {});
 
     // Play the video
     console.log(`  Playing video...`);
@@ -154,9 +172,9 @@ async function getTranscriptWithLongPlay(page, lectureId, title) {
     }
     console.log(`  Video playing: ${playing}`);
 
-    // Let video play for 60 seconds
-    console.log(`  Letting video play for 60 seconds...`);
-    for (let i = 0; i < 6; i++) {
+    // Let video play for 20 seconds
+    console.log(`  Letting video play for 20 seconds...`);
+    for (let i = 0; i < 2; i++) {
       await sleep(10000);
       const currentTime = await page.evaluate(() => {
         const v = document.querySelector('video');
@@ -199,14 +217,6 @@ async function getTranscriptWithLongPlay(page, lectureId, title) {
     if (noTranscriptMsg) {
       console.log(`  ⛔ "No transcript" message detected — this lecture has no captions`);
       return null;
-    }
-
-    if (attempt < MAX_ATTEMPTS) {
-      console.log(`  Reloading page for next attempt...`);
-      try {
-        await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-      } catch (e) {}
-      await sleep(5000);
     }
   }
 

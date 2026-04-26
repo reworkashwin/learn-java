@@ -441,8 +441,16 @@ async function main() {
     let extracted = 0;
     let failed = [];
 
+    // Optional: limit extraction to sections up to MAX_SECTION
+    const MAX_SECTION = parseInt(process.env.MAX_SECTION || '999', 10);
+
     for (const lecture of lectures) {
       if (lecture.transcript) {
+        continue;
+      }
+
+      // Skip sections beyond the limit
+      if (lecture.sectionIndex > MAX_SECTION) {
         continue;
       }
 
