@@ -70,6 +70,21 @@ Pop  →  returns 8   →  Stack: [10]
 Pop  →  returns 10  →  Stack: []
 ```
 
+### 💻 Java code example
+
+```java
+Deque<Integer> stack = new ArrayDeque<>();
+stack.push(10);  // Stack: [10]
+stack.push(8);   // Stack: [8, 10]
+stack.push(12);  // Stack: [12, 8, 10]
+stack.push(4);   // Stack: [4, 12, 8, 10]
+
+System.out.println(stack.peek()); // 4 — view top without removing
+System.out.println(stack.pop());  // 4 — remove and return top
+System.out.println(stack.pop());  // 12
+System.out.println(stack.size()); // 2 — [8, 10] remain
+```
+
 ---
 
 ## Concept 4: Stack Memory — The Real-World Application

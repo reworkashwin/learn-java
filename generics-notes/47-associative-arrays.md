@@ -33,6 +33,20 @@ Each email (key) maps to exactly one user (value). Two users can't share the sam
 
 Because real-world data is naturally relational. IDs identify records, URLs identify pages, usernames identify accounts. Whenever you need to **look something up by a unique identifier**, you need an associative array.
 
+```java
+// Basic Map usage — the Java implementation of associative arrays
+Map<String, Integer> ages = new HashMap<>();
+ages.put("Alice", 30);    // insert key-value pair
+ages.put("Bob", 25);
+ages.put("Carol", 28);
+
+int age = ages.get("Bob");        // O(1) lookup → 25
+boolean has = ages.containsKey("Alice"); // O(1) → true
+ages.remove("Carol");              // O(1) removal
+
+System.out.println(ages); // {Alice=30, Bob=25}
+```
+
 ---
 
 ## Concept 2: The Quest for O(1) — Why Associative Arrays Exist

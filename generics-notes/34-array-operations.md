@@ -55,6 +55,15 @@ Step 2: Insert
 
 In the worst case (inserting at index 0), **every item** must shift. This is O(n).
 
+```java
+List<Integer> list = new ArrayList<>(List.of(12, 5, -7, 25));
+list.add(1, 20);  // insert 20 at index 1 → shifts 5, -7, 25 right
+System.out.println(list); // [12, 20, 5, -7, 25]
+
+list.add(0, 99);  // insert at beginning → shifts ALL elements
+System.out.println(list); // [99, 12, 20, 5, -7, 25]
+```
+
 ---
 
 ## Removing the Last Item — O(1)
@@ -89,6 +98,15 @@ Step 3: Shift left → [12, -7, 25]
 ```
 
 Items must remain contiguous — no gaps allowed. This is what makes arbitrary removal expensive.
+
+```java
+List<Integer> list = new ArrayList<>(List.of(12, 5, -7, 25));
+list.remove(Integer.valueOf(5));  // remove by value → find + shift
+System.out.println(list); // [12, -7, 25]
+
+list.remove(0);  // remove by index → shift all remaining elements left
+System.out.println(list); // [-7, 25]
+```
 
 ---
 

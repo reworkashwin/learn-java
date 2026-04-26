@@ -118,6 +118,16 @@ while (it.hasNext()) {
 }
 ```
 
+### Converting collections to arrays
+
+```java
+List<String> names = new ArrayList<>(List.of("Alice", "Bob"));
+String[] array = names.toArray(new String[0]); // List → String[]
+System.out.println(Arrays.toString(array));    // [Alice, Bob]
+```
+
+`toArray(new String[0])` converts any collection into a typed array. The `new String[0]` is a type hint — Java uses it to determine the array type, then allocates the right size internally.
+
 ---
 
 ## Choosing the Right Data Structure

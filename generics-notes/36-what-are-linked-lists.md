@@ -54,7 +54,24 @@ The last node's pointer points to `null`. This is how we know we've reached the 
 ```
 
 Each node stores the data and a reference to the next node's memory address.
+```java
+// A simple linked list node in Java:
+class Node<T> {
+    T data;
+    Node<T> next;
 
+    Node(T data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+// Building a chain manually:
+Node<Integer> head = new Node<>(5);
+head.next = new Node<>(20);
+head.next.next = new Node<>(3);
+// Result: 5 → 20 → 3 → null
+```
 ---
 
 ## The No-Shifting Advantage

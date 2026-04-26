@@ -145,5 +145,20 @@ Despite these challenges, hash tables remain the **fastest data structure on ave
 ## 💡 Pro Tips
 
 - If you know the approximate size of your data, set the **initial capacity** of the HashMap to avoid unnecessary resizes: `new HashMap<>(expectedSize)`
+
+```java
+// BAD — default capacity 16, resizes repeatedly as it grows
+Map<String, Integer> map = new HashMap<>();
+for (int i = 0; i < 10000; i++) {
+    map.put("key" + i, i); // triggers ~10 resizes internally
+}
+
+// GOOD — pre-sized, avoids most or all resizing
+Map<String, Integer> map = new HashMap<>(16000); // > 10000 / 0.75
+for (int i = 0; i < 10000; i++) {
+    map.put("key" + i, i); // no resizing needed
+}
+```
+
 - Java's default initial capacity is 16 with a load factor of 0.75 — the first resize happens at 12 items
 - You can customize the load factor: `new HashMap<>(capacity, loadFactor)` — a lower value trades memory for speed

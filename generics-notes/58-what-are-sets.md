@@ -32,7 +32,15 @@ Whenever you need a collection of **unique** elements:
 - Storing unique tags
 - Eliminating duplicates from data
 - Checking membership efficiently: "Is this item already in the collection?"
+```java
+Set<String> tags = new HashSet<>();
+tags.add("java");
+tags.add("generics");
+tags.add("java");       // duplicate — silently ignored
 
+System.out.println(tags.size());          // 2 (not 3)
+System.out.println(tags.contains("java")); // true — O(1) lookup
+```
 ---
 
 ## Concept 2: Set Implementations
@@ -94,6 +102,26 @@ Given:
 | **Relative complement** (A - B) | `{B, C}` | Items in A but **not** in B |
 
 These operations are commonly visualized using **Venn diagrams** — two overlapping circles where the overlap represents the intersection.
+
+```java
+Set<String> a = new HashSet<>(Set.of("A", "B", "C", "D"));
+Set<String> b = new HashSet<>(Set.of("A", "D", "F"));
+
+// Intersection (items in both)
+Set<String> intersection = new HashSet<>(a);
+intersection.retainAll(b);
+System.out.println(intersection); // [A, D]
+
+// Union (items in either)
+Set<String> union = new HashSet<>(a);
+union.addAll(b);
+System.out.println(union); // [A, B, C, D, F]
+
+// Difference (A - B)
+Set<String> diff = new HashSet<>(a);
+diff.removeAll(b);
+System.out.println(diff); // [B, C]
+```
 
 ---
 

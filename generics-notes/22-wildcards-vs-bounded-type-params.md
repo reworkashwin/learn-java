@@ -49,6 +49,16 @@ public static void process(List<? extends Number> list) {
 }
 ```
 
+```java
+// Demonstration: upper bounded wildcard is NOT immutable
+List<Integer> nums = new ArrayList<>(List.of(5, 2, 8, 1));
+List<? extends Number> ref = nums;
+
+// ref.add(10);      // ❌ Won't compile — can't add typed values
+ref.clear();          // ✅ Compiles and runs — list is now empty!
+System.out.println(nums); // [] — the original list was modified!
+```
+
 Upper bounded wildcards prevent adding **typed** items, but they don't make the list immutable. Operations like `clear()`, `remove()`, and `sort()` work because they don't introduce new typed elements into the collection — they only remove or rearrange existing elements, which is safe regardless of the unknown actual type. Adding `null` works because `null` is compatible with every reference type. Only inserting a new *typed* value is blocked, since the compiler can't verify it matches the list's actual type.
 
 ---

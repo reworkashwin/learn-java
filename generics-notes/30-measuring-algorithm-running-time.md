@@ -104,6 +104,25 @@ The running time grows **logarithmically** — much slower than linearly. Each s
 
 Instead of checking every element, binary search eliminates half the remaining elements each step. This is why it works in O(log n) time.
 
+```java
+// Binary search — O(log n)
+public static int binarySearch(int[] sorted, int target) {
+    int low = 0, high = sorted.length - 1;
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (sorted[mid] == target) return mid;       // found it
+        else if (sorted[mid] < target) low = mid + 1; // discard left half
+        else high = mid - 1;                          // discard right half
+    }
+    return -1; // not found
+}
+
+// With 1,000,000 items: at most ~20 comparisons (log₂(1,000,000) ≈ 20)
+// With 1,000,000,000 items: at most ~30 comparisons
+```
+
+Each iteration discards half the array. An array of 1 million elements needs at most ~20 steps, not 1 million.
+
 ---
 
 ## Comparing Growth Rates

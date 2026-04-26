@@ -68,6 +68,22 @@ Dequeue  →  returns 56  →  Queue: []
 
 First come, first served — every single time.
 
+### 💻 Java code example
+
+```java
+Queue<Integer> queue = new ArrayDeque<>();
+queue.offer(10);  // Queue: [10]
+queue.offer(6);   // Queue: [10, 6]
+queue.offer(18);  // Queue: [10, 6, 18]
+
+System.out.println(queue.peek());  // 10 — view front without removing
+System.out.println(queue.poll());  // 10 — remove and return front
+System.out.println(queue.poll());  // 6
+System.out.println(queue.size());  // 1 — [18] remains
+```
+
+`offer()` = enqueue, `poll()` = dequeue, `peek()` = view front. These methods return `null` on an empty queue instead of throwing an exception, making them safer than `add()`/`remove()`.
+
 ---
 
 ## Concept 4: Real-World Applications

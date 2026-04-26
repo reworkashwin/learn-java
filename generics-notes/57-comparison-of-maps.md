@@ -82,7 +82,22 @@ This resize operation is expensive, but it keeps future operations fast. The tra
 - **HashMap** — Default choice. Fastest on average. Use when order doesn't matter.
 - **LinkedHashMap** — When you need to preserve **insertion order** (e.g., caching, maintaining sequence).
 - **TreeMap** — When you need keys in **sorted order** or need range queries (`headMap()`, `tailMap()`, `subMap()`).
+```java
+// Same data, different ordering behavior:
+Map<String, Integer> hash = new HashMap<>();
+Map<String, Integer> linked = new LinkedHashMap<>();
+Map<String, Integer> tree = new TreeMap<>();
 
+for (Map<String, Integer> map : List.of(hash, linked, tree)) {
+    map.put("Charlie", 3);
+    map.put("Alice", 1);
+    map.put("Bob", 2);
+}
+
+System.out.println(hash);    // {Bob=2, Alice=1, Charlie=3} (unpredictable order)
+System.out.println(linked);  // {Charlie=3, Alice=1, Bob=2} (insertion order)
+System.out.println(tree);    // {Alice=1, Bob=2, Charlie=3} (sorted by key)
+```
 In the 21st century, memory is cheap. Speed is what matters for most applications. This is why `HashMap` is the most commonly used map implementation despite its higher memory overhead.
 
 ---

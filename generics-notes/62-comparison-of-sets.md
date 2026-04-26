@@ -63,6 +63,17 @@ However, `LinkedHashSet` uses the **most** memory overall because it has both th
 | Need range operations (headSet, tailSet) | **TreeSet** |
 | Memory is constrained | **TreeSet** |
 
+```java
+// Same data, different ordering behavior:
+Set<String> hash = new HashSet<>(List.of("Charlie", "Alice", "Bob"));
+Set<String> linked = new LinkedHashSet<>(List.of("Charlie", "Alice", "Bob"));
+Set<String> tree = new TreeSet<>(List.of("Charlie", "Alice", "Bob"));
+
+System.out.println(hash);    // [Bob, Alice, Charlie] (unpredictable order)
+System.out.println(linked);  // [Charlie, Alice, Bob] (insertion order)
+System.out.println(tree);    // [Alice, Bob, Charlie] (sorted alphabetically)
+```
+
 ---
 
 ## ✅ Key Takeaways

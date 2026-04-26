@@ -150,7 +150,22 @@ If you need **guaranteed** O(log n) performance even in the worst case, use a **
 - Assuming hash tables are always O(1) — worst case is O(n) due to collisions
 - Ignoring the impact of a bad hash function — it can turn a hash table into a linked list
 - Forgetting that open addressing has a capacity limit — when the array fills up, it must be resized
+You can observe collisions indirectly in Java by checking that two different keys produce the same bucket index:
 
+```java
+String key1 = "Aa";
+String key2 = "BB";
+// These two strings have the same hashCode in Java!
+System.out.println(key1.hashCode()); // 2112
+System.out.println(key2.hashCode()); // 2112
+
+Map<String, Integer> map = new HashMap<>();
+map.put(key1, 1);  // goes to bucket: 2112 % tableSize
+map.put(key2, 2);  // same bucket → collision → chained in linked list
+// Both entries coexist because equals() distinguishes them
+System.out.println(map.get("Aa")); // 1
+System.out.println(map.get("BB")); // 2
+```
 ## 💡 Pro Tips
 
 - Java's `HashMap` uses **chaining** (with linked lists that upgrade to balanced trees at 8+ items per bucket since Java 8)

@@ -47,7 +47,14 @@ You don't know the **concrete type** at compile time. With reflection, you can f
 
 ```java
 Class<?> clazz = v.getClass();
-System.out.println(clazz.getName()); // "com.example.Car" or "com.example.Bus"
+System.out.println(clazz.getName());          // "com.example.Car"
+System.out.println(clazz.getSimpleName());    // "Car"
+System.out.println(clazz.getSuperclass());    // class java.lang.Object
+System.out.println(clazz.getInterfaces()[0]); // interface Vehicle
+
+// You can also get a Class from a string:
+Class<?> fromName = Class.forName("com.example.Car");
+Object obj = fromName.getDeclaredConstructor().newInstance(); // creates a Car!
 ```
 
 Now you can inspect its methods, fields, and constructors — all at runtime.

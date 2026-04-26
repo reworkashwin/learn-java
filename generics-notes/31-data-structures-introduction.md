@@ -42,6 +42,17 @@ The same task can be incredibly fast or painfully slow depending on the data str
 
 Choosing the wrong data structure for your use case means your program works — but 100x or 1000x slower than it could.
 
+```java
+// Same task — checking if a value exists — vastly different performance:
+List<Integer> list = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+Set<Integer> set = new HashSet<>(List.of(1, 2, 3, 4, 5));
+
+list.contains(3); // O(n) — scans up to 5 elements
+set.contains(3);  // O(1) — one hash computation, done
+
+// With 1 million items, the difference is ~1,000,000x slower for the list!
+```
+
 ### 💡 Insight
 
 As a developer, your job isn't just to make things work — it's to make them work **efficiently**. Understanding data structures is what separates a beginner from an intermediate programmer.

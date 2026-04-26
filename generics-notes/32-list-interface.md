@@ -77,6 +77,17 @@ Because `List` extends `Collection` and `Iterable`, it inherits a rich set of me
 - `remove(int index)` — remove element at a given index
 - `subList(int from, int to)` — get a view of a portion of the list
 
+```java
+List<String> names = new ArrayList<>(List.of("Alice", "Bob", "Charlie", "Bob"));
+
+names.get(0);                // "Alice" — O(1) for ArrayList
+names.set(2, "Carol");       // replaces "Charlie" with "Carol"
+names.indexOf("Bob");        // 1 — first occurrence
+names.lastIndexOf("Bob");    // 3 — last occurrence
+names.remove(0);             // removes "Alice", shifts everything left
+names.subList(0, 2);         // [Bob, Carol] — a live view, not a copy
+```
+
 ---
 
 ## Iteration: Two Approaches

@@ -48,12 +48,13 @@ You MUST follow this **think-step protocol** for every content line in a file. T
 **For each bullet point, warning, comparison, recommendation, or explanation line:**
 
 1. **Read the line** — what does it claim?
-2. **Ask 5 questions** about it:
+2. **Ask 6 questions** about it:
    - Q1: "Could a beginner ask 'but why?' after reading this?" → If yes → **shallow explanation**
    - Q2: "Could a beginner ask 'how does that actually work internally?'" → If yes → **missing mechanism**
-   - Q3: "Would a code example or worked number make this click faster?" → If yes → **missing example**
+   - Q3: "Would a worked number or formula example make this concrete?" → If yes → **missing worked example**
    - Q4: "Does this use a term/acronym a beginner might not know?" → If yes → **jargon gap**
    - Q5: "Does this state an effect (keeps/ensures/prevents) without showing HOW?" → If yes → **missing causal link**
+   - Q6: "Would a small code snippet make this concept click instantly?" → If yes → **needs code example** (this is the most powerful improvement — a 3-5 line snippet often teaches more than a paragraph)
 3. **Check surrounding context** (5 lines before and after) — is the answer already there? If yes → skip. If no → flag it.
 4. **Record the gap** with: file, line number, exact text, which question it failed, suggested fix.
 
@@ -119,18 +120,32 @@ These are statements that tell the reader WHAT but not WHY or HOW.
 
 **How to check:** For each bullet point, ask: *"Could a beginner ask 'but why?' after reading this?"* If yes → it needs improvement.
 
-### Category 2: Missing Examples
+### Category 2: Missing Code Examples (HIGH PRIORITY)
+
+Code examples are the **single most effective improvement** for beginners. A 3-5 line snippet often teaches more than an entire paragraph of prose. Be aggressive about adding them.
 
 | Pattern | What's Missing | Fix |
 |---------|---------------|-----|
-| A concept explained only in prose | Code showing it in action | Add a small, focused code snippet |
+| A concept explained only in prose | Code showing it in action | Add a small, focused code snippet (3-8 lines) |
 | A code example without output | What the code actually produces | Add `// Output: ...` comments or a printed result |
 | A numeric value / formula / threshold | A worked calculation | Add concrete numbers: "e.g., array size 16 × 0.75 = resizes at 12 entries" |
-| A comparison claim without proof | Side-by-side demonstration | Add a code example or benchmark showing the difference |
-| An error/exception mentioned | Code that triggers it | Add a minimal snippet that reproduces the error |
-| A "fix" mentioned without code | The corrected version | Add the working code alongside the broken code |
+| A comparison claim ("X is faster than Y") | Side-by-side proof | Add a ❌ vs ✅ code pair showing both approaches |
+| An error/exception mentioned | Code that triggers it | Add a minimal ❌ snippet that reproduces the error |
+| A "fix" or "use X instead" without code | The corrected version | Add the ✅ working code alongside the ❌ broken code |
+| A behavioral difference described in words | Code proving it | Add a snippet where the reader can SEE the difference in output |
+| A method/API mentioned for the first time | How to call it | Add a usage example: `ClassName.method(args) // → result` |
+| A warning like "don't do X" | What X looks like | Add the bad code so the reader recognizes it in their own code |
+| An internal mechanism explained (e.g., modCount) | What the reader would observe | Add code showing the observable effect (the exception, the wrong output) |
 
-**How to check:** For each concept, ask: *"Would a code example make this click faster for a beginner?"* If yes → add one.
+**How to check:** For each concept, ask: *"If I remove the prose and leave only the code, would a beginner still understand 80% of this?"* If the answer is no because there's no code → add some.
+
+#### Code Example Quality Rules
+
+- **Keep examples minimal** — 3-8 lines, focused on ONE concept. Don't build full programs
+- **Always show output** — add `// Output: ...` or `// Throws: ...` comments
+- **Use ❌/✅ pairs for mistakes** — show the wrong way AND the right way together
+- **Use realistic variable names** — `names`, `scores`, `employeeMap` — not `a`, `b`, `x`
+- **Add a one-line comment explaining the key line** — e.g., `list.add("Alice"); // O(1) — appends to end of backing array`
 
 ### Category 3: Unexplained Jargon and Acronyms
 
@@ -187,12 +202,14 @@ These are statements that tell the reader WHAT but not WHY or HOW.
 ### Rules for Applying Fixes
 
 1. **NEVER delete or rewrite existing content** — only ADD to it
-2. **Keep additions concise** — 1-3 sentences per fix, not paragraphs
-3. **Match the existing tone** — conversational, mentor-like
-4. **Add inline** — put the explanation right after the statement it enhances
-5. **Use the same formatting** — if the file uses bold for emphasis, do the same
-6. **Don't add new sections** — enhance within existing sections
-7. **Don't add docstrings, comments, or type annotations to code you didn't change**
+2. **Keep prose additions concise** — 1-3 sentences per fix, not paragraphs
+3. **Code examples can be longer** — 3-8 lines of code with output comments is fine and encouraged
+4. **Match the existing tone** — conversational, mentor-like
+5. **Add inline** — put the explanation/example right after the statement it enhances
+6. **Use the same formatting** — if the file uses bold for emphasis, do the same
+7. **Don't add new sections** — enhance within existing sections
+8. **Don't add docstrings, comments, or type annotations to code you didn't change**
+9. **For code examples:** use ```java fenced blocks, realistic variable names, and always include output comments
 
 ### Batch Processing
 

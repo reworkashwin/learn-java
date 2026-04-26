@@ -80,6 +80,19 @@ Vector<String> vector = new Vector<>(5, 3);
 3. When the 6th item is inserted, Java resizes the array to `5 + 3 = 8`
 4. The next resize would go to `8 + 3 = 11`, and so on
 
+```java
+Vector<String> vector = new Vector<>(5, 3);
+System.out.println("Capacity: " + vector.capacity()); // 5
+
+for (int i = 0; i < 6; i++) vector.add("item" + i);
+System.out.println("Capacity: " + vector.capacity()); // 8 (5 + 3)
+
+for (int i = 6; i < 9; i++) vector.add("item" + i);
+System.out.println("Capacity: " + vector.capacity()); // 11 (8 + 3)
+```
+
+Compare with `ArrayList`, which has no `capacity()` method and always grows by ~50% (factor of 1.5x).
+
 This gives you finer control over memory allocation compared to the doubling strategy of `ArrayList`.
 
 ### 💡 Insight
