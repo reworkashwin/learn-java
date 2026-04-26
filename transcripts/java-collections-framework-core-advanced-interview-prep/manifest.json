@@ -1,0 +1,806 @@
+{
+  "courseSlug": "java-collections-framework-core-advanced-interview-prep",
+  "courseId": 6273317,
+  "notesDir": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes",
+  "transcriptsDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep",
+  "totalLectures": 76,
+  "totalWithTranscripts": 74,
+  "sections": [
+    {
+      "index": 1,
+      "title": "Module 1: Introduction to Collections",
+      "lectureCount": 6,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01"
+    },
+    {
+      "index": 2,
+      "title": "Module 2: Core Interfaces of the Collection Framework",
+      "lectureCount": 11,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02"
+    },
+    {
+      "index": 3,
+      "title": "Module 3: Collection Classes and Implementations",
+      "lectureCount": 11,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03"
+    },
+    {
+      "index": 4,
+      "title": "Module 4: Advanced Concepts",
+      "lectureCount": 9,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04"
+    },
+    {
+      "index": 5,
+      "title": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "lectureCount": 8,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05"
+    },
+    {
+      "index": 6,
+      "title": "Module 6: Concurrent Collections",
+      "lectureCount": 6,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06"
+    },
+    {
+      "index": 7,
+      "title": "Module 7: Algorithms and utilities in Collections",
+      "lectureCount": 7,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07"
+    },
+    {
+      "index": 8,
+      "title": "Module 8: Practical Examples and Use Cases",
+      "lectureCount": 5,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-08"
+    },
+    {
+      "index": 9,
+      "title": "Module 9: Collection Framework in Interviews",
+      "lectureCount": 13,
+      "transcriptDir": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09"
+    }
+  ],
+  "lectures": [
+    {
+      "noteNumber": "001",
+      "lectureId": 46742259,
+      "title": "1.1 Intorduction to collections",
+      "section": "Module 1: Introduction to Collections",
+      "sectionIndex": 1,
+      "lectureIndex": 1,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01/01-11-intorduction-to-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/001-11-intorduction-to-collections.md"
+    },
+    {
+      "noteNumber": "002",
+      "lectureId": 46746899,
+      "title": "1.2 Collection Framework Overview",
+      "section": "Module 1: Introduction to Collections",
+      "sectionIndex": 1,
+      "lectureIndex": 2,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01/02-12-collection-framework-overview.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/002-12-collection-framework-overview.md"
+    },
+    {
+      "noteNumber": "003",
+      "lectureId": 46746901,
+      "title": "1.3 Map Collection Hierarchy",
+      "section": "Module 1: Introduction to Collections",
+      "sectionIndex": 1,
+      "lectureIndex": 3,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01/03-13-map-collection-hierarchy.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/003-13-map-collection-hierarchy.md"
+    },
+    {
+      "noteNumber": "004",
+      "lectureId": 46746903,
+      "title": "1.4 Is Array Part of Coleection",
+      "section": "Module 1: Introduction to Collections",
+      "sectionIndex": 1,
+      "lectureIndex": 4,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01/04-14-is-array-part-of-coleection.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/004-14-is-array-part-of-coleection.md"
+    },
+    {
+      "noteNumber": "005",
+      "lectureId": 46746913,
+      "title": "1.5 Benefits of Using Collections",
+      "section": "Module 1: Introduction to Collections",
+      "sectionIndex": 1,
+      "lectureIndex": 5,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01/05-15-benefits-of-using-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/005-15-benefits-of-using-collections.md"
+    },
+    {
+      "noteNumber": "006",
+      "lectureId": 46746915,
+      "title": "1.6 Generics in Collection",
+      "section": "Module 1: Introduction to Collections",
+      "sectionIndex": 1,
+      "lectureIndex": 6,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-01/06-16-generics-in-collection.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/006-16-generics-in-collection.md"
+    },
+    {
+      "noteNumber": "007",
+      "lectureId": 46746925,
+      "title": "2.1 Introduction to Core Interfaces of The Collection Framework",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 7,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/07-21-introduction-to-core-interfaces-of-the-collection-framework.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/007-21-introduction-to-core-interfaces-of-the-collection-framework.md"
+    },
+    {
+      "noteNumber": "008",
+      "lectureId": 46746929,
+      "title": "2.2 Iterable Interface Part 1 - Iterator and it's methods",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 8,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/08-22-iterable-interface-part-1---iterator-and-its-methods.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/008-22-iterable-interface-part-1---iterator-and-its-methods.md"
+    },
+    {
+      "noteNumber": "009",
+      "lectureId": 46746931,
+      "title": "2.3 Iterable Part 2 - forEach () Method",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 9,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/09-23-iterable-part-2---foreach-method.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/009-23-iterable-part-2---foreach-method.md"
+    },
+    {
+      "noteNumber": "010",
+      "lectureId": 46746933,
+      "title": "2.4 Iterable Part 3 - spliterator () Method and Spliterator Interface",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 10,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/10-24-iterable-part-3---spliterator-method-and-spliterator-interface.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/010-24-iterable-part-3---spliterator-method-and-spliterator-interface.md"
+    },
+    {
+      "noteNumber": "011",
+      "lectureId": 46746939,
+      "title": "2.5 Collection Interface",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 11,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/11-25-collection-interface.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/011-25-collection-interface.md"
+    },
+    {
+      "noteNumber": "012",
+      "lectureId": 46746967,
+      "title": "2.6 List Interface Part 1",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 12,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/12-26-list-interface-part-1.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/012-26-list-interface-part-1.md"
+    },
+    {
+      "noteNumber": "013",
+      "lectureId": 46746971,
+      "title": "2.7 List Interface Part2 - clear(), equals(), get(), set()",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 13,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/13-27-list-interface-part2---clear-equals-get-set.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/013-27-list-interface-part2---clear-equals-get-set.md"
+    },
+    {
+      "noteNumber": "014",
+      "lectureId": 46746975,
+      "title": "2.8 List Interface Part 3",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 14,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/14-28-list-interface-part-3.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/014-28-list-interface-part-3.md"
+    },
+    {
+      "noteNumber": "015",
+      "lectureId": 46746979,
+      "title": "2.9 Set Interface",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 15,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/15-29-set-interface.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/015-29-set-interface.md"
+    },
+    {
+      "noteNumber": "016",
+      "lectureId": 46746981,
+      "title": "2.10 Queue Interface",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 16,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/16-210-queue-interface.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/016-210-queue-interface.md"
+    },
+    {
+      "noteNumber": "017",
+      "lectureId": 46746985,
+      "title": "2.11 Map Interface",
+      "section": "Module 2: Core Interfaces of the Collection Framework",
+      "sectionIndex": 2,
+      "lectureIndex": 17,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-02/17-211-map-interface.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/017-211-map-interface.md"
+    },
+    {
+      "noteNumber": "018",
+      "lectureId": 46746989,
+      "title": "3.1 Intro to Collection Classes",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 18,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/18-31-intro-to-collection-classes.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/018-31-intro-to-collection-classes.md"
+    },
+    {
+      "noteNumber": "019",
+      "lectureId": 46746993,
+      "title": "3.2 ArrayList Implementation",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 19,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/19-32-arraylist-implementation.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/019-32-arraylist-implementation.md"
+    },
+    {
+      "noteNumber": "020",
+      "lectureId": 46746997,
+      "title": "3.3 LinkedList Implementation",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 20,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/20-33-linkedlist-implementation.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/020-33-linkedlist-implementation.md"
+    },
+    {
+      "noteNumber": "021",
+      "lectureId": 46747001,
+      "title": "3.4 LinkedList Queue Operations",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 21,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/21-34-linkedlist-queue-operations.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/021-34-linkedlist-queue-operations.md"
+    },
+    {
+      "noteNumber": "022",
+      "lectureId": 46747007,
+      "title": "3.5 Vector and Stack",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 22,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/22-35-vector-and-stack.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/022-35-vector-and-stack.md"
+    },
+    {
+      "noteNumber": "023",
+      "lectureId": 46747011,
+      "title": "3.6 Synchronization in Vector and Stack",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 23,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/23-36-synchronization-in-vector-and-stack.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/023-36-synchronization-in-vector-and-stack.md"
+    },
+    {
+      "noteNumber": "024",
+      "lectureId": 46747015,
+      "title": "3.7 Difference Between ArrayList and Vector",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 24,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/24-37-difference-between-arraylist-and-vector.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/024-37-difference-between-arraylist-and-vector.md"
+    },
+    {
+      "noteNumber": "025",
+      "lectureId": 46747017,
+      "title": "3.8 HashSet and LinkedHashSet",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 25,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/25-38-hashset-and-linkedhashset.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/025-38-hashset-and-linkedhashset.md"
+    },
+    {
+      "noteNumber": "026",
+      "lectureId": 46747023,
+      "title": "3.10 Priority Queue",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 27,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/27-310-priority-queue.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/026-310-priority-queue.md"
+    },
+    {
+      "noteNumber": "027",
+      "lectureId": 46747029,
+      "title": "3.11 Deque Implementations",
+      "section": "Module 3: Collection Classes and Implementations",
+      "sectionIndex": 3,
+      "lectureIndex": 28,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-03/28-311-deque-implementations.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/027-311-deque-implementations.md"
+    },
+    {
+      "noteNumber": "028",
+      "lectureId": 46747039,
+      "title": "4.1 Intro to Advanced Concepts in Java Collection Framework",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 29,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/29-41-intro-to-advanced-concepts-in-java-collection-framework.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/028-41-intro-to-advanced-concepts-in-java-collection-framework.md"
+    },
+    {
+      "noteNumber": "029",
+      "lectureId": 46747045,
+      "title": "4.2  Iterator and List Iterator",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 30,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/30-42-iterator-and-list-iterator.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/029-42-iterator-and-list-iterator.md"
+    },
+    {
+      "noteNumber": "030",
+      "lectureId": 46747049,
+      "title": "4.3 Differences Between Iterator and List Iterator",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 31,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/31-43-differences-between-iterator-and-list-iterator.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/030-43-differences-between-iterator-and-list-iterator.md"
+    },
+    {
+      "noteNumber": "031",
+      "lectureId": 46747057,
+      "title": "4.4 FileFast and FileSafe Iterators",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 32,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/32-44-filefast-and-filesafe-iterators.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/031-44-filefast-and-filesafe-iterators.md"
+    },
+    {
+      "noteNumber": "032",
+      "lectureId": 46747059,
+      "title": "4.5 Comparators and Comparables",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 33,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/33-45-comparators-and-comparables.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/032-45-comparators-and-comparables.md"
+    },
+    {
+      "noteNumber": "033",
+      "lectureId": 46747063,
+      "title": "4.6 Synchronized Collection",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 34,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/34-46-synchronized-collection.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/033-46-synchronized-collection.md"
+    },
+    {
+      "noteNumber": "034",
+      "lectureId": 46747067,
+      "title": "4.7 Performance Consideration of Synchronized Collections",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 35,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/35-47-performance-consideration-of-synchronized-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/034-47-performance-consideration-of-synchronized-collections.md"
+    },
+    {
+      "noteNumber": "035",
+      "lectureId": 46747071,
+      "title": "4.8 Concurrent Collections",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 36,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/36-48-concurrent-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/035-48-concurrent-collections.md"
+    },
+    {
+      "noteNumber": "036",
+      "lectureId": 46747073,
+      "title": "4.9 Immutable Collections",
+      "section": "Module 4: Advanced Concepts",
+      "sectionIndex": 4,
+      "lectureIndex": 37,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-04/37-49-immutable-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/036-49-immutable-collections.md"
+    },
+    {
+      "noteNumber": "037",
+      "lectureId": 46747285,
+      "title": "5.1 Intro to Java 8 Enhancements to Collections",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 38,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/38-51-intro-to-java-8-enhancements-to-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/037-51-intro-to-java-8-enhancements-to-collections.md"
+    },
+    {
+      "noteNumber": "038",
+      "lectureId": 46777391,
+      "title": "5.2 Introduction to Stream API",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 39,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/39-52-introduction-to-stream-api.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/038-52-introduction-to-stream-api.md"
+    },
+    {
+      "noteNumber": "039",
+      "lectureId": 46777399,
+      "title": "5.3  Intermediate and Terminal Operations",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 40,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/40-53-intermediate-and-terminal-operations.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/039-53-intermediate-and-terminal-operations.md"
+    },
+    {
+      "noteNumber": "040",
+      "lectureId": 46777401,
+      "title": "5.4 Parallel Streams",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 41,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/41-54-parallel-streams.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/040-54-parallel-streams.md"
+    },
+    {
+      "noteNumber": "041",
+      "lectureId": 46793275,
+      "title": "5.5 ForEach in Java 8",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 42,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/42-55-foreach-in-java-8.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/041-55-foreach-in-java-8.md"
+    },
+    {
+      "noteNumber": "042",
+      "lectureId": 46777403,
+      "title": "5.6 Internal vs External Iteration",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 43,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/43-56-internal-vs-external-iteration.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/042-56-internal-vs-external-iteration.md"
+    },
+    {
+      "noteNumber": "043",
+      "lectureId": 46777405,
+      "title": "5.7 Collectors Class Overview",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 44,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/44-57-collectors-class-overview.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/043-57-collectors-class-overview.md"
+    },
+    {
+      "noteNumber": "044",
+      "lectureId": 46777407,
+      "title": "5.8 Lambda Experessions",
+      "section": "Module 5: Java 8 Enhancements to CollectionsStream API",
+      "sectionIndex": 5,
+      "lectureIndex": 45,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-05/45-58-lambda-experessions.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/044-58-lambda-experessions.md"
+    },
+    {
+      "noteNumber": "045",
+      "lectureId": 46747083,
+      "title": "6.1 Intro to Concurrent Collections",
+      "section": "Module 6: Concurrent Collections",
+      "sectionIndex": 6,
+      "lectureIndex": 46,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06/46-61-intro-to-concurrent-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/045-61-intro-to-concurrent-collections.md"
+    },
+    {
+      "noteNumber": "046",
+      "lectureId": 46747085,
+      "title": "6.2 Concurrent HashMap",
+      "section": "Module 6: Concurrent Collections",
+      "sectionIndex": 6,
+      "lectureIndex": 47,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06/47-62-concurrent-hashmap.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/046-62-concurrent-hashmap.md"
+    },
+    {
+      "noteNumber": "047",
+      "lectureId": 46747087,
+      "title": "6.3 CopyOnWriteArrayList",
+      "section": "Module 6: Concurrent Collections",
+      "sectionIndex": 6,
+      "lectureIndex": 48,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06/48-63-copyonwritearraylist.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/047-63-copyonwritearraylist.md"
+    },
+    {
+      "noteNumber": "048",
+      "lectureId": 46747093,
+      "title": "6.4 CopyOnWriteArraySet",
+      "section": "Module 6: Concurrent Collections",
+      "sectionIndex": 6,
+      "lectureIndex": 49,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06/49-64-copyonwritearrayset.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/048-64-copyonwritearrayset.md"
+    },
+    {
+      "noteNumber": "049",
+      "lectureId": 46747095,
+      "title": "6.5 BloackingQueue Interface and its implementations",
+      "section": "Module 6: Concurrent Collections",
+      "sectionIndex": 6,
+      "lectureIndex": 50,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06/50-65-bloackingqueue-interface-and-its-implementations.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/049-65-bloackingqueue-interface-and-its-implementations.md"
+    },
+    {
+      "noteNumber": "050",
+      "lectureId": 46747097,
+      "title": "6.6 ConcurrentLinkedQueue and ConcurrentLinkedDeque",
+      "section": "Module 6: Concurrent Collections",
+      "sectionIndex": 6,
+      "lectureIndex": 51,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-06/51-66-concurrentlinkedqueue-and-concurrentlinkeddeque.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/050-66-concurrentlinkedqueue-and-concurrentlinkeddeque.md"
+    },
+    {
+      "noteNumber": "051",
+      "lectureId": 46747099,
+      "title": "7.1 Introduction to Algorithms and Utilities in Collections",
+      "section": "Module 7: Algorithms and utilities in Collections",
+      "sectionIndex": 7,
+      "lectureIndex": 52,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07/52-71-introduction-to-algorithms-and-utilities-in-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/051-71-introduction-to-algorithms-and-utilities-in-collections.md"
+    },
+    {
+      "noteNumber": "052",
+      "lectureId": 46747101,
+      "title": "7.2 Sorting in Collections",
+      "section": "Module 7: Algorithms and utilities in Collections",
+      "sectionIndex": 7,
+      "lectureIndex": 53,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07/53-72-sorting-in-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/052-72-sorting-in-collections.md"
+    },
+    {
+      "noteNumber": "053",
+      "lectureId": 46747107,
+      "title": "7.3 Searching (linear Search vs Binary Search)",
+      "section": "Module 7: Algorithms and utilities in Collections",
+      "sectionIndex": 7,
+      "lectureIndex": 54,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07/54-73-searching-linear-search-vs-binary-search.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/053-73-searching-linear-search-vs-binary-search.md"
+    },
+    {
+      "noteNumber": "054",
+      "lectureId": 46747117,
+      "title": "7.5 Frequency and Disjoint Methods in Collections",
+      "section": "Module 7: Algorithms and utilities in Collections",
+      "sectionIndex": 7,
+      "lectureIndex": 56,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07/56-75-frequency-and-disjoint-methods-in-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/054-75-frequency-and-disjoint-methods-in-collections.md"
+    },
+    {
+      "noteNumber": "055",
+      "lectureId": 46747121,
+      "title": "7.6 Copying and Filling in Collections",
+      "section": "Module 7: Algorithms and utilities in Collections",
+      "sectionIndex": 7,
+      "lectureIndex": 57,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07/57-76-copying-and-filling-in-collections.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/055-76-copying-and-filling-in-collections.md"
+    },
+    {
+      "noteNumber": "056",
+      "lectureId": 46747127,
+      "title": "7.7 Arrays Class in Java",
+      "section": "Module 7: Algorithms and utilities in Collections",
+      "sectionIndex": 7,
+      "lectureIndex": 58,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-07/58-77-arrays-class-in-java.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/056-77-arrays-class-in-java.md"
+    },
+    {
+      "noteNumber": "057",
+      "lectureId": 46747143,
+      "title": "8.1 Managing a To-Do List with List Implementation",
+      "section": "Module 8: Practical Examples and Use Cases",
+      "sectionIndex": 8,
+      "lectureIndex": 59,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-08/59-81-managing-a-to-do-list-with-list-implementation.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/057-81-managing-a-to-do-list-with-list-implementation.md"
+    },
+    {
+      "noteNumber": "058",
+      "lectureId": 46747147,
+      "title": "8.2 Caching Mechanism in Maps",
+      "section": "Module 8: Practical Examples and Use Cases",
+      "sectionIndex": 8,
+      "lectureIndex": 60,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-08/60-82-caching-mechanism-in-maps.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/058-82-caching-mechanism-in-maps.md"
+    },
+    {
+      "noteNumber": "059",
+      "lectureId": 46747153,
+      "title": "8.3 TaskSheduling Using PriorityQueue",
+      "section": "Module 8: Practical Examples and Use Cases",
+      "sectionIndex": 8,
+      "lectureIndex": 61,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-08/61-83-tasksheduling-using-priorityqueue.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/059-83-tasksheduling-using-priorityqueue.md"
+    },
+    {
+      "noteNumber": "060",
+      "lectureId": 46747159,
+      "title": "8.4 Maintaining Unique User Sessions with Set Implementations",
+      "section": "Module 8: Practical Examples and Use Cases",
+      "sectionIndex": 8,
+      "lectureIndex": 62,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-08/62-84-maintaining-unique-user-sessions-with-set-implementations.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/060-84-maintaining-unique-user-sessions-with-set-implementations.md"
+    },
+    {
+      "noteNumber": "061",
+      "lectureId": 46747161,
+      "title": "8.5 Common Pitfalls and Best Practices",
+      "section": "Module 8: Practical Examples and Use Cases",
+      "sectionIndex": 8,
+      "lectureIndex": 63,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-08/63-85-common-pitfalls-and-best-practices.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/061-85-common-pitfalls-and-best-practices.md"
+    },
+    {
+      "noteNumber": "062",
+      "lectureId": 46747177,
+      "title": "9.1 Introduction to Collections in Interviews",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 64,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/64-91-introduction-to-collections-in-interviews.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/062-91-introduction-to-collections-in-interviews.md"
+    },
+    {
+      "noteNumber": "063",
+      "lectureId": 46747179,
+      "title": "9.2 How does ConcurrentHashMap achieve thread-safety without locking the entire",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 65,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/65-92-how-does-concurrenthashmap-achieve-thread-safety-without-locking-the-entire.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/063-92-how-does-concurrenthashmap-achieve-thread-safety-without-locking-the-entire.md"
+    },
+    {
+      "noteNumber": "064",
+      "lectureId": 46747183,
+      "title": "9.3 What is the internal difference between HashMap and LinkedHashMap",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 66,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/66-93-what-is-the-internal-difference-between-hashmap-and-linkedhashmap.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/064-93-what-is-the-internal-difference-between-hashmap-and-linkedhashmap.md"
+    },
+    {
+      "noteNumber": "065",
+      "lectureId": 46747185,
+      "title": "9.4 How does the TreeMap handle element comparisons",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 67,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/67-94-how-does-the-treemap-handle-element-comparisons.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/065-94-how-does-the-treemap-handle-element-comparisons.md"
+    },
+    {
+      "noteNumber": "066",
+      "lectureId": 46747191,
+      "title": "9.5 Weak references in WeakHashMap, and how do they affect garbage collection",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 68,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/68-95-weak-references-in-weakhashmap-and-how-do-they-affect-garbage-collection.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/066-95-weak-references-in-weakhashmap-and-how-do-they-affect-garbage-collection.md"
+    },
+    {
+      "noteNumber": "067",
+      "lectureId": 46747201,
+      "title": "9.6 Difference between a CopyOnWriteArrayList and a regular ArrayList",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 69,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/69-96-difference-between-a-copyonwritearraylist-and-a-regular-arraylist.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/067-96-difference-between-a-copyonwritearraylist-and-a-regular-arraylist.md"
+    },
+    {
+      "noteNumber": "068",
+      "lectureId": 46747203,
+      "title": "9.7. How does LinkedHashSet maintain order, and how does it differ from HashSet",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 70,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/70-97-how-does-linkedhashset-maintain-order-and-how-does-it-differ-from-hashset.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/068-97-how-does-linkedhashset-maintain-order-and-how-does-it-differ-from-hashset.md"
+    },
+    {
+      "noteNumber": "069",
+      "lectureId": 46747207,
+      "title": "9.8. How does the NavigableMap interface extend the capabilities of SortedMap",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 71,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/71-98-how-does-the-navigablemap-interface-extend-the-capabilities-of-sortedmap.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/069-98-how-does-the-navigablemap-interface-extend-the-capabilities-of-sortedmap.md"
+    },
+    {
+      "noteNumber": "070",
+      "lectureId": 46747211,
+      "title": "9.9 Java List Hacker Rank Challenge",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 72,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/72-99-java-list-hacker-rank-challenge.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/070-99-java-list-hacker-rank-challenge.md"
+    },
+    {
+      "noteNumber": "071",
+      "lectureId": 46747213,
+      "title": "9.10 Java ArrayList Hacker Rank Challenge",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 73,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/73-910-java-arraylist-hacker-rank-challenge.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/071-910-java-arraylist-hacker-rank-challenge.md"
+    },
+    {
+      "noteNumber": "072",
+      "lectureId": 46747223,
+      "title": "9.11 Java HashSet Hacker Rank Challenge",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 74,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/74-911-java-hashset-hacker-rank-challenge.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/072-911-java-hashset-hacker-rank-challenge.md"
+    },
+    {
+      "noteNumber": "073",
+      "lectureId": 46747227,
+      "title": "9.12 Java Deque Hacker Rank Challenge",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 75,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/75-912-java-deque-hacker-rank-challenge.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/073-912-java-deque-hacker-rank-challenge.md"
+    },
+    {
+      "noteNumber": "074",
+      "lectureId": 46747231,
+      "title": "9.13 Java Map Hacker Rank Challenge",
+      "section": "Module 9: Collection Framework in Interviews",
+      "sectionIndex": 9,
+      "lectureIndex": 76,
+      "transcriptFile": "/Users/ashwin-14876/MyFiles/learn-java/transcripts/java-collections-framework-core-advanced-interview-prep/section-09/76-913-java-map-hacker-rank-challenge.txt",
+      "noteFile": "/Users/ashwin-14876/MyFiles/learn-java/collections-notes/074-913-java-map-hacker-rank-challenge.md"
+    }
+  ]
+}

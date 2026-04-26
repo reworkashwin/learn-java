@@ -48,40 +48,51 @@ function sleep(ms) {
 // ─── Login ───────────────────────────────────────────────────────────────────
 async function login(page) {
   console.log('Navigating to Udemy...');
-  await page.goto(`https://www.udemy.com/course/${COURSE_SLUG}/`);
+  try {
+    await page.goto(`https://www.udemy.com/course/${COURSE_SLUG}/`, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  } catch (e) {
+    console.log('Initial navigation had issues, continuing...');
+  }
   await sleep(3000);
   await page.waitForLoadState('networkidle').catch(() => {});
 
-  // Check if already logged in by looking for enrolled course access
+  // Check if already logged in - try multiple signals
+  const currentUrl = page.url();
   const loggedIn = await page.evaluate(() => {
     return document.cookie.includes('access_token') || 
            !!document.querySelector('[data-purpose="user-dropdown"]') ||
-           !!document.querySelector('[class*="logged-in"]');
+           !!document.querySelector('[class*="logged-in"]') ||
+           !!document.querySelector('[data-purpose="header-login"]') === false;
   });
 
-  if (loggedIn) {
-    console.log('Already logged in!');
-    return true;
+  // Also check if we're on the course landing page (which means logged in and enrolled)
+  if (loggedIn || currentUrl.includes('udemy.com/course/')) {
+    // Try to verify by checking if we can access the API
+    const apiCheck = await page.evaluate(async (slug) => {
+      try {
+        const resp = await fetch(`/api-2.0/courses/${slug}/?fields[course]=id`);
+        return resp.ok;
+      } catch (e) { return false; }
+    }, COURSE_SLUG);
+
+    if (apiCheck) {
+      console.log('Already logged in!');
+      return true;
+    }
   }
 
-  // Navigate to login page
-  console.log('Need to log in...');
-  await page.goto('https://www.udemy.com/join/login-popup/');
-  await sleep(2000);
-
-  const emailInput = page.locator('input[name="email"], input[type="email"]');
-  await emailInput.waitFor({ state: 'visible', timeout: 15000 });
-  
+  // If we end up on a login/signup page, wait for user to log in manually
   console.log('\n========================================');
   console.log('BROWSER WINDOW IS OPEN');
-  console.log('Please log in manually (email + code/password)');
-  console.log('The script will continue once you are on the course page');
+  console.log('Please log in manually if needed');
+  console.log('The script will continue once you are logged in');
   console.log('========================================\n');
 
   // Wait for the user to complete login — watch for course page or dashboard
   await page.waitForURL(url => {
     const href = url.toString();
-    return href.includes('/learn/') || href.includes('/home/') || href.includes('/my-courses/');
+    return (href.includes('udemy.com/course/') && !href.includes('/join/')) || 
+           href.includes('/learn/') || href.includes('/home/') || href.includes('/my-courses/');
   }, { timeout: 300000 }); // 5 minutes
 
   await sleep(2000);
@@ -173,46 +184,9 @@ async function getCurriculum(page, courseId) {
   return allItems;
 }
 
-// ─── Get Transcript ──────────────────────────────────────────────────────────
-async function getTranscript(page, lectureId) {
-  const lectureUrl = `https://www.udemy.com/course/${COURSE_SLUG}/learn/lecture/${lectureId}`;
-
-  try {
-    await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-  } catch (e) {
-    console.log(`  Navigation timeout for lecture ${lectureId}, continuing...`);
-  }
-
-  await sleep(3000);
-
-  // Open transcript panel
-  try {
-    const transcriptBtn = page.getByRole('button', { name: 'Transcript in sidebar region' });
-    if (await transcriptBtn.isVisible({ timeout: 5000 })) {
-      await transcriptBtn.click();
-      await sleep(2000);
-    }
-  } catch (e) {
-    try {
-      const transcriptTab = page.getByRole('tab', { name: 'Transcript' });
-      if (await transcriptTab.isVisible({ timeout: 2000 })) {
-        await transcriptTab.click();
-        await sleep(2000);
-      }
-    } catch (e2) {
-      return null;
-    }
-  }
-
-  await sleep(2000);
-
-  try {
-    await page.waitForSelector('[class*="transcript--cue-container"]', { timeout: 5000 });
-  } catch (e) {}
-  await sleep(1000);
-
-  // Extract transcript text
-  const transcript = await page.evaluate(() => {
+// ─── Extract transcript text from page ───────────────────────────────────────
+async function extractTranscriptText(page) {
+  return await page.evaluate(() => {
     const cues = document.querySelectorAll('[class*="transcript--cue-container"]');
     if (cues.length > 0) {
       const texts = Array.from(cues).map(c => {
@@ -239,8 +213,118 @@ async function getTranscript(page, lectureId) {
 
     return null;
   });
+}
 
-  return transcript;
+// ─── Try to open the transcript panel ────────────────────────────────────────
+async function openTranscriptPanel(page) {
+  // Method 1: Button with "Transcript in sidebar region"
+  try {
+    const transcriptBtn = page.getByRole('button', { name: 'Transcript in sidebar region' });
+    if (await transcriptBtn.isVisible({ timeout: 3000 })) {
+      await transcriptBtn.click();
+      await sleep(2000);
+      return true;
+    }
+  } catch (e) {}
+
+  // Method 2: Tab named "Transcript"
+  try {
+    const transcriptTab = page.getByRole('tab', { name: 'Transcript' });
+    if (await transcriptTab.isVisible({ timeout: 2000 })) {
+      await transcriptTab.click();
+      await sleep(2000);
+      return true;
+    }
+  } catch (e) {}
+
+  // Method 3: Any clickable element with "Transcript" text
+  try {
+    const transcriptEl = page.locator('button:has-text("Transcript"), [role="tab"]:has-text("Transcript"), [data-purpose*="transcript"]');
+    if (await transcriptEl.first().isVisible({ timeout: 2000 })) {
+      await transcriptEl.first().click();
+      await sleep(2000);
+      return true;
+    }
+  } catch (e) {}
+
+  return false;
+}
+
+// ─── Play the video ──────────────────────────────────────────────────────────
+async function playVideo(page) {
+  try {
+    // Try clicking play button
+    const playBtn = page.locator('[data-purpose="play-button"], button[aria-label="Play"], button[aria-label="play"]');
+    if (await playBtn.first().isVisible({ timeout: 3000 })) {
+      await playBtn.first().click();
+      return true;
+    }
+  } catch (e) {}
+
+  try {
+    // Try clicking the video element itself
+    const video = page.locator('video');
+    if (await video.first().isVisible({ timeout: 2000 })) {
+      await video.first().click();
+      return true;
+    }
+  } catch (e) {}
+
+  // Try pressing space to play
+  try {
+    await page.keyboard.press('Space');
+    return true;
+  } catch (e) {}
+
+  return false;
+}
+
+// ─── Get Transcript ──────────────────────────────────────────────────────────
+async function getTranscript(page, lectureId) {
+  const lectureUrl = `https://www.udemy.com/course/${COURSE_SLUG}/learn/lecture/${lectureId}`;
+  const MAX_ATTEMPTS = 3;
+
+  try {
+    await page.goto(lectureUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  } catch (e) {
+    console.log(`  Navigation timeout for lecture ${lectureId}, continuing...`);
+  }
+
+  // Wait for page to fully load
+  await sleep(5000);
+  await page.waitForLoadState('networkidle').catch(() => {});
+
+  // Play the video first to trigger transcript loading
+  console.log(`    Playing video...`);
+  await playVideo(page);
+  await sleep(3000);
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    // Try to open the transcript panel
+    const opened = await openTranscriptPanel(page);
+
+    if (opened) {
+      // Wait for transcript content to appear
+      try {
+        await page.waitForSelector('[class*="transcript--cue-container"]', { timeout: 8000 });
+      } catch (e) {}
+      await sleep(2000);
+
+      const transcript = await extractTranscriptText(page);
+      if (transcript && transcript.length > 50) {
+        return transcript;
+      }
+    }
+
+    if (attempt < MAX_ATTEMPTS) {
+      console.log(`    Attempt ${attempt} failed, letting video play more...`);
+      // Let video play a bit more and retry
+      await playVideo(page);
+      await sleep(5000);
+    }
+  }
+
+  return null;
 }
 
 // ─── Retry failed transcripts ────────────────────────────────────────────────
@@ -344,17 +428,26 @@ async function main() {
       } catch (e) {}
     }
 
-    let extracted = 0;
+    // Preload ALL existing transcripts onto lecture objects before iterating
+    // This prevents data loss in progressive saves (which dump all lectures)
     let skipped = 0;
-
     for (const lecture of lectures) {
       if (existingData.lectures && existingData.lectures[lecture.id] && existingData.lectures[lecture.id].transcript) {
         lecture.transcript = existingData.lectures[lecture.id].transcript;
         skipped++;
+      }
+    }
+
+    let extracted = 0;
+    let failed = [];
+
+    for (const lecture of lectures) {
+      if (lecture.transcript) {
         continue;
       }
 
-      console.log(`[${extracted + skipped + 1}/${lectures.length}] S${lecture.sectionIndex}.${lecture.index}: ${lecture.title}`);
+      const currentNum = extracted + skipped + failed.length + 1;
+      console.log(`[${currentNum}/${lectures.length}] S${lecture.sectionIndex}.${lecture.index}: ${lecture.title}`);
 
       const transcript = await getTranscript(page, lecture.id);
 
@@ -363,8 +456,13 @@ async function main() {
         extracted++;
         console.log(`  ✅ Got transcript (${transcript.length} chars)`);
       } else {
-        console.log(`  ⚠️  No transcript available`);
+        failed.push({ id: lecture.id, title: lecture.title, section: lecture.section, sectionIndex: lecture.sectionIndex, index: lecture.index });
+        console.log(`  ⚠️  No transcript available after ${3} attempts`);
       }
+
+      // Print running tracker
+      const totalDone = extracted + skipped + failed.length;
+      console.log(`  📊 Progress: ${totalDone}/${lectures.length} | ✅ ${extracted + skipped} transcripts | ❌ ${failed.length} missing\n`);
 
       // Save progress after each lecture
       const saveData = {
@@ -425,6 +523,20 @@ async function main() {
     console.log(`  Skipped (already had): ${skipped}`);
     console.log(`  Saved to: ${ALL_TRANSCRIPTS_FILE}`);
     console.log(`========================================\n`);
+
+    // Print detailed tracking per section
+    console.log('─── DETAILED TRACKING ───────────────────');
+    for (const section of sections) {
+      const withTranscript = section.lectures.filter(l => l.transcript).length;
+      const total = section.lectures.length;
+      console.log(`\n📁 Section ${section.index}: ${section.title} (${withTranscript}/${total})`);
+      for (const lecture of section.lectures) {
+        const status = lecture.transcript ? '✅' : '❌';
+        const chars = lecture.transcript ? `(${lecture.transcript.length} chars)` : '';
+        console.log(`   ${status} ${lecture.index}: ${lecture.title} ${chars}`);
+      }
+    }
+    console.log('\n─────────────────────────────────────────');
 
     // Save individual .txt files per section
     for (const section of sections) {

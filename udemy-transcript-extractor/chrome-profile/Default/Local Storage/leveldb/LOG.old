@@ -1,6 +1,6 @@
-2026/04/18-14:43:58.782 2d9c52 Reusing MANIFEST /Users/ashwin-14876/My Files/udemy-transcript-extractor/chrome-profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/04/18-14:43:58.788 2d9c52 Recovering log #35
-2026/04/18-14:43:58.789 2d9c52 Reusing old log /Users/ashwin-14876/My Files/udemy-transcript-extractor/chrome-profile/Default/Local Storage/leveldb/000035.log 
-2026/04/18-14:51:00.634 2d9c55 Level-0 table #39: started
-2026/04/18-14:51:00.638 2d9c55 Level-0 table #39: 15905 bytes OK
-2026/04/18-14:51:00.644 2d9c55 Delete type=0 #35
+2026/04/26-00:35:32.588 370f1 Reusing MANIFEST /Users/ashwin-14876/MyFiles/learn-java/udemy-transcript-extractor/chrome-profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/04/26-00:35:32.592 370f1 Recovering log #69
+2026/04/26-00:35:32.594 370f1 Reusing old log /Users/ashwin-14876/MyFiles/learn-java/udemy-transcript-extractor/chrome-profile/Default/Local Storage/leveldb/000069.log 
+2026/04/26-00:37:33.571 370f6 Level-0 table #73: started
+2026/04/26-00:37:33.578 370f6 Level-0 table #73: 15546 bytes OK
+2026/04/26-00:37:33.582 370f6 Delete type=0 #69
