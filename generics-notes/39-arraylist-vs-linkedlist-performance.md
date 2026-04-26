@@ -127,4 +127,4 @@ In real applications, profile before optimizing. But if you know your usage patt
 - **Random access + mostly appends**: `ArrayList`
 - **Frequent front insertions**: `LinkedList`
 
-`ArrayDeque` is often overlooked but is the most efficient choice for both stack and queue patterns — it outperforms both `ArrayList` and `LinkedList` in those use cases.
+`ArrayDeque` is often overlooked but is the most efficient choice for both stack and queue patterns — it outperforms both `ArrayList` and `LinkedList` in those use cases because it uses a circular buffer (contiguous array with head/tail pointers), which means no node-object allocation overhead like `LinkedList` and no element-shifting like `ArrayList`.

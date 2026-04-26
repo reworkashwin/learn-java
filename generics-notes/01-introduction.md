@@ -24,7 +24,7 @@ Java gives you a powerful framework to **store, manage, and manipulate groups of
 
 - **ArrayLists** — dynamic arrays that grow as needed
 - **LinkedLists** — efficient for insertions and deletions
-- **Stacks and Queues** — LIFO and FIFO structures
+- **Stacks and Queues** — LIFO (Last-In, First-Out) and FIFO (First-In, First-Out) structures
 - **HashMaps and HashSets** — lightning-fast lookups using hashing
 
 These aren't just academic concepts — they're the backbone of nearly every Java application.

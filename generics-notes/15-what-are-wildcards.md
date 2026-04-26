@@ -122,7 +122,7 @@ Java provides three wildcard variants, each with different powers:
 | **Upper bounded** | `List<? extends Animal>` | "List of Animal or any subtype" — safe to read as Animal |
 | **Lower bounded** | `List<? super Dog>` | "List of Dog or any supertype" — safe to add Dog |
 
-We'll dive deep into upper and lower bounded wildcards in the next topics. For now, understand that:
+We'll dive deep into upper and lower bounded wildcards in the next topics (see [Note 17–18](17-upper-bounded-wildcards-introduction.md) for upper bounds, [Note 19–20](19-lower-bounded-wildcards.md) for lower bounds). For now, understand that:
 - **Unbounded (`?`)** = "I don't care about the type at all"
 - **Upper bounded (`? extends X`)** = "I want to **read** items as type X"
 - **Lower bounded (`? super X`)** = "I want to **write** items of type X"

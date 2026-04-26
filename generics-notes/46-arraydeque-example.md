@@ -164,4 +164,4 @@ while (!stack.isEmpty()) {
 
 - `ArrayDeque` is the **default recommendation** from Java docs for both stack and queue implementations
 - Program to the `Deque` interface, not the `ArrayDeque` implementation
-- It is **not** thread-safe — use `ConcurrentLinkedDeque` for concurrent scenarios
+- It is **not** thread-safe — use `ConcurrentLinkedDeque` for concurrent scenarios. ArrayDeque's `head` and `tail` pointers and its backing circular array are unsynchronized. Concurrent `addFirst()`/`removeLast()` calls can cause two threads to read the same `head` index, overwrite each other's writes, or trigger concurrent array resizing that loses elements

@@ -122,4 +122,4 @@ This is exactly LIFO behavior — the most recently called method finishes first
 ## 💡 Pro Tips
 
 - Any recursive algorithm can be converted to an iterative one using an explicit stack
-- In Java, prefer `ArrayDeque` over the legacy `Stack` class for stack implementations
+- In Java, prefer `ArrayDeque` over the legacy `Stack` class for stack implementations — `Stack` extends `Vector`, so every operation is synchronized, adding unnecessary locking overhead in single-threaded code

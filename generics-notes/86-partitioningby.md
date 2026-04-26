@@ -16,7 +16,7 @@ We've used `groupingBy()` to split elements into multiple groups based on a clas
 
 ### ❓ Why not just use groupingBy()?
 
-You could use `groupingBy()` with a boolean-returning function, but `partitioningBy()` is cleaner and **guarantees both keys exist** — even if one group is empty. With `groupingBy`, if no element maps to `false`, that key won't be in the map.
+You could use `groupingBy()` with a boolean-returning function, but `partitioningBy()` is cleaner and **guarantees both keys exist** — even if one group is empty. With `groupingBy`, if no element maps to `false`, that key won't be in the map. The reason: `groupingBy()` uses a `HashMap` that only creates entries when it encounters a matching key during iteration, so unseen keys are simply absent. `partitioningBy()` internally pre-initializes both the `true` and `false` buckets before processing any elements.
 
 ### ⚙️ How it works
 

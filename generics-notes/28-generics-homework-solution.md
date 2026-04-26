@@ -137,7 +137,7 @@ Running the sorting algorithm
 Running the search algorithm
 ```
 
-Notice the order is reversed — we're pulling from the end (LIFO behavior), so the last item added is the first one executed.
+Notice the order is reversed — we're pulling from the end (LIFO — Last In, First Out — behavior), so the last item added is the first one executed.
 
 ### Why `Library<Algorithm>`?
 

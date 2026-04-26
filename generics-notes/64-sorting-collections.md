@@ -30,7 +30,7 @@ System.out.println(names);  // [Alice, Bob, Charlie]
 
 ### 💡 Insight
 
-Under the hood, Java uses **TimSort** — a hybrid sorting algorithm combining merge sort and insertion sort. It's stable (equal elements maintain their relative position) and runs in **O(n log n)** time.
+Under the hood, Java uses **TimSort** — a hybrid sorting algorithm combining merge sort and insertion sort. It's stable (equal elements maintain their relative position) and runs in **O(n log n)** time. Why hybrid? TimSort exploits pre-existing order in real-world data: it scans for already-sorted subsequences (called "runs"), uses insertion sort for small chunks (which is faster than merge sort for small arrays due to lower overhead), and then merges the runs using merge sort. This makes TimSort exceptionally fast on partially sorted data — often approaching O(n) — while still guaranteeing O(n log n) in the worst case.
 
 ---
 

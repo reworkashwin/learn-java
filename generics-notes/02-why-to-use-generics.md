@@ -109,9 +109,9 @@ Without generics, you'd need separate sorting methods for `int[]`, `double[]`, `
 
 ## ⚠️ Common Mistakes
 
-- Using raw types (no generics) and relying on type casting — this defeats the entire purpose
-- Thinking generics are just "syntactic sugar" — they fundamentally change when errors are caught
-- Confusing compile-time safety with runtime behavior — generics are a compile-time feature
+- Using raw types (no generics) and relying on type casting — this defeats the entire purpose. With raw types, the compiler has no type information, so it can't warn you when you insert a `String` into a list that should hold `Integer`. You only discover the mistake at runtime when a `ClassCastException` crashes your application — exactly the kind of bug generics were designed to prevent.
+- Thinking generics are just "syntactic sugar" — they fundamentally change when errors are caught. Syntactic sugar only changes how code *looks* (like the enhanced for-loop replacing explicit `Iterator` usage). Generics change how code *behaves* at compile time — the compiler performs full type-checking that didn't exist before, catching entire categories of bugs that would otherwise reach production.
+- Confusing compile-time safety with runtime behavior — generics are a compile-time feature. Due to **type erasure**, all generic type information is removed during compilation. At runtime, `List<String>` and `List<Integer>` are the same class (`List`). This means you can't use `instanceof` with generic types or rely on generic info via reflection — the safety generics provide exists only at compile time.
 
 ## ✅ Key Takeaways
 

@@ -136,6 +136,8 @@ Singleton.INSTANCE.doSomething();
 | Private constructor | ❌ No | Depends | ❌ No |
 | Enum | ✅ Yes | ✅ Yes | ✅ Yes |
 
+The private-constructor singleton says "Depends" for thread-safety because the lazy `if (instance == null)` check is a race condition: two threads can both see `null` simultaneously and each create a separate instance. The enum approach is inherently thread-safe because the JVM guarantees enum constants are initialized exactly once during class loading. Serialization breaks private-constructor singletons because `ObjectInputStream.readObject()` creates a new instance bypassing the constructor — enums are immune because Java's serialization spec handles them specially, always returning the existing constant.
+
 ---
 
 ## ✅ Key Takeaways

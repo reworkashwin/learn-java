@@ -98,6 +98,8 @@ If one of the bounds is a **class** (not an interface), it must come **first**:
 <T extends Comparable<T> & Number>   // ❌ Compile error — class must be first
 ```
 
+Why must the class come first? Java allows only **single class inheritance**, so there can be at most one class bound. By requiring it first, the compiler can immediately verify there's only one class and parse the remaining bounds as interfaces — making the syntax unambiguous.
+
 ---
 
 ## ⚠️ Common Mistakes

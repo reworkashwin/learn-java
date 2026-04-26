@@ -90,7 +90,7 @@ Sequential: ~7000ms (7 seconds)
 Parallel:   ~680ms  (0.7 seconds)
 ```
 
-The parallel approach is approximately **10x faster**! Each file gets saved independently, making this a perfect candidate for parallelization.
+The parallel approach is approximately **10x faster**! Each file gets saved independently, making this a perfect candidate for parallelization. The speedup exceeds the typical core-count multiplier (~4x on 4 cores) because file I/O is **wait-bound**: while one thread blocks waiting for the OS to flush data to disk, other threads continue writing. This overlapping of wait times is why I/O-heavy workloads can achieve super-linear speedup relative to core count.
 
 ---
 

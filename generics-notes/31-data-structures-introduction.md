@@ -111,7 +111,7 @@ Notice the generics: `List<E>`, `Map<K, V>`. Everything we learned about generic
 | No duplicates, fast lookup | `HashSet` |
 | No duplicates, sorted order | `TreeSet` |
 | LIFO (undo, backtracking) | `Stack` or `ArrayDeque` |
-| FIFO (task queues, BFS) | `Queue`, `ArrayDeque` |
+| FIFO (task queues, BFS — Breadth-First Search) | `Queue`, `ArrayDeque` |
 | Key-value lookup | `HashMap` |
 | Sorted key-value pairs | `TreeMap` |
 
@@ -133,5 +133,5 @@ In practice, `ArrayList` and `HashMap` cover about 80% of use cases. Start with 
 
 - Using `ArrayList` when you need frequent insertions at the beginning (use `LinkedList` or `ArrayDeque`)
 - Using `LinkedList` for random access by index (use `ArrayList`)
-- Not considering thread safety — standard collections are NOT thread-safe
+- Not considering thread safety — standard collections like `ArrayList` and `HashMap` are NOT thread-safe. Their internal fields (`size`, backing arrays, node pointers) have no synchronization, so concurrent modifications from multiple threads can corrupt internal state, lose elements, or throw unexpected exceptions like `ArrayIndexOutOfBoundsException`
 - Ignoring the initial capacity of `ArrayList` or `HashMap` in performance-critical code

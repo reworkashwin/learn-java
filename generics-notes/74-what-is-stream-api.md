@@ -84,7 +84,7 @@ List<String> result = names.stream()        // Source
     .collect(Collectors.toList());           // Terminal
 ```
 
-**Intermediate operations are lazy** — they don't execute until a terminal operation is invoked. This allows Java to optimize the pipeline.
+**Intermediate operations are lazy** — they don't execute until a terminal operation is invoked. This allows Java to optimize the pipeline. Specifically, laziness enables two key optimizations: (1) **loop fusion** — instead of iterating the entire collection separately for each operation, Java processes all operations on each element in a single pass; and (2) **short-circuiting** — operations like `limit()` or `findFirst()` can stop processing early once they have enough results, avoiding unnecessary work on remaining elements.
 
 ### 💡 Insight
 

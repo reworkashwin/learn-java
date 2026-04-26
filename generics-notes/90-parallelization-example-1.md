@@ -175,6 +175,8 @@ numbers.parallelStream()
     .forEach(results::add);  // ArrayList is NOT thread-safe
 ```
 
+What actually happens: `ArrayList.add()` increments an internal `size` counter and writes to an internal array. When two threads call `add()` simultaneously, both read the same `size` value, both write to the same index, and one element is silently lost. Worse, if the backing array needs to grow, concurrent resizing can throw `ArrayIndexOutOfBoundsException` or corrupt the internal array entirely. Use `collect(Collectors.toList())` instead — its combiner safely merges partial results.
+
 ---
 
 ## Concept 5: Rules of Thumb for Parallel Streams

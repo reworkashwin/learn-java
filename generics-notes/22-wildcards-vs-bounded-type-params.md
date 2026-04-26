@@ -49,7 +49,7 @@ public static void process(List<? extends Number> list) {
 }
 ```
 
-Upper bounded wildcards prevent adding **typed** items, but they don't make the list immutable.
+Upper bounded wildcards prevent adding **typed** items, but they don't make the list immutable. Operations like `clear()`, `remove()`, and `sort()` work because they don't introduce new typed elements into the collection — they only remove or rearrange existing elements, which is safe regardless of the unknown actual type. Adding `null` works because `null` is compatible with every reference type. Only inserting a new *typed* value is blocked, since the compiler can't verify it matches the list's actual type.
 
 ---
 

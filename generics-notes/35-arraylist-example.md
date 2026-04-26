@@ -166,11 +166,15 @@ for (String name : names) {
 }
 ```
 
+Why does this happen? The for-each loop is syntactic sugar for an `Iterator`. Internally, `ArrayList` maintains a `modCount` (modification counter) that increments on every structural change (`add`, `remove`, `clear`). When you call `names.remove()` directly, `modCount` increases — but the iterator doesn't know. On its next `hasNext()`/`next()` call, it compares its saved `expectedModCount` against the list's current `modCount`, detects the mismatch, and throws `ConcurrentModificationException`.
+
 Use an `Iterator` or `removeIf()` instead:
 
 ```java
 names.removeIf(name -> name.startsWith("A")); // ✅ safe
 ```
+
+Why are these safe? `Iterator.remove()` updates **both** the list's `modCount` and the iterator's `expectedModCount`, keeping them in sync. `removeIf()` handles iteration internally, so there's no external iterator to get out of sync.
 
 ---
 
@@ -210,4 +214,4 @@ List<Integer> sub = numbers.subList(1, 3); // [8, 5]
 
 - Removing elements during a for-each loop → `ConcurrentModificationException`
 - Confusing `remove(int index)` with `remove(Object value)` for `List<Integer>`
-- Forgetting that `ArrayList` is NOT thread-safe (use `Collections.synchronizedList()` or `CopyOnWriteArrayList` in multithreaded code)
+- Forgetting that `ArrayList` is NOT thread-safe (use `Collections.synchronizedList()` or `CopyOnWriteArrayList` in multithreaded code). Internally, `add()` reads the current `size`, writes to `elementData[size]`, then increments `size` — none of these steps are atomic. Two threads calling `add()` simultaneously can both read the same `size`, write to the same index (one element silently lost), or trigger concurrent array resizing that throws `ArrayIndexOutOfBoundsException`

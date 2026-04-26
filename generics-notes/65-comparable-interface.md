@@ -109,7 +109,7 @@ You might be tempted to negate the result:
 return -Integer.compare(this.numberOfPages, other.getNumberOfPages());
 ```
 
-This works **most of the time** but is **not consistent** — it can fail in edge cases with integer overflow.
+This works **most of the time** but is **not consistent** — it can fail in edge cases with integer overflow. For example, `Integer.compare()` can return `Integer.MIN_VALUE` (-2,147,483,648). Negating it: `-(-2,147,483,648)` **overflows** back to `-2,147,483,648` (still negative!) because `Integer.MAX_VALUE` is only 2,147,483,647. The sign doesn't flip, so the sort order is wrong.
 
 ### ✅ The correct way
 

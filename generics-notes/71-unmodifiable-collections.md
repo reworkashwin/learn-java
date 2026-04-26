@@ -117,7 +117,16 @@ This pattern is extremely common in graph algorithms, data models, and any class
 
 - Forgetting that unmodifiable wrappers throw **runtime** exceptions, not compile-time errors — the compiler won't warn you
 - Returning `neighbors` directly from a getter instead of wrapping it — this exposes your internal state
-- Confusing unmodifiable with immutable — the underlying collection can still be modified through the original reference; only the wrapper is read-only
+- Confusing unmodifiable with immutable — the underlying collection can still be modified through the original reference; only the wrapper is read-only. For example:
+
+```java
+List<String> original = new ArrayList<>(List.of("A", "B"));
+List<String> readOnly = Collections.unmodifiableList(original);
+original.add("C");  // this works!
+System.out.println(readOnly); // [A, B, C] — the "read-only" view changed!
+```
+
+The unmodifiable wrapper is just a view — it delegates to the original list. For true immutability (where no reference can modify the data), use `List.of(...)` or `List.copyOf(original)` instead.
 
 ## 💡 Pro Tips
 

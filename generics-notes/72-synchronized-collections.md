@@ -139,7 +139,7 @@ These use finer-grained locking strategies (or lock-free algorithms) that allow 
 
 - Assuming `ArrayList` is thread-safe — it is not
 - Using `Hashtable` or `Vector` in modern code — these are legacy; use `ConcurrentHashMap` or `Collections.synchronizedList()` instead
-- Forgetting that compound operations (check-then-act) still require explicit synchronization even with synchronized wrappers
+- Forgetting that compound operations (check-then-act) still require explicit synchronization even with synchronized wrappers. For example, `if (!syncList.contains(x)) syncList.add(x)` — each call is individually synchronized, but **another thread can insert `x` between the `contains()` and `add()` calls**, resulting in duplicates. Wrap compound operations in a `synchronized (syncList) { ... }` block to make them atomic
 
 ## 💡 Pro Tips
 

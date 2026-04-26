@@ -39,6 +39,8 @@ Just like with maps, modern Java converts long collision chains into red-black t
 | **Memory usage** | Medium | Highest | Lowest |
 | **Tuning parameters** | Load factor | Load factor | None |
 
+The null-value row deserves attention: `TreeSet` forbids `null` because it must call `compareTo()` (or `Comparator.compare()`) on every element to determine its position — and calling either method on `null` throws a `NullPointerException`. Hash-based sets don't have this constraint because they simply assign null a hash code of 0.
+
 ---
 
 ## Concept 4: Memory Considerations

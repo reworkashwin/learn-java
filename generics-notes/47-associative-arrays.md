@@ -56,7 +56,7 @@ We already know that accessing `array[5]` is instant — O(1). The problem is: h
 
 **Answer**: Use a **hash function** to convert any key into an array index. Given key `"alice@email.com"`, the hash function computes something like index `7`, and we store the value at `array[7]`.
 
-This is the core idea. We'll explore the details (hash functions, collisions, etc.) in the coming notes.
+This is the core idea. We'll explore the details in the coming notes: hash functions and hash table basics (note 48), collision handling strategies (note 49), and load factor with dynamic resizing (note 50).
 
 ---
 

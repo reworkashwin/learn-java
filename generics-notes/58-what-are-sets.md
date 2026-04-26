@@ -123,7 +123,7 @@ These operations are commonly visualized using **Venn diagrams** — two overlap
 
 - Trying to access items by index in a set — sets have no `get(index)` method
 - Assuming `HashSet` preserves insertion order — it does **not** (use `LinkedHashSet` for that)
-- Adding mutable objects to a `HashSet` and then modifying them — this can corrupt the set because the hash code changes
+- Adding mutable objects to a `HashSet` and then modifying them — this can corrupt the set because the hash code changes. When the field that contributes to `hashCode()` is modified, the object now sits in the **wrong bucket** (computed from the old hash). A `contains()` call recomputes the hash, looks in the **new** bucket, and doesn't find the object — even though it's still in the set. The object becomes permanently "lost" inside the data structure
 
 ## 💡 Pro Tips
 

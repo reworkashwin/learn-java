@@ -191,5 +191,5 @@ while (!scheduler.isEmpty()) {
 
 - Using `LinkedList` as a queue when `ArrayDeque` is faster and simpler
 - Calling `poll()` or `peek()` without checking for `null` (empty queue returns `null`)
-- Assuming `PriorityQueue` iteration order is sorted — only `poll()` guarantees ordering
-- Forgetting that `PriorityQueue` does NOT allow `null` elements
+- Assuming `PriorityQueue` iteration order is sorted — only `poll()` guarantees ordering. The internal heap structure only guarantees the minimum is at the root; the rest of the underlying array is **not** fully sorted
+- Forgetting that `PriorityQueue` does NOT allow `null` elements — `null` cannot be compared via `compareTo()` or a `Comparator`, so insertion would throw a `NullPointerException`

@@ -83,6 +83,8 @@ for (int i = 0; i < 1_000_000; i++) {
 
 Each `Integer` object takes about 16 bytes on a 64-bit JVM, compared to 4 bytes for a plain `int`. That's 4x the memory.
 
+**Worked example:** For the 1 million items above: `1,000,000 × 16 bytes = ~16 MB` with `Integer` wrappers, versus `1,000,000 × 4 bytes = ~4 MB` with raw `int`. That's 12 MB of overhead purely from autoboxing — plus additional GC pressure from 1 million short-lived objects.
+
 ### 🧪 Null-pointer danger
 
 Wrapper types can be `null`, but primitives can't. Unboxing a `null` throws a `NullPointerException`:
@@ -148,4 +150,4 @@ This is one of the most anticipated changes in Java's evolution. Until then, aut
 - Trying to use `List<int>` instead of `List<Integer>`
 - Ignoring the performance impact of autoboxing in tight loops
 - Unboxing a `null` `Integer` to `int` — causes `NullPointerException`
-- Comparing wrapper objects with `==` instead of `.equals()` (only works for cached values -128 to 127)
+- Comparing wrapper objects with `==` instead of `.equals()` — Java caches `Integer` values from -128 to 127, so `==` works by coincidence in that range (both references point to the same cached object). Outside that range, `new Integer(200) == new Integer(200)` is `false` because they are different heap objects, even though `.equals()` returns `true`

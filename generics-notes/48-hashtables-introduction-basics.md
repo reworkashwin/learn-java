@@ -91,10 +91,18 @@ In practice, with a good hash function and a properly sized array, operations ar
 
 ### 🧠 Load factor and resizing
 
-- **Load factor** = number of entries / array size
-- Java's `HashMap` default load factor is **0.75**
-- When 75% of the array is filled, it **doubles** the array size and rehashes all entries
-- This keeps chains short and maintains O(1) performance
+- **Load factor** = number of entries / array size — it measures how "full" the hash table is. A load factor of 0.5 means half the buckets are occupied; 1.0 means as many entries as buckets.
+
+- Java's `HashMap` default load factor is **0.75** — but why 0.75 specifically? It's a **tradeoff between memory waste and collision probability**:
+  - **Lower load factor (e.g., 0.5):** Resize when only 50% full → more empty buckets → fewer collisions → faster lookups, BUT you waste ~50% of your array as empty slots
+  - **Higher load factor (e.g., 0.9):** Resize when 90% full → less wasted memory, BUT buckets become crowded → more collisions → chains grow → lookups slow toward O(n)
+  - **0.75 is the sweet spot:** Statistically, at 75% capacity, the average chain length stays close to 1 (most buckets have 0 or 1 entry), so O(1) holds. Go beyond ~80%, and collision chains start growing noticeably.
+
+- When 75% of the array is filled, it **doubles** the array size and rehashes all entries. Why double? Doubling is a geometric growth strategy — it means resizing happens less and less frequently as the map grows. If you only added 10 slots each time, a map growing to 1 million entries would resize ~100,000 times. Doubling means it resizes only ~17 times (16 → 32 → 64 → ... → 1,048,576).
+
+- **How resizing keeps chains short:** When the array doubles from 16 to 32 slots, entries that were sharing the same bucket (because `hash % 16` was the same) now get split — `hash % 32` uses the extra bit to distribute them across two buckets instead of one. So chains that were 2-3 entries long drop back to 1-2.
+
+**Worked example:** Your HashMap starts with an internal array of size 16. Resizing triggers when entries exceed `16 × 0.75 = 12`. At that point, the array doubles to 32, and the new threshold becomes `32 × 0.75 = 24`. The next resize happens at 24 entries (array grows to 64, threshold = 48), and so on. Every existing entry must be **rehashed** during resizing — its `hashCode() % newArraySize` may map to a different bucket, so Java recalculates each entry's position.
 
 ---
 
@@ -114,8 +122,8 @@ In practice, with a good hash function and a properly sized array, operations ar
 
 `Hashtable` is a legacy class from Java 1.0. In modern Java:
 - Use `HashMap` for single-threaded code
-- Use `ConcurrentHashMap` for multi-threaded code
-- Never use `Hashtable` in new code
+- Use `ConcurrentHashMap` for multi-threaded code — it uses segment-level (bucket-level) locking instead of locking the entire table, allowing multiple threads to read/write concurrently without blocking each other
+- Never use `Hashtable` in new code — it locks the entire table on every operation, creating a bottleneck where all threads must wait for a single lock
 
 ---
 
@@ -130,6 +138,6 @@ In practice, with a good hash function and a properly sized array, operations ar
 ## ⚠️ Common Mistakes
 
 - Not overriding both `hashCode()` and `equals()` when using custom objects as keys
-- Modifying an object's fields after using it as a key (changes its hash → "lost" entry)
+- Modifying an object's fields after using it as a key — the hash changes, so `get()` computes a different bucket than where the entry was originally stored, and the entry becomes unreachable even though it's still in the map
 - Using `Hashtable` in modern code — use `HashMap` or `ConcurrentHashMap`
 - Assuming iteration order in `HashMap` — it's unordered (use `LinkedHashMap` for order)

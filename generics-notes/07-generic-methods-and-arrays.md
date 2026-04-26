@@ -120,6 +120,8 @@ This is the first hint that generics are more nuanced than they first appear:
 | Create `new T[10]` | ❌ |
 | Create `new T()` | ❌ |
 
+Both `new T[10]` and `new T()` fail for the same reason: type erasure replaces `T` with `Object` at runtime, so `new T()` would literally become `new Object()` — which is never what you intended. The JVM has no way to know the actual class to instantiate, so the compiler blocks it entirely.
+
 ---
 
 ## ⚠️ Common Mistakes

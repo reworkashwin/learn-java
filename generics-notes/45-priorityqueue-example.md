@@ -169,4 +169,4 @@ The `compareTo()` method is the **single method** of the `Comparable` interface,
 
 - Use a `Comparator` in the constructor to define priority without modifying the class itself
 - If you need frequent `contains()` or arbitrary `remove()`, consider a `TreeMap` or `HashMap` instead
-- PriorityQueue is **not** thread-safe — use `PriorityBlockingQueue` for concurrent access
+- PriorityQueue is **not** thread-safe — use `PriorityBlockingQueue` for concurrent access. PriorityQueue's internal heap array and `size` field have no synchronization, so concurrent `offer()`/`poll()` can corrupt the heap structure — two threads may sift elements simultaneously, violating the heap invariant and causing `poll()` to return elements out of priority order or throw `ArrayIndexOutOfBoundsException` during resize

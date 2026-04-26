@@ -55,6 +55,8 @@ Modern Java improved this: when the number of items in a single bucket exceeds a
 | **Memory usage** | More (array larger than needed) | Most (array + doubly linked list) | Less (tree nodes only) |
 | **Parameters to tune** | Load factor, initial capacity | Load factor, initial capacity | None |
 
+TreeMap forbids `null` keys because it must call `compareTo()` (or `Comparator.compare()`) on every key to navigate the red-black tree and find the correct position — calling either method on `null` throws `NullPointerException`. Hash-based maps don't have this constraint because they simply assign null a hash code of 0.
+
 ---
 
 ## Concept 4: Memory and Load Factor

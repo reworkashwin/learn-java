@@ -142,9 +142,9 @@ Not for performance — for **safety**. Generics transform potential **runtime e
 Type erasure also explains many "weird" generic behaviors:
 - You can't do `new T()` — `T` doesn't exist at runtime
 - You can't do `instanceof List<Integer>` — type is erased
-- You can't create generic arrays — type is unknown at runtime
+- You can't create generic arrays — type is unknown at runtime (see [Note 26](26-generic-arrays-problematic.md))
 
-We'll explore some of these in upcoming lectures.
+We'll explore these in upcoming lectures — generic arrays in [Note 26](26-generic-arrays-problematic.md) and why primitives can't be generic in [Note 27](27-why-cant-primitive-types-be-generic.md).
 
 ---
 

@@ -155,4 +155,4 @@ If you need **guaranteed** O(log n) performance even in the worst case, use a **
 
 - Java's `HashMap` uses **chaining** (with linked lists that upgrade to balanced trees at 8+ items per bucket since Java 8)
 - A good hash function minimizes collisions and avoids clustering
-- Use **prime numbers** for array sizes and hash computations to reduce collision probability
+- Use **prime numbers** for array sizes and hash computations to reduce collision probability — prime-sized tables distribute keys more uniformly under modulo because they share no common factors with typical key patterns, avoiding clustering that powers-of-two or composite sizes can create

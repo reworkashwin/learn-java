@@ -197,5 +197,5 @@ Use `HashMap` by default. Switch to `TreeMap` when you need:
 
 - Using `TreeMap` when order doesn't matter — `HashMap` is faster for plain lookups
 - Forgetting that `TreeMap` keys must implement `Comparable` (or you must provide a `Comparator`)
-- Assuming `TreeMap` allows `null` keys — it doesn't (throws `NullPointerException`)
+- Assuming `TreeMap` allows `null` keys — it doesn't, because every `put()` call internally invokes `key.compareTo()` to navigate the red-black tree and find the correct insertion point. Calling `compareTo()` on `null` throws `NullPointerException`
 - Confusing iteration order of `HashMap` (unpredictable) with `TreeMap` (sorted)

@@ -144,4 +144,4 @@ String keys are sorted in **alphabetical order** — that's their natural orderi
 
 - Use `TreeMap` when you need keys in sorted order (e.g., leaderboards, time-series data)
 - Use `HashMap` when you just need fast lookups and don't care about order
-- `TreeMap` does **not** allow `null` keys (unlike `HashMap` which allows one null key)
+- `TreeMap` does **not** allow `null` keys (unlike `HashMap` which allows one null key) — because TreeMap must call `compareTo()` (or `Comparator.compare()`) on every key to find its position in the tree. Calling `compareTo()` on `null` throws a `NullPointerException`, so null keys are structurally impossible

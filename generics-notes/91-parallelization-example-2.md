@@ -36,6 +36,8 @@ int result = IntStream.of(1, 2, 3, 4)
     .reduce(0, (a, b) -> a - b);
 // Sequential: ((((0-1)-2)-3)-4) = -10
 // Parallel: unpredictable! depends on how chunks are split
+// Example parallel split: chunk1=[1,2] → (0-1)-2 = -3, chunk2=[3,4] → (0-3)-4 = -7
+// Combine: (-3) - (-7) = 4 — completely wrong vs sequential -10
 ```
 
 ### 💡 Insight
@@ -114,7 +116,7 @@ With `Collectors.toList()`, the combiner is built in — it uses `List::addAll` 
 
 ### ⚠️ Common Mistake
 
-If you use `collect()` with three arguments but the combiner is wrong or missing, parallel execution produces incorrect results. The combiner is **only used in parallel** — sequential streams skip it. This means bugs hide until you switch to parallel.
+If you use `collect()` with three arguments but the combiner is wrong or missing, parallel execution produces incorrect results. The combiner is **only used in parallel** — sequential streams skip it. This means bugs hide until you switch to parallel. For example, if the combiner does nothing (empty body), each thread builds its own partial result, but those results are never merged — you get only one thread's output instead of the combined total.
 
 ---
 

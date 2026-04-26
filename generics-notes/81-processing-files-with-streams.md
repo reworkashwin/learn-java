@@ -189,7 +189,7 @@ This pattern replaces verbose `BufferedReader` + `while` loop code with a single
 ## ⚠️ Common Mistakes
 
 - Forgetting to handle `IOException` — file operations always require exception handling
-- Not closing the stream — `Files.lines()` returns a stream backed by a file handle; in production, use try-with-resources
+- Not closing the stream — `Files.lines()` returns a stream backed by a file handle; in production, use try-with-resources. If you don't close it, the underlying file descriptor stays open. On Linux the default limit is ~1024 open file descriptors per process; leak enough of them and subsequent `Files.lines()` calls throw `IOException: Too many open files`
 - Hardcoding file paths — use `Path.of()` and relative paths or configuration for portability
 
 ## 💡 Pro Tips

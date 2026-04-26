@@ -71,7 +71,7 @@ System.out.println(nums);  // [8, 1, 3, 10, 2, 5]  (random each time)
 - Randomized testing
 - Implementing randomized algorithms (e.g., Bogosort)
 
-Under the hood, Java uses the **Fisher-Yates shuffle algorithm** — an efficient O(n) algorithm for random permutation.
+Under the hood, Java uses the **Fisher-Yates shuffle algorithm** — an efficient O(n) algorithm for random permutation. It works by iterating backwards through the list: for each position `i`, it picks a random index `j` between 0 and `i` (inclusive), then swaps elements at positions `i` and `j`. Each element has an equal probability of landing in any position, producing a truly uniform random permutation in a single pass.
 
 ---
 

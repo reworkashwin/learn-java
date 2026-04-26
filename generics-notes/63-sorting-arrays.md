@@ -17,7 +17,7 @@ Sorting is one of the most fundamental operations in programming. Java provides 
 
 ### ❓ Why two different algorithms?
 
-- **Quicksort** is the fastest sorting algorithm on average but can degrade to O(n²) in the worst case. For primitives, this is acceptable.
+- **Quicksort** is the fastest sorting algorithm on average but can degrade to O(n²) in the worst case. The O(n²) worst case occurs when the pivot selection is poor — for example, if the pivot is always the smallest or largest element, each partition removes only one element instead of splitting the array roughly in half, turning the divide-and-conquer into a linear scan repeated n times. For primitives, this risk is acceptable — because (1) primitives have no identity beyond their value, so **stability doesn't matter** (two equal `int` values are indistinguishable), and (2) Java's Dual-Pivot Quicksort uses randomized pivots that make the O(n²) worst case extremely unlikely in practice.
 - **Merge Sort** guarantees O(n log n) in all cases and is **stable** (preserves the original order of equal elements). Stability matters for objects, where equal elements might still differ in other fields.
 
 ---
@@ -87,7 +87,7 @@ Since `String` is a reference type, Java uses **Merge Sort** (TimSort) here, whi
 
 ## ⚠️ Common Mistakes
 
-- Trying to pass `Collections.reverseOrder()` to `Arrays.sort()` with a primitive array — this causes a compile error. It only works with reference type arrays (`Integer[]`, not `int[]`).
+- Trying to pass `Collections.reverseOrder()` to `Arrays.sort()` with a primitive array — this causes a compile error because the `Arrays.sort(T[], Comparator)` overload requires a generic array, and generics don't support primitive types (type erasure replaces `T` with `Object`, and `int` is not an `Object`). Use `Integer[]` instead of `int[]`.
 - Forgetting that array indices start at 0 — use `nums.length - 1` as the starting index when iterating in reverse
 
 ## 💡 Pro Tips

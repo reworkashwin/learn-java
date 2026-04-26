@@ -99,7 +99,7 @@ Here's a preview of what you can accomplish with the Reflection API:
 - **Read annotations** → `method.isAnnotationPresent(MyAnnotation.class)`
 - **Access private members** → `field.setAccessible(true)`
 
-We'll explore each of these in the coming notes.
+We'll explore each of these in the coming notes: getting the `Class` object (note 94), fields (note 95), methods (note 96), private members (note 97), constructors and singletons (note 98), superclasses and interfaces (note 99), and annotations (note 100).
 
 ---
 

@@ -54,6 +54,8 @@ The type inference algorithm doesn't just pick `Object` (even though everything 
 - `Integer` + `Double` → `Number` (both extend it)
 - `String` + `Integer` → `Object` (only common ancestor)
 
+How does Java find this? It walks up each argument's type hierarchy (classes and interfaces) and finds the **lowest common ancestor** — the most specific type that appears in both hierarchies. For `String` + `ArrayList`, Java checks: `String` implements `Serializable`, `Comparable`, `CharSequence`; `ArrayList` implements `Serializable`, `Cloneable`, `List`, `RandomAccess`. The most specific shared type is `Serializable`, so `T = Serializable`.
+
 ---
 
 ## Concept 3: Type Inference in Class Instantiation
